@@ -1,0 +1,173 @@
+<!doctype html>
+<!--
+  sithewok13-dev.github.io: one page listing the owner's game ports and their
+  latest public releases. The games are the GAMES list in the script below;
+  each one's releases are read from GitHub's public API when the page opens,
+  so a new release shows up with no edit here. If that fails (offline, or
+  GitHub's limit of 60 requests an hour per visitor), each card still links
+  to its releases page. No game data, logos or official artwork here.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sithewok's Game Ports</title>
+<meta name="description" content="Unofficial fan ports of classic PC games for iPhone and iPad, with touch controls: Jedi Knight, Mysteries of the Sith, Serious Sam, DOOM 3 and Half-Life. Bring your own game files.">
+<link rel="canonical" href="https://sithewok13-dev.github.io/">
+<style>
+  :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #5f5f66; --accent: #8e3aa8; --on-accent: #ffffff; --line: #d9d9de; --card: #f6f6f8; --note: #fff6dc; --note-line: #e8d38f; --tag: #e9e9ee; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #141416; --fg: #f2f2f5; --muted: #a8a8b0; --accent: #c77ddf; --on-accent: #141416; --line: #34343a; --card: #1d1d21; --note: #2c2617; --note-line: #5c4d22; --tag: #2a2a30; }
+  }
+  :root[data-theme="dark"] { --bg: #141416; --fg: #f2f2f5; --muted: #a8a8b0; --accent: #c77ddf; --on-accent: #141416; --line: #34343a; --card: #1d1d21; --note: #2c2617; --note-line: #5c4d22; --tag: #2a2a30; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 32px 16px 48px; }
+  h1 { font-size: 1.6em; line-height: 1.2; margin: 0 0 8px; }
+  h2 { font-size: 1.2em; line-height: 1.25; margin: 0 0 4px; }
+  .lead { color: var(--muted); margin: 0 0 16px; }
+  a { color: var(--accent); }
+  .note { background: var(--note); border: 1px solid var(--note-line); border-radius: 12px; padding: 12px 14px; margin: 0 0 24px; }
+  .note p { margin: 0; }
+  .note p + p { margin-top: 6px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px 16px; margin: 0 0 16px; }
+  .apps { color: var(--muted); margin: 0 0 12px; font-size: 0.95em; }
+  .release { margin: 0 0 4px; }
+  .release strong { font-size: 1.05em; }
+  .tag { display: inline-block; background: var(--tag); border-radius: 6px; padding: 0 7px; font-size: 0.8em; font-weight: 600; vertical-align: 2px; margin-left: 4px; }
+  .sub { color: var(--muted); font-size: 0.9em; margin: 0; }
+  .buttons { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0 12px; }
+  .button { display: inline-block; padding: 11px 16px; border-radius: 12px; background: var(--accent); color: var(--on-accent); text-decoration: none; font-weight: 600; }
+  .button.secondary { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+  .platforms { list-style: none; padding: 12px 0 0; margin: 0; border-top: 1px solid var(--line); font-size: 0.92em; }
+  .platforms li + li { margin-top: 4px; }
+  .platforms b { font-weight: 600; }
+  .exp { color: var(--muted); }
+  footer { margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.85em; }
+  footer p { margin: 0 0 8px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Sithewok's Game Ports</h1>
+  <p class="lead">Unofficial fan ports of classic PC games, with touch controls, for iPhone and iPad.</p>
+
+  <div class="note">
+    <p><b>Made for iPhone and touchscreens first.</b> These ports are mainly for iOS, played with the on-screen touch controls, and that's where they're tested.</p>
+    <p>Game controllers may work, but controller support hasn't been tested.</p>
+    <p>Anything else (Android and computer builds) is an experiment: mostly untested, and it may not work.</p>
+  </div>
+
+  <div id="games"></div>
+
+  <footer>
+    <p><b>Bring your own game.</b> No game files are included or shared here: each app needs your own copy of the game, and each guide says how to copy it in.</p>
+    <p>Fan projects, not affiliated with or endorsed by Lucasfilm, Disney, Croteam, Devolver Digital, id Software, Bethesda or Valve. All trademarks belong to their owners.</p>
+    <p>Each game's newest release is read from GitHub when this page opens.</p>
+  </footer>
+</main>
+
+<script>
+// The games on this page, in order. To add one, add an entry here.
+const GAMES = [
+  {
+    repo: "sithewok13-dev/OpenJKDF2-iOS",
+    title: "Star Wars Jedi Knight: Dark Forces II and Mysteries of the Sith",
+    apps: "Apps: OpenJKDF2 and OpenMoTS, built on OpenJKDF2",
+    guide: "https://github.com/sithewok13-dev/OpenJKDF2-iOS/blob/HEAD/docs/ios/README.md",
+    sidestore: "https://sithewok13-dev.github.io/OpenJKDF2-iOS/",
+    other: "Android: an experiment, not released, and not yet tried on a real Android device."
+  },
+  {
+    repo: "sithewok13-dev/SeriousSamClassic",
+    title: "Serious Sam: The First Encounter and The Second Encounter",
+    apps: "Apps: Sam FE and Sam SE, built on Croteam's Serious Engine 1",
+    guide: "https://github.com/sithewok13-dev/SeriousSamClassic/blob/HEAD/ios/RELEASE_NOTES.md",
+    other: "Android: planned, not available yet."
+  },
+  {
+    repo: "sithewok13-dev/doom3-ios",
+    title: "DOOM 3",
+    apps: "App: DOOM 3, built on dhewm3",
+    guide: "https://github.com/sithewok13-dev/doom3-ios/blob/ios/docs/ios/RELEASE_NOTES.md"
+  },
+  {
+    repo: "sithewok13-dev/xash3d-fwgs",
+    title: "Half-Life, Opposing Force and Blue Shift",
+    apps: "App: Half-Life (all three games in one), built on Xash3D FWGS",
+    guide: "https://github.com/sithewok13-dev/xash3d-fwgs/blob/HEAD/Documentation/ios-port.md"
+  }
+];
+
+const TEST_TAGS = ["ios-latest"];
+
+function el(tag, props, ...kids) {
+  const e = document.createElement(tag);
+  Object.assign(e, props || {});
+  for (const k of kids) if (k != null) e.append(k);
+  return e;
+}
+
+function button(text, href, secondary) {
+  return el("a", { className: "button" + (secondary ? " secondary" : ""), href, textContent: text });
+}
+
+function niceDate(iso) {
+  return new Date(iso).toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
+}
+
+function card(g) {
+  const releases = "https://github.com/" + g.repo + "/releases";
+  const status = el("div", {}, el("p", { className: "sub", textContent: "Checking the latest release…" }));
+  const buttons = el("div", { className: "buttons" });
+  const platforms = el("ul", { className: "platforms" },
+    el("li", {}, el("b", { textContent: "iPhone and iPad: " }), "the main version."));
+  if (g.other) platforms.append(el("li", { className: "exp", textContent: g.other }));
+
+  const c = el("section", { className: "card" },
+    el("h2", { textContent: g.title }),
+    el("p", { className: "apps", textContent: g.apps }),
+    status, buttons, platforms);
+
+  function fill(list) {
+    const real = list.filter(r => !r.draft && !TEST_TAGS.includes(r.tag_name))
+      .sort((a, b) => new Date(b.published_at) - new Date(a.published_at));
+    const test = list.find(r => TEST_TAGS.includes(r.tag_name));
+    status.replaceChildren();
+    if (real.length) {
+      const r = real[0];
+      const line = el("p", { className: "release" }, "Latest release: ", el("strong", { textContent: r.tag_name }));
+      if (r.prerelease) line.append(el("span", { className: "tag", textContent: "BETA" }));
+      status.append(line, el("p", { className: "sub", textContent: "Released " + niceDate(r.published_at) }));
+      buttons.append(button("Download", r.html_url));
+    } else if (test) {
+      status.append(el("p", { className: "release" }, el("strong", { textContent: "Test builds only" })),
+        el("p", { className: "sub", textContent: "No numbered release yet. The test build changes often and may have bugs." }));
+      buttons.append(button("Download test build", test.html_url));
+    } else {
+      status.append(el("p", { className: "sub", textContent: "No release yet." }));
+    }
+    finish(real.length && test ? test.html_url : null);
+  }
+
+  function finish(testUrl) {
+    buttons.append(button("Setup guide", g.guide, true));
+    if (g.sidestore) buttons.append(button("Add to SideStore", g.sidestore, true));
+    if (testUrl) status.append(el("p", { className: "sub" }, "Or try the ", el("a", { href: testUrl, textContent: "latest test build" }), " (changes often, may have bugs)."));
+  }
+
+  fetch("https://api.github.com/repos/" + g.repo + "/releases?per_page=20")
+    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(fill)
+    .catch(() => {
+      status.replaceChildren(el("p", { className: "sub", textContent: "Couldn't load the latest release just now." }));
+      buttons.append(button("See releases", releases));
+      finish(null);
+    });
+  return c;
+}
+
+const box = document.getElementById("games");
+for (const g of GAMES) box.append(card(g));
+</script>
+</body>
+</html>
