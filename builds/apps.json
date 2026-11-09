@@ -10,6 +10,8 @@
     { "id": "halflife", "name": "Half-Life", "about": "Half-Life, Opposing Force, Blue Shift (Xash3D)", "repo": "sithewok13-dev/xash3d-fwgs", "tags": ["ios-latest"], "asset": "\\.ipa$", "bundle": "com.sithewok.xash3d" },
     { "id": "samfe", "name": "Sam FE", "about": "Serious Sam: The First Encounter", "repo": "sithewok13-dev/SeriousSamClassic", "tags": ["ios-latest"], "asset": "^serioussam-ios\\.ipa$", "bundle": "io.github.sithewok13.serioussam.fe" },
     { "id": "samse", "name": "Sam SE", "about": "Serious Sam: The Second Encounter", "repo": "sithewok13-dev/SeriousSamClassic", "tags": ["ios-latest"], "asset": "^serioussamse-ios\\.ipa$", "bundle": "io.github.sithewok13.serioussam.se" },
+    { "id": "doom", "name": "DOOM", "about": "DOOM, DOOM II and more (UZDoom)", "repo": "sithewok13-dev/UZDoom", "tags": ["ios-latest"], "asset": "^DOOM\\.ipa$", "bundle": "io.github.sithewok13.doom" },
+    { "id": "keen", "name": "Commander Keen", "about": "Commander Genius", "repo": "sithewok13-dev/Commander-Genius", "tags": ["ios-latest"], "asset": "^Keen-ios\\.ipa$", "bundle": "io.github.sithewok13.keen" },
     { "id": "doom3", "name": "DOOM 3", "about": "dhewm3", "repo": "sithewok13-dev/doom3-ios", "tags": ["ios-latest"], "asset": "\\.ipa$", "bundle": "com.sithewok.doom3" },
     { "id": "nolf1", "name": "NOLF", "about": "No One Lives Forever (relith)", "repo": "relith-dev/relith", "tags": ["ios-latest"], "asset": "\\.ipa$", "bundle": "net.relith.nolf", "private": true },
     { "id": "nolf2", "name": "NOLF2", "about": "No One Lives Forever 2", "repo": "sithewok13-dev/nolf2", "tags": ["ios-latest"], "asset": "\\.ipa$", "bundle": "io.github.sithewok13.nolf2" },
