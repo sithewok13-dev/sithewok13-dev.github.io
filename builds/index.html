@@ -1,0 +1,149 @@
+<!doctype html>
+<!--
+  The owner's builds page: every app's newest build, from builds.json, which a
+  GitHub Actions job (.github/workflows/builds.yml) refreshes every 10 minutes
+  from each repo's release. "I have this one" is remembered in this browser only.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Sithewok's Builds</title>
+<meta name="description" content="The newest test build of each of Sithewok's iOS ports.">
+<link rel="apple-touch-icon" href="icons/source.png">
+<style>
+  :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #5f5f66; --accent: #8e3aa8; --on-accent: #ffffff; --line: #d9d9de; --card: #f6f6f8; --ok: #1f7a3a; --ok-bg: #e3f4e8; --up: #8a5300; --up-bg: #fff1d6; --tag: #e9e9ee; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #141416; --fg: #f2f2f5; --muted: #a8a8b0; --accent: #c77ddf; --on-accent: #141416; --line: #34343a; --card: #1d1d21; --ok: #7fd99a; --ok-bg: #17301f; --up: #ffc46b; --up-bg: #3a2a10; --tag: #2a2a30; }
+  }
+  :root[data-theme="dark"] { --bg: #141416; --fg: #f2f2f5; --muted: #a8a8b0; --accent: #c77ddf; --on-accent: #141416; --line: #34343a; --card: #1d1d21; --ok: #7fd99a; --ok-bg: #17301f; --up: #ffc46b; --up-bg: #3a2a10; --tag: #2a2a30; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; -webkit-text-size-adjust: 100%; }
+  main { max-width: 680px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { font-size: 1.6em; line-height: 1.2; margin: 0 0 6px; }
+  .lead { color: var(--muted); margin: 0 0 14px; }
+  a { color: var(--accent); }
+  .summary { border-radius: 14px; padding: 12px 14px; margin: 0 0 14px; font-weight: 600; }
+  .summary.ok { background: var(--ok-bg); color: var(--ok); }
+  .summary.up { background: var(--up-bg); color: var(--up); }
+  .how { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; margin: 0 0 18px; font-size: 0.93em; }
+  .how p { margin: 0; }
+  .how p + p { margin-top: 6px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 14px; margin: 0 0 12px; }
+  .top { display: flex; gap: 12px; align-items: center; }
+  .top img { width: 48px; height: 48px; border-radius: 11px; flex: none; }
+  .names { min-width: 0; }
+  h2 { font-size: 1.1em; line-height: 1.25; margin: 0; }
+  .about { color: var(--muted); font-size: 0.88em; margin: 0; }
+  .build { font-size: 1.25em; font-weight: 700; margin: 10px 0 0; font-variant-numeric: tabular-nums; }
+  .when { color: var(--muted); font-size: 0.88em; margin: 0; }
+  .tag { display: inline-block; background: var(--tag); border-radius: 6px; padding: 0 7px; font-size: 0.75em; font-weight: 600; vertical-align: 2px; margin-left: 4px; color: var(--muted); }
+  .mine { display: inline-block; border-radius: 8px; padding: 3px 9px; font-size: 0.88em; font-weight: 600; margin: 8px 0 0; }
+  .mine.ok { background: var(--ok-bg); color: var(--ok); }
+  .mine.up { background: var(--up-bg); color: var(--up); }
+  .buttons { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 0; }
+  .button { display: inline-block; padding: 10px 14px; border-radius: 12px; background: var(--accent); color: var(--on-accent); text-decoration: none; font-weight: 600; font-size: 0.95em; border: 1px solid var(--accent); cursor: pointer; font-family: inherit; }
+  .button.secondary { background: transparent; color: var(--accent); }
+  .note { color: var(--muted); font-size: 0.85em; margin: 8px 0 0; }
+  footer { margin-top: 24px; padding-top: 14px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.85em; }
+  footer p { margin: 0 0 8px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>My builds</h1>
+  <p class="lead" id="checked">Loading…</p>
+  <div id="summary"></div>
+  <div class="how">
+    <p><b>Check an app:</b> open the MENU tray in the app. The line under it (like <i>build 80 · Nov 9</i>) should match the number here.</p>
+    <p><b>After you install one,</b> tap <i>I have this one</i>. The page then tells you when a newer build comes out.</p>
+    <p><b>Feather:</b> <i>Install in Feather</i> downloads it straight into Feather. Or <a id="addsrc" href="#">add this list to Feather's Sources</a>: apps installed from there show <i>Update Available</i> in Feather's Library.</p>
+  </div>
+  <div id="apps"></div>
+  <footer>
+    <p>GitHub checks for new builds every 10 minutes, so a build can take a few minutes to show here.</p>
+    <p>Private apps: the download only works when you're signed in to GitHub in this browser.</p>
+    <p>No game files here: each app needs your own copy of the game.</p>
+  </footer>
+</main>
+<script>
+const SOURCE = "https://sithewok13-dev.github.io/builds/source.json";
+const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+document.getElementById("addsrc").href = "feather://source/" + SOURCE;
+
+function el(tag, props, ...kids) {
+  const e = document.createElement(tag);
+  Object.assign(e, props || {});
+  for (const k of kids) if (k != null) e.append(k);
+  return e;
+}
+function store(key, val) {
+  try { if (val === undefined) return localStorage.getItem(key); localStorage.setItem(key, val); } catch (e) { return null; }
+}
+function stampDate(ymd) {
+  const [y, m, d] = ymd.split("-").map(Number);
+  return MONTHS[m - 1] + " " + d;
+}
+function ago(iso) {
+  const s = (Date.now() - new Date(iso)) / 1000;
+  if (s < 90) return "just now";
+  if (s < 5400) return Math.round(s / 60) + " min ago";
+  if (s < 129600) return Math.round(s / 3600) + " h ago";
+  return Math.round(s / 86400) + " days ago";
+}
+function stampOf(a) { return a.build ? "build " + a.build + " · " + stampDate(a.date) : "built " + stampDate(a.date); }
+function idOf(a) { return a.build ? String(a.build) : a.built; }
+
+let behind = [];
+function card(a) {
+  const c = el("section", { className: "card", id: a.id });
+  const names = el("div", { className: "names" }, el("h2", { textContent: a.name }));
+  if (a.private) names.firstChild.append(el("span", { className: "tag", textContent: "PRIVATE" }));
+  if (a.about) names.append(el("p", { className: "about", textContent: a.about }));
+  c.append(el("div", { className: "top" }, el("img", { src: "icons/" + a.id + ".png", alt: "" }), names));
+  if (a.status !== "ok") {
+    const why = { "no access": "Can't see this repo yet (it needs the access token).", "no release": "No test build published yet.", "no download": "The newest release has no app file.", "error": "Couldn't reach GitHub." }[a.status] || a.status;
+    c.append(el("p", { className: "note", textContent: why }));
+    return c;
+  }
+  c.append(el("p", { className: "build", textContent: stampOf(a) }),
+    el("p", { className: "when", textContent: "Built " + ago(a.built) + (a.tag && a.tag !== "ios-latest" ? " · release " + a.tag : "") }));
+  const have = store("have." + a.id);
+  if (have) {
+    if (have === idOf(a)) c.append(el("p", { className: "mine ok", textContent: "✓ You have the newest" }));
+    else { c.append(el("p", { className: "mine up", textContent: "Update: you have " + (/^\d+$/.test(have) ? "build " + have : "an older build") }));
+      behind.push(a); }
+  }
+  const b = el("div", { className: "buttons" });
+  if (!a.private) b.append(el("a", { className: "button", href: "feather://install/" + a.download, textContent: "Install in Feather" }));
+  b.append(el("a", { className: "button" + (a.private ? "" : " secondary"), href: a.download, textContent: "Download" }));
+  const mark = el("button", { className: "button secondary", textContent: have === idOf(a) ? "Installed ✓" : "I have this one" });
+  mark.onclick = () => { store("have." + a.id, idOf(a)); render(); };
+  b.append(mark);
+  c.append(b);
+  return c;
+}
+
+let DATA = null;
+function render() {
+  behind = [];
+  const box = document.getElementById("apps");
+  box.replaceChildren(...DATA.apps.map(card));
+  const sum = document.getElementById("summary");
+  const marked = DATA.apps.filter(a => store("have." + a.id)).length;
+  if (behind.length) sum.replaceChildren(el("div", { className: "summary up" },
+    (behind.length === 1 ? "1 app has" : behind.length + " apps have") + " a newer build: ",
+    ...behind.flatMap((a, i) => [i ? ", " : "", el("a", { href: "#" + a.id, textContent: a.name })])));
+  else if (marked) sum.replaceChildren(el("div", { className: "summary ok", textContent: "✓ Every app you marked is up to date" }));
+  else sum.replaceChildren();
+  document.getElementById("checked").textContent = "Newest build of each app. Last change " + ago(DATA.updated) + ".";
+}
+
+fetch("builds.json", { cache: "no-store" })
+  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then(d => { DATA = d; render(); })
+  .catch(() => { document.getElementById("checked").textContent = "Couldn't load the list just now. Pull down to try again."; });
+</script>
+</body>
+</html>

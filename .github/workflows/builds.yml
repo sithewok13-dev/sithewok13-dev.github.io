@@ -1,0 +1,37 @@
+# Refreshes builds/builds.json and builds/source.json (the builds page and its
+# Feather source) from each app's GitHub release. Private repos need the
+# RELEASES_TOKEN secret (read-only, sithewok13-dev) and
+# RELEASES_TOKEN_RELITH_DEV (read-only, relith-dev); without it they show "no access".
+name: builds
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+  repository_dispatch:
+    types: [build-published]
+  push:
+    branches: [main]
+    paths: ["builds/apps.json", "tools/update_builds.py"]
+permissions:
+  contents: write
+concurrency:
+  group: builds
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read the releases
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RELEASES_TOKEN: ${{ secrets.RELEASES_TOKEN }}
+          RELEASES_TOKEN_RELITH_DEV: ${{ secrets.RELEASES_TOKEN_RELITH_DEV }}
+        run: python3 tools/update_builds.py
+      - name: Save if changed
+        run: |
+          git add builds/builds.json builds/source.json
+          if git diff --cached --quiet; then echo "no change"; exit 0; fi
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit -q -m "Builds: refresh the list"
+          git push

@@ -1,0 +1,22 @@
+{
+  "_note": "The apps on the builds page and in its Feather source. tags: tried in order; \"*\" = the newest release. asset: a regular expression for the IPA's file name. private: the repo is private (no Feather source entry; the download works only signed in to GitHub).",
+  "apps": [
+    { "id": "raze", "name": "Raze", "about": "Duke Nukem 3D, Blood, Redneck Rampage, Shadow Warrior, PowerSlave", "repo": "sithewok13-dev/Raze-iOS-", "tags": ["ios-latest"], "asset": "^Raze\\.ipa$", "bundle": "io.github.sithewok13.raze" },
+    { "id": "jk", "name": "Jedi Knight", "about": "Dark Forces II (OpenJKDF2)", "repo": "sithewok13-dev/OpenJKDF2-iOS", "tags": ["ios-latest"], "asset": "^OpenJKDF2-iOS-unsigned\\.ipa$", "bundle": "org.openjkdf2.openjkdf2" },
+    { "id": "mots", "name": "Mysteries of the Sith", "about": "OpenMoTS", "repo": "sithewok13-dev/OpenJKDF2-iOS", "tags": ["ios-latest"], "asset": "^OpenJKDF2-MotS-iOS-unsigned\\.ipa$", "bundle": "org.openjkdf2.openjkdf2.mots" },
+    { "id": "darkforces", "name": "Dark Forces", "about": "The Force Engine", "repo": "sithewok13-dev/TheForceEngine", "tags": ["ios-latest"], "asset": "\\.ipa$", "bundle": "com.sithewok.darkforces" },
+    { "id": "jasp", "name": "Jedi Academy", "about": "Single player (OpenJK)", "repo": "sithewok13-dev/OpenJK-iOS", "tags": ["ios-latest"], "asset": "(?i)sp.*\\.ipa$", "bundle": "org.openjk.ios.sp" },
+    { "id": "jamp", "name": "Jedi Academy MP", "about": "Multiplayer (OpenJK)", "repo": "sithewok13-dev/OpenJK-iOS", "tags": ["ios-latest"], "asset": "(?i)mp.*\\.ipa$", "bundle": "org.openjk.ios.mp" },
+    { "id": "halflife", "name": "Half-Life", "about": "Half-Life, Opposing Force, Blue Shift (Xash3D)", "repo": "sithewok13-dev/xash3d-fwgs", "tags": ["ios-latest"], "asset": "\\.ipa$", "bundle": "com.sithewok.xash3d" },
+    { "id": "samfe", "name": "Sam FE", "about": "Serious Sam: The First Encounter", "repo": "sithewok13-dev/SeriousSamClassic", "tags": ["ios-latest"], "asset": "^serioussam-ios\\.ipa$", "bundle": "io.github.sithewok13.serioussam.fe" },
+    { "id": "samse", "name": "Sam SE", "about": "Serious Sam: The Second Encounter", "repo": "sithewok13-dev/SeriousSamClassic", "tags": ["ios-latest"], "asset": "^serioussamse-ios\\.ipa$", "bundle": "io.github.sithewok13.serioussam.se" },
+    { "id": "doom3", "name": "DOOM 3", "about": "dhewm3", "repo": "sithewok13-dev/doom3-ios", "tags": ["ios-latest"], "asset": "\\.ipa$", "bundle": "com.sithewok.doom3" },
+    { "id": "nolf1", "name": "NOLF", "about": "No One Lives Forever (relith)", "repo": "relith-dev/relith", "tags": ["ios-latest"], "asset": "\\.ipa$", "bundle": "net.relith.nolf", "private": true },
+    { "id": "nolf2", "name": "NOLF2", "about": "No One Lives Forever 2", "repo": "sithewok13-dev/nolf2", "tags": ["ios-latest"], "asset": "\\.ipa$", "bundle": "io.github.sithewok13.nolf2" },
+    { "id": "sh2", "name": "Silent Hill 2", "about": "", "repo": "sithewok13-dev/sh2-ios-build", "tags": ["app"], "asset": "^SH2\\.ipa$", "bundle": "com.sithewok.sh2", "private": true },
+    { "id": "sh3", "name": "Silent Hill 3", "about": "", "repo": "sithewok13-dev/sh3-ios-build", "tags": ["app"], "asset": "^SH3\\.ipa$", "bundle": "com.sithewok.sh3", "private": true },
+    { "id": "conker", "name": "Conker", "about": "Conker's Bad Fur Day", "repo": "sithewok13-dev/conker-ios", "tags": ["*"], "asset": "\\.ipa$", "bundle": "io.github.sithewok13.conker", "private": true },
+    { "id": "sote", "name": "Shadows of the Empire", "about": "", "repo": "sithewok13-dev/sote-ios", "tags": ["ios-latest", "*"], "asset": "\\.ipa$", "bundle": "io.github.sithewok13.sote" },
+    { "id": "vpx", "name": "Visual Pinball", "about": "", "repo": "sithewok13-dev/vpinball", "tags": ["ios-latest"], "asset": "\\.ipa$", "bundle": "org.vpinball.ios" }
+  ]
+}

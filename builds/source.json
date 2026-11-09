@@ -1,0 +1,186 @@
+{
+ "name": "Sithewok's Builds",
+ "identifier": "io.github.sithewok13.builds",
+ "website": "https://sithewok13-dev.github.io/builds/",
+ "iconURL": "https://sithewok13-dev.github.io/builds/icons/source.png",
+ "tintColor": "8e3aa8",
+ "apps": [
+  {
+   "name": "Raze",
+   "bundleIdentifier": "io.github.sithewok13.raze",
+   "developerName": "sithewok",
+   "subtitle": "Duke Nukem 3D, Blood, Redneck Rampage, Shadow Warrior, PowerSlave",
+   "localizedDescription": "Duke Nukem 3D, Blood, Redneck Rampage, Shadow Warrior, PowerSlave. Test build; bring your own game files.",
+   "iconURL": "https://sithewok13-dev.github.io/builds/icons/raze.png",
+   "tintColor": "8e3aa8",
+   "versions": [
+    {
+     "version": "2026-11-09 02:07:07",
+     "date": "2026-11-09T02:07:07Z",
+     "size": 21093679,
+     "downloadURL": "https://github.com/sithewok13-dev/Raze-iOS-/releases/download/ios-latest/Raze.ipa"
+    }
+   ],
+   "version": "2026-11-09 02:07:07",
+   "versionDate": "2026-11-09T02:07:07Z",
+   "size": 21093679,
+   "downloadURL": "https://github.com/sithewok13-dev/Raze-iOS-/releases/download/ios-latest/Raze.ipa",
+   "appPermissions": {}
+  },
+  {
+   "name": "Jedi Knight",
+   "bundleIdentifier": "org.openjkdf2.openjkdf2",
+   "developerName": "sithewok",
+   "subtitle": "Dark Forces II (OpenJKDF2)",
+   "localizedDescription": "Dark Forces II (OpenJKDF2). Test build; bring your own game files.",
+   "iconURL": "https://sithewok13-dev.github.io/builds/icons/jk.png",
+   "tintColor": "8e3aa8",
+   "versions": [
+    {
+     "version": "2026-11-09 14:05:39",
+     "date": "2026-11-09T14:05:39Z",
+     "size": 5443212,
+     "downloadURL": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/download/ios-latest/OpenJKDF2-iOS-unsigned.ipa"
+    }
+   ],
+   "version": "2026-11-09 14:05:39",
+   "versionDate": "2026-11-09T14:05:39Z",
+   "size": 5443212,
+   "downloadURL": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/download/ios-latest/OpenJKDF2-iOS-unsigned.ipa",
+   "appPermissions": {}
+  },
+  {
+   "name": "Mysteries of the Sith",
+   "bundleIdentifier": "org.openjkdf2.openjkdf2.mots",
+   "developerName": "sithewok",
+   "subtitle": "OpenMoTS",
+   "localizedDescription": "OpenMoTS. Test build; bring your own game files.",
+   "iconURL": "https://sithewok13-dev.github.io/builds/icons/mots.png",
+   "tintColor": "8e3aa8",
+   "versions": [
+    {
+     "version": "2026-11-09 14:05:39",
+     "date": "2026-11-09T14:05:39Z",
+     "size": 5429940,
+     "downloadURL": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/download/ios-latest/OpenJKDF2-MotS-iOS-unsigned.ipa"
+    }
+   ],
+   "version": "2026-11-09 14:05:39",
+   "versionDate": "2026-11-09T14:05:39Z",
+   "size": 5429940,
+   "downloadURL": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/download/ios-latest/OpenJKDF2-MotS-iOS-unsigned.ipa",
+   "appPermissions": {}
+  },
+  {
+   "name": "Half-Life",
+   "bundleIdentifier": "com.sithewok.xash3d",
+   "developerName": "sithewok",
+   "subtitle": "Half-Life, Opposing Force, Blue Shift (Xash3D)",
+   "localizedDescription": "Half-Life, Opposing Force, Blue Shift (Xash3D). Test build; bring your own game files.",
+   "iconURL": "https://sithewok13-dev.github.io/builds/icons/halflife.png",
+   "tintColor": "8e3aa8",
+   "versions": [
+    {
+     "version": "2026-11-09 04:59:51",
+     "date": "2026-11-09T04:59:51Z",
+     "size": 12585495,
+     "downloadURL": "https://github.com/sithewok13-dev/xash3d-fwgs/releases/download/ios-latest/Xash3D-iOS-unsigned.ipa"
+    }
+   ],
+   "version": "2026-11-09 04:59:51",
+   "versionDate": "2026-11-09T04:59:51Z",
+   "size": 12585495,
+   "downloadURL": "https://github.com/sithewok13-dev/xash3d-fwgs/releases/download/ios-latest/Xash3D-iOS-unsigned.ipa",
+   "appPermissions": {}
+  },
+  {
+   "name": "Sam FE",
+   "bundleIdentifier": "io.github.sithewok13.serioussam.fe",
+   "developerName": "sithewok",
+   "subtitle": "Serious Sam: The First Encounter",
+   "localizedDescription": "Serious Sam: The First Encounter. Test build; bring your own game files.",
+   "iconURL": "https://sithewok13-dev.github.io/builds/icons/samfe.png",
+   "tintColor": "8e3aa8",
+   "versions": [
+    {
+     "version": "2026-11-09 04:57:22",
+     "date": "2026-11-09T04:57:22Z",
+     "size": 8138895,
+     "downloadURL": "https://github.com/sithewok13-dev/SeriousSamClassic/releases/download/ios-latest/serioussam-ios.ipa"
+    }
+   ],
+   "version": "2026-11-09 04:57:22",
+   "versionDate": "2026-11-09T04:57:22Z",
+   "size": 8138895,
+   "downloadURL": "https://github.com/sithewok13-dev/SeriousSamClassic/releases/download/ios-latest/serioussam-ios.ipa",
+   "appPermissions": {}
+  },
+  {
+   "name": "Sam SE",
+   "bundleIdentifier": "io.github.sithewok13.serioussam.se",
+   "developerName": "sithewok",
+   "subtitle": "Serious Sam: The Second Encounter",
+   "localizedDescription": "Serious Sam: The Second Encounter. Test build; bring your own game files.",
+   "iconURL": "https://sithewok13-dev.github.io/builds/icons/samse.png",
+   "tintColor": "8e3aa8",
+   "versions": [
+    {
+     "version": "2026-11-09 04:57:22",
+     "date": "2026-11-09T04:57:22Z",
+     "size": 8405141,
+     "downloadURL": "https://github.com/sithewok13-dev/SeriousSamClassic/releases/download/ios-latest/serioussamse-ios.ipa"
+    }
+   ],
+   "version": "2026-11-09 04:57:22",
+   "versionDate": "2026-11-09T04:57:22Z",
+   "size": 8405141,
+   "downloadURL": "https://github.com/sithewok13-dev/SeriousSamClassic/releases/download/ios-latest/serioussamse-ios.ipa",
+   "appPermissions": {}
+  },
+  {
+   "name": "NOLF2",
+   "bundleIdentifier": "io.github.sithewok13.nolf2",
+   "developerName": "sithewok",
+   "subtitle": "No One Lives Forever 2",
+   "localizedDescription": "No One Lives Forever 2. Test build; bring your own game files.",
+   "iconURL": "https://sithewok13-dev.github.io/builds/icons/nolf2.png",
+   "tintColor": "8e3aa8",
+   "versions": [
+    {
+     "version": "2026-11-09 14:09:50",
+     "date": "2026-11-09T14:09:50Z",
+     "size": 3453196,
+     "downloadURL": "https://github.com/sithewok13-dev/nolf2/releases/download/ios-latest/NOLF2-ios.ipa"
+    }
+   ],
+   "version": "2026-11-09 14:09:50",
+   "versionDate": "2026-11-09T14:09:50Z",
+   "size": 3453196,
+   "downloadURL": "https://github.com/sithewok13-dev/nolf2/releases/download/ios-latest/NOLF2-ios.ipa",
+   "appPermissions": {}
+  },
+  {
+   "name": "Shadows of the Empire",
+   "bundleIdentifier": "io.github.sithewok13.sote",
+   "developerName": "sithewok",
+   "subtitle": "",
+   "localizedDescription": "Shadows of the Empire. Test build; bring your own game files.",
+   "iconURL": "https://sithewok13-dev.github.io/builds/icons/sote.png",
+   "tintColor": "8e3aa8",
+   "versions": [
+    {
+     "version": "2026-11-01 04:16:33",
+     "date": "2026-11-01T04:16:33Z",
+     "size": 3988476,
+     "downloadURL": "https://github.com/sithewok13-dev/sote-ios/releases/download/v0.9.5/SotE-iOS-0.9.5.ipa"
+    }
+   ],
+   "version": "2026-11-01 04:16:33",
+   "versionDate": "2026-11-01T04:16:33Z",
+   "size": 3988476,
+   "downloadURL": "https://github.com/sithewok13-dev/sote-ios/releases/download/v0.9.5/SotE-iOS-0.9.5.ipa",
+   "appPermissions": {}
+  }
+ ],
+ "news": []
+}
