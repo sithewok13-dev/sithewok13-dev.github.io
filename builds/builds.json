@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T16:37:57Z",
+ "updated": "2026-11-09T19:29:35Z",
  "apps": [
   {
    "id": "raze",
@@ -9,10 +9,10 @@
    "bundle": "io.github.sithewok13.raze",
    "private": false,
    "status": "ok",
-   "build": null,
+   "build": 81,
    "date": "2026-11-09",
-   "built": "2026-11-09T02:07:07Z",
-   "size": 21093679,
+   "built": "2026-11-09T17:24:29Z",
+   "size": 21093926,
    "tag": "ios-latest",
    "download": "https://github.com/sithewok13-dev/Raze-iOS-/releases/download/ios-latest/Raze.ipa",
    "release": "https://github.com/sithewok13-dev/Raze-iOS-/releases/tag/ios-latest"
@@ -25,10 +25,10 @@
    "bundle": "org.openjkdf2.openjkdf2",
    "private": false,
    "status": "ok",
-   "build": null,
+   "build": 135,
    "date": "2026-11-09",
-   "built": "2026-11-09T14:05:39Z",
-   "size": 5443212,
+   "built": "2026-11-09T16:40:43Z",
+   "size": 5442841,
    "tag": "ios-latest",
    "download": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/download/ios-latest/OpenJKDF2-iOS-unsigned.ipa",
    "release": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/tag/ios-latest"
@@ -41,10 +41,10 @@
    "bundle": "org.openjkdf2.openjkdf2.mots",
    "private": false,
    "status": "ok",
-   "build": null,
+   "build": 135,
    "date": "2026-11-09",
-   "built": "2026-11-09T14:05:39Z",
-   "size": 5429940,
+   "built": "2026-11-09T16:40:43Z",
+   "size": 5429568,
    "tag": "ios-latest",
    "download": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/download/ios-latest/OpenJKDF2-MotS-iOS-unsigned.ipa",
    "release": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/tag/ios-latest"
@@ -56,7 +56,14 @@
    "repo": "sithewok13-dev/TheForceEngine",
    "bundle": "com.sithewok.darkforces",
    "private": false,
-   "status": "no release"
+   "status": "ok",
+   "build": 31,
+   "date": "2026-11-09",
+   "built": "2026-11-09T16:51:25Z",
+   "size": 17442186,
+   "tag": "ios-latest",
+   "download": "https://github.com/sithewok13-dev/TheForceEngine/releases/download/ios-latest/DarkForces-iOS-unsigned.ipa",
+   "release": "https://github.com/sithewok13-dev/TheForceEngine/releases/tag/ios-latest"
   },
   {
    "id": "jasp",
@@ -65,7 +72,14 @@
    "repo": "sithewok13-dev/OpenJK-iOS",
    "bundle": "org.openjk.ios.sp",
    "private": false,
-   "status": "no release"
+   "status": "ok",
+   "build": 6,
+   "date": "2026-11-09",
+   "built": "2026-11-09T17:13:45Z",
+   "size": 5568386,
+   "tag": "ios-latest",
+   "download": "https://github.com/sithewok13-dev/OpenJK-iOS/releases/download/ios-latest/OpenJK-SP-0.2.0-dev.6.ipa",
+   "release": "https://github.com/sithewok13-dev/OpenJK-iOS/releases/tag/ios-latest"
   },
   {
    "id": "jamp",
@@ -74,7 +88,14 @@
    "repo": "sithewok13-dev/OpenJK-iOS",
    "bundle": "org.openjk.ios.mp",
    "private": false,
-   "status": "no release"
+   "status": "ok",
+   "build": 6,
+   "date": "2026-11-09",
+   "built": "2026-11-09T17:13:45Z",
+   "size": 6231389,
+   "tag": "ios-latest",
+   "download": "https://github.com/sithewok13-dev/OpenJK-iOS/releases/download/ios-latest/OpenJK-MP-0.2.0-dev.6.ipa",
+   "release": "https://github.com/sithewok13-dev/OpenJK-iOS/releases/tag/ios-latest"
   },
   {
    "id": "halflife",
@@ -84,10 +105,10 @@
    "bundle": "com.sithewok.xash3d",
    "private": false,
    "status": "ok",
-   "build": null,
+   "build": 81,
    "date": "2026-11-09",
-   "built": "2026-11-09T04:59:51Z",
-   "size": 12585495,
+   "built": "2026-11-09T17:07:20Z",
+   "size": 12585510,
    "tag": "ios-latest",
    "download": "https://github.com/sithewok13-dev/xash3d-fwgs/releases/download/ios-latest/Xash3D-iOS-unsigned.ipa",
    "release": "https://github.com/sithewok13-dev/xash3d-fwgs/releases/tag/ios-latest"
@@ -100,10 +121,10 @@
    "bundle": "io.github.sithewok13.serioussam.fe",
    "private": false,
    "status": "ok",
-   "build": null,
+   "build": 40,
    "date": "2026-11-09",
-   "built": "2026-11-09T04:57:22Z",
-   "size": 8138895,
+   "built": "2026-11-09T17:33:54Z",
+   "size": 8139548,
    "tag": "ios-latest",
    "download": "https://github.com/sithewok13-dev/SeriousSamClassic/releases/download/ios-latest/serioussam-ios.ipa",
    "release": "https://github.com/sithewok13-dev/SeriousSamClassic/releases/tag/ios-latest"
@@ -116,10 +137,10 @@
    "bundle": "io.github.sithewok13.serioussam.se",
    "private": false,
    "status": "ok",
-   "build": null,
+   "build": 40,
    "date": "2026-11-09",
-   "built": "2026-11-09T04:57:22Z",
-   "size": 8405141,
+   "built": "2026-11-09T17:33:54Z",
+   "size": 8405050,
    "tag": "ios-latest",
    "download": "https://github.com/sithewok13-dev/SeriousSamClassic/releases/download/ios-latest/serioussamse-ios.ipa",
    "release": "https://github.com/sithewok13-dev/SeriousSamClassic/releases/tag/ios-latest"
@@ -131,7 +152,14 @@
    "repo": "sithewok13-dev/doom3-ios",
    "bundle": "com.sithewok.doom3",
    "private": false,
-   "status": "no release"
+   "status": "ok",
+   "build": 40,
+   "date": "2026-11-09",
+   "built": "2026-11-09T17:28:09Z",
+   "size": 10566056,
+   "tag": "ios-latest",
+   "download": "https://github.com/sithewok13-dev/doom3-ios/releases/download/ios-latest/DOOM3-iOS-unsigned.ipa",
+   "release": "https://github.com/sithewok13-dev/doom3-ios/releases/tag/ios-latest"
   },
   {
    "id": "nolf1",
@@ -150,10 +178,10 @@
    "bundle": "io.github.sithewok13.nolf2",
    "private": false,
    "status": "ok",
-   "build": null,
+   "build": 6,
    "date": "2026-11-09",
-   "built": "2026-11-09T14:09:50Z",
-   "size": 3453196,
+   "built": "2026-11-09T16:53:48Z",
+   "size": 3453836,
    "tag": "ios-latest",
    "download": "https://github.com/sithewok13-dev/nolf2/releases/download/ios-latest/NOLF2-ios.ipa",
    "release": "https://github.com/sithewok13-dev/nolf2/releases/tag/ios-latest"
@@ -193,22 +221,29 @@
    "bundle": "io.github.sithewok13.sote",
    "private": false,
    "status": "ok",
-   "build": null,
-   "date": "2026-11-01",
-   "built": "2026-11-01T04:16:33Z",
-   "size": 3988476,
-   "tag": "v0.9.5",
-   "download": "https://github.com/sithewok13-dev/sote-ios/releases/download/v0.9.5/SotE-iOS-0.9.5.ipa",
-   "release": "https://github.com/sithewok13-dev/sote-ios/releases/tag/v0.9.5"
+   "build": 46,
+   "date": "2026-11-09",
+   "built": "2026-11-09T16:57:59Z",
+   "size": 3995121,
+   "tag": "ios-latest",
+   "download": "https://github.com/sithewok13-dev/sote-ios/releases/download/ios-latest/SotE-iOS-0.9.6.ipa",
+   "release": "https://github.com/sithewok13-dev/sote-ios/releases/tag/ios-latest"
   },
   {
    "id": "vpx",
    "name": "Visual Pinball",
    "about": "",
    "repo": "sithewok13-dev/vpinball",
-   "bundle": "org.vpinball.ios",
+   "bundle": "org.vpinball.vpinball-bgfx",
    "private": false,
-   "status": "no release"
+   "status": "ok",
+   "build": 16,
+   "date": "2026-11-09",
+   "built": "2026-11-09T17:28:09Z",
+   "size": 67214152,
+   "tag": "ios-latest",
+   "download": "https://github.com/sithewok13-dev/vpinball/releases/download/ios-latest/VPinballX_BGFX-ios.ipa",
+   "release": "https://github.com/sithewok13-dev/vpinball/releases/tag/ios-latest"
   }
  ]
 }

@@ -15,15 +15,15 @@
    "tintColor": "8e3aa8",
    "versions": [
     {
-     "version": "2026-11-09 02:07:07",
-     "date": "2026-11-09T02:07:07Z",
-     "size": 21093679,
+     "version": "build 81",
+     "date": "2026-11-09T17:24:29Z",
+     "size": 21093926,
      "downloadURL": "https://github.com/sithewok13-dev/Raze-iOS-/releases/download/ios-latest/Raze.ipa"
     }
    ],
-   "version": "2026-11-09 02:07:07",
-   "versionDate": "2026-11-09T02:07:07Z",
-   "size": 21093679,
+   "version": "build 81",
+   "versionDate": "2026-11-09T17:24:29Z",
+   "size": 21093926,
    "downloadURL": "https://github.com/sithewok13-dev/Raze-iOS-/releases/download/ios-latest/Raze.ipa",
    "appPermissions": {}
   },
@@ -37,15 +37,15 @@
    "tintColor": "8e3aa8",
    "versions": [
     {
-     "version": "2026-11-09 14:05:39",
-     "date": "2026-11-09T14:05:39Z",
-     "size": 5443212,
+     "version": "build 135",
+     "date": "2026-11-09T16:40:43Z",
+     "size": 5442841,
      "downloadURL": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/download/ios-latest/OpenJKDF2-iOS-unsigned.ipa"
     }
    ],
-   "version": "2026-11-09 14:05:39",
-   "versionDate": "2026-11-09T14:05:39Z",
-   "size": 5443212,
+   "version": "build 135",
+   "versionDate": "2026-11-09T16:40:43Z",
+   "size": 5442841,
    "downloadURL": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/download/ios-latest/OpenJKDF2-iOS-unsigned.ipa",
    "appPermissions": {}
   },
@@ -59,16 +59,82 @@
    "tintColor": "8e3aa8",
    "versions": [
     {
-     "version": "2026-11-09 14:05:39",
-     "date": "2026-11-09T14:05:39Z",
-     "size": 5429940,
+     "version": "build 135",
+     "date": "2026-11-09T16:40:43Z",
+     "size": 5429568,
      "downloadURL": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/download/ios-latest/OpenJKDF2-MotS-iOS-unsigned.ipa"
     }
    ],
-   "version": "2026-11-09 14:05:39",
-   "versionDate": "2026-11-09T14:05:39Z",
-   "size": 5429940,
+   "version": "build 135",
+   "versionDate": "2026-11-09T16:40:43Z",
+   "size": 5429568,
    "downloadURL": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/download/ios-latest/OpenJKDF2-MotS-iOS-unsigned.ipa",
+   "appPermissions": {}
+  },
+  {
+   "name": "Dark Forces",
+   "bundleIdentifier": "com.sithewok.darkforces",
+   "developerName": "sithewok",
+   "subtitle": "The Force Engine",
+   "localizedDescription": "The Force Engine. Test build; bring your own game files.",
+   "iconURL": "https://sithewok13-dev.github.io/builds/icons/darkforces.png",
+   "tintColor": "8e3aa8",
+   "versions": [
+    {
+     "version": "build 31",
+     "date": "2026-11-09T16:51:25Z",
+     "size": 17442186,
+     "downloadURL": "https://github.com/sithewok13-dev/TheForceEngine/releases/download/ios-latest/DarkForces-iOS-unsigned.ipa"
+    }
+   ],
+   "version": "build 31",
+   "versionDate": "2026-11-09T16:51:25Z",
+   "size": 17442186,
+   "downloadURL": "https://github.com/sithewok13-dev/TheForceEngine/releases/download/ios-latest/DarkForces-iOS-unsigned.ipa",
+   "appPermissions": {}
+  },
+  {
+   "name": "Jedi Academy",
+   "bundleIdentifier": "org.openjk.ios.sp",
+   "developerName": "sithewok",
+   "subtitle": "Single player (OpenJK)",
+   "localizedDescription": "Single player (OpenJK). Test build; bring your own game files.",
+   "iconURL": "https://sithewok13-dev.github.io/builds/icons/jasp.png",
+   "tintColor": "8e3aa8",
+   "versions": [
+    {
+     "version": "build 6",
+     "date": "2026-11-09T17:13:45Z",
+     "size": 5568386,
+     "downloadURL": "https://github.com/sithewok13-dev/OpenJK-iOS/releases/download/ios-latest/OpenJK-SP-0.2.0-dev.6.ipa"
+    }
+   ],
+   "version": "build 6",
+   "versionDate": "2026-11-09T17:13:45Z",
+   "size": 5568386,
+   "downloadURL": "https://github.com/sithewok13-dev/OpenJK-iOS/releases/download/ios-latest/OpenJK-SP-0.2.0-dev.6.ipa",
+   "appPermissions": {}
+  },
+  {
+   "name": "Jedi Academy MP",
+   "bundleIdentifier": "org.openjk.ios.mp",
+   "developerName": "sithewok",
+   "subtitle": "Multiplayer (OpenJK)",
+   "localizedDescription": "Multiplayer (OpenJK). Test build; bring your own game files.",
+   "iconURL": "https://sithewok13-dev.github.io/builds/icons/jamp.png",
+   "tintColor": "8e3aa8",
+   "versions": [
+    {
+     "version": "build 6",
+     "date": "2026-11-09T17:13:45Z",
+     "size": 6231389,
+     "downloadURL": "https://github.com/sithewok13-dev/OpenJK-iOS/releases/download/ios-latest/OpenJK-MP-0.2.0-dev.6.ipa"
+    }
+   ],
+   "version": "build 6",
+   "versionDate": "2026-11-09T17:13:45Z",
+   "size": 6231389,
+   "downloadURL": "https://github.com/sithewok13-dev/OpenJK-iOS/releases/download/ios-latest/OpenJK-MP-0.2.0-dev.6.ipa",
    "appPermissions": {}
   },
   {
@@ -81,15 +147,15 @@
    "tintColor": "8e3aa8",
    "versions": [
     {
-     "version": "2026-11-09 04:59:51",
-     "date": "2026-11-09T04:59:51Z",
-     "size": 12585495,
+     "version": "build 81",
+     "date": "2026-11-09T17:07:20Z",
+     "size": 12585510,
      "downloadURL": "https://github.com/sithewok13-dev/xash3d-fwgs/releases/download/ios-latest/Xash3D-iOS-unsigned.ipa"
     }
    ],
-   "version": "2026-11-09 04:59:51",
-   "versionDate": "2026-11-09T04:59:51Z",
-   "size": 12585495,
+   "version": "build 81",
+   "versionDate": "2026-11-09T17:07:20Z",
+   "size": 12585510,
    "downloadURL": "https://github.com/sithewok13-dev/xash3d-fwgs/releases/download/ios-latest/Xash3D-iOS-unsigned.ipa",
    "appPermissions": {}
   },
@@ -103,15 +169,15 @@
    "tintColor": "8e3aa8",
    "versions": [
     {
-     "version": "2026-11-09 04:57:22",
-     "date": "2026-11-09T04:57:22Z",
-     "size": 8138895,
+     "version": "build 40",
+     "date": "2026-11-09T17:33:54Z",
+     "size": 8139548,
      "downloadURL": "https://github.com/sithewok13-dev/SeriousSamClassic/releases/download/ios-latest/serioussam-ios.ipa"
     }
    ],
-   "version": "2026-11-09 04:57:22",
-   "versionDate": "2026-11-09T04:57:22Z",
-   "size": 8138895,
+   "version": "build 40",
+   "versionDate": "2026-11-09T17:33:54Z",
+   "size": 8139548,
    "downloadURL": "https://github.com/sithewok13-dev/SeriousSamClassic/releases/download/ios-latest/serioussam-ios.ipa",
    "appPermissions": {}
   },
@@ -125,16 +191,38 @@
    "tintColor": "8e3aa8",
    "versions": [
     {
-     "version": "2026-11-09 04:57:22",
-     "date": "2026-11-09T04:57:22Z",
-     "size": 8405141,
+     "version": "build 40",
+     "date": "2026-11-09T17:33:54Z",
+     "size": 8405050,
      "downloadURL": "https://github.com/sithewok13-dev/SeriousSamClassic/releases/download/ios-latest/serioussamse-ios.ipa"
     }
    ],
-   "version": "2026-11-09 04:57:22",
-   "versionDate": "2026-11-09T04:57:22Z",
-   "size": 8405141,
+   "version": "build 40",
+   "versionDate": "2026-11-09T17:33:54Z",
+   "size": 8405050,
    "downloadURL": "https://github.com/sithewok13-dev/SeriousSamClassic/releases/download/ios-latest/serioussamse-ios.ipa",
+   "appPermissions": {}
+  },
+  {
+   "name": "DOOM 3",
+   "bundleIdentifier": "com.sithewok.doom3",
+   "developerName": "sithewok",
+   "subtitle": "dhewm3",
+   "localizedDescription": "dhewm3. Test build; bring your own game files.",
+   "iconURL": "https://sithewok13-dev.github.io/builds/icons/doom3.png",
+   "tintColor": "8e3aa8",
+   "versions": [
+    {
+     "version": "build 40",
+     "date": "2026-11-09T17:28:09Z",
+     "size": 10566056,
+     "downloadURL": "https://github.com/sithewok13-dev/doom3-ios/releases/download/ios-latest/DOOM3-iOS-unsigned.ipa"
+    }
+   ],
+   "version": "build 40",
+   "versionDate": "2026-11-09T17:28:09Z",
+   "size": 10566056,
+   "downloadURL": "https://github.com/sithewok13-dev/doom3-ios/releases/download/ios-latest/DOOM3-iOS-unsigned.ipa",
    "appPermissions": {}
   },
   {
@@ -147,15 +235,15 @@
    "tintColor": "8e3aa8",
    "versions": [
     {
-     "version": "2026-11-09 14:09:50",
-     "date": "2026-11-09T14:09:50Z",
-     "size": 3453196,
+     "version": "build 6",
+     "date": "2026-11-09T16:53:48Z",
+     "size": 3453836,
      "downloadURL": "https://github.com/sithewok13-dev/nolf2/releases/download/ios-latest/NOLF2-ios.ipa"
     }
    ],
-   "version": "2026-11-09 14:09:50",
-   "versionDate": "2026-11-09T14:09:50Z",
-   "size": 3453196,
+   "version": "build 6",
+   "versionDate": "2026-11-09T16:53:48Z",
+   "size": 3453836,
    "downloadURL": "https://github.com/sithewok13-dev/nolf2/releases/download/ios-latest/NOLF2-ios.ipa",
    "appPermissions": {}
   },
@@ -169,16 +257,38 @@
    "tintColor": "8e3aa8",
    "versions": [
     {
-     "version": "2026-11-01 04:16:33",
-     "date": "2026-11-01T04:16:33Z",
-     "size": 3988476,
-     "downloadURL": "https://github.com/sithewok13-dev/sote-ios/releases/download/v0.9.5/SotE-iOS-0.9.5.ipa"
+     "version": "build 46",
+     "date": "2026-11-09T16:57:59Z",
+     "size": 3995121,
+     "downloadURL": "https://github.com/sithewok13-dev/sote-ios/releases/download/ios-latest/SotE-iOS-0.9.6.ipa"
     }
    ],
-   "version": "2026-11-01 04:16:33",
-   "versionDate": "2026-11-01T04:16:33Z",
-   "size": 3988476,
-   "downloadURL": "https://github.com/sithewok13-dev/sote-ios/releases/download/v0.9.5/SotE-iOS-0.9.5.ipa",
+   "version": "build 46",
+   "versionDate": "2026-11-09T16:57:59Z",
+   "size": 3995121,
+   "downloadURL": "https://github.com/sithewok13-dev/sote-ios/releases/download/ios-latest/SotE-iOS-0.9.6.ipa",
+   "appPermissions": {}
+  },
+  {
+   "name": "Visual Pinball",
+   "bundleIdentifier": "org.vpinball.vpinball-bgfx",
+   "developerName": "sithewok",
+   "subtitle": "",
+   "localizedDescription": "Visual Pinball. Test build; bring your own game files.",
+   "iconURL": "https://sithewok13-dev.github.io/builds/icons/vpx.png",
+   "tintColor": "8e3aa8",
+   "versions": [
+    {
+     "version": "build 16",
+     "date": "2026-11-09T17:28:09Z",
+     "size": 67214152,
+     "downloadURL": "https://github.com/sithewok13-dev/vpinball/releases/download/ios-latest/VPinballX_BGFX-ios.ipa"
+    }
+   ],
+   "version": "build 16",
+   "versionDate": "2026-11-09T17:28:09Z",
+   "size": 67214152,
+   "downloadURL": "https://github.com/sithewok13-dev/vpinball/releases/download/ios-latest/VPinballX_BGFX-ios.ipa",
    "appPermissions": {}
   }
  ],
