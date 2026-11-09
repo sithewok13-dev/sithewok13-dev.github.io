@@ -17,6 +17,6 @@
     { "id": "sh3", "name": "Silent Hill 3", "about": "", "repo": "sithewok13-dev/sh3-ios-build", "tags": ["app"], "asset": "^SH3\\.ipa$", "bundle": "com.sithewok.sh3", "private": true },
     { "id": "conker", "name": "Conker", "about": "Conker's Bad Fur Day", "repo": "sithewok13-dev/conker-ios", "tags": ["*"], "asset": "\\.ipa$", "bundle": "io.github.sithewok13.conker", "private": true },
     { "id": "sote", "name": "Shadows of the Empire", "about": "", "repo": "sithewok13-dev/sote-ios", "tags": ["ios-latest", "*"], "asset": "\\.ipa$", "bundle": "io.github.sithewok13.sote" },
-    { "id": "vpx", "name": "Visual Pinball", "about": "", "repo": "sithewok13-dev/vpinball", "tags": ["ios-latest"], "asset": "\\.ipa$", "bundle": "org.vpinball.ios" }
+    { "id": "vpx", "name": "Visual Pinball", "about": "", "repo": "sithewok13-dev/vpinball", "tags": ["ios-latest"], "asset": "\\.ipa$", "bundle": "org.vpinball.vpinball-bgfx" }
   ]
 }
