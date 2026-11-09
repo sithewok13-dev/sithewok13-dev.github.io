@@ -204,6 +204,50 @@
    "appPermissions": {}
   },
   {
+   "name": "DOOM",
+   "bundleIdentifier": "io.github.sithewok13.doom",
+   "developerName": "sithewok",
+   "subtitle": "DOOM, DOOM II and more (UZDoom)",
+   "localizedDescription": "DOOM, DOOM II and more (UZDoom). Test build; bring your own game files.",
+   "iconURL": "https://sithewok13-dev.github.io/builds/icons/doom.png",
+   "tintColor": "8e3aa8",
+   "versions": [
+    {
+     "version": "2026-11-09 07:18:51",
+     "date": "2026-11-09T07:18:51Z",
+     "size": 39331020,
+     "downloadURL": "https://github.com/sithewok13-dev/UZDoom/releases/download/ios-latest/DOOM.ipa"
+    }
+   ],
+   "version": "2026-11-09 07:18:51",
+   "versionDate": "2026-11-09T07:18:51Z",
+   "size": 39331020,
+   "downloadURL": "https://github.com/sithewok13-dev/UZDoom/releases/download/ios-latest/DOOM.ipa",
+   "appPermissions": {}
+  },
+  {
+   "name": "Commander Keen",
+   "bundleIdentifier": "io.github.sithewok13.keen",
+   "developerName": "sithewok",
+   "subtitle": "Commander Genius",
+   "localizedDescription": "Commander Genius. Test build; bring your own game files.",
+   "iconURL": "https://sithewok13-dev.github.io/builds/icons/keen.png",
+   "tintColor": "8e3aa8",
+   "versions": [
+    {
+     "version": "2026-11-09 12:53:10",
+     "date": "2026-11-09T12:53:10Z",
+     "size": 3381762,
+     "downloadURL": "https://github.com/sithewok13-dev/Commander-Genius/releases/download/ios-latest/Keen-ios.ipa"
+    }
+   ],
+   "version": "2026-11-09 12:53:10",
+   "versionDate": "2026-11-09T12:53:10Z",
+   "size": 3381762,
+   "downloadURL": "https://github.com/sithewok13-dev/Commander-Genius/releases/download/ios-latest/Keen-ios.ipa",
+   "appPermissions": {}
+  },
+  {
    "name": "DOOM 3",
    "bundleIdentifier": "com.sithewok.doom3",
    "developerName": "sithewok",
