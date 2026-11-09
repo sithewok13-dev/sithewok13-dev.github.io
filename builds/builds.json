@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T22:09:08Z",
+ "updated": "2026-11-09T22:30:04Z",
  "apps": [
   {
    "id": "raze",
@@ -153,10 +153,10 @@
    "bundle": "io.github.sithewok13.doom",
    "private": false,
    "status": "ok",
-   "build": null,
+   "build": 10,
    "date": "2026-11-09",
-   "built": "2026-11-09T07:18:51Z",
-   "size": 39331020,
+   "built": "2026-11-09T22:19:14Z",
+   "size": 39331695,
    "tag": "ios-latest",
    "download": "https://github.com/sithewok13-dev/UZDoom/releases/download/ios-latest/DOOM.ipa",
    "release": "https://github.com/sithewok13-dev/UZDoom/releases/tag/ios-latest"
@@ -169,10 +169,10 @@
    "bundle": "io.github.sithewok13.keen",
    "private": false,
    "status": "ok",
-   "build": null,
+   "build": 7,
    "date": "2026-11-09",
-   "built": "2026-11-09T12:53:10Z",
-   "size": 3381762,
+   "built": "2026-11-09T22:16:01Z",
+   "size": 3381968,
    "tag": "ios-latest",
    "download": "https://github.com/sithewok13-dev/Commander-Genius/releases/download/ios-latest/Keen-ios.ipa",
    "release": "https://github.com/sithewok13-dev/Commander-Genius/releases/tag/ios-latest"

@@ -213,15 +213,15 @@
    "tintColor": "8e3aa8",
    "versions": [
     {
-     "version": "2026-11-09 07:18:51",
-     "date": "2026-11-09T07:18:51Z",
-     "size": 39331020,
+     "version": "build 10",
+     "date": "2026-11-09T22:19:14Z",
+     "size": 39331695,
      "downloadURL": "https://github.com/sithewok13-dev/UZDoom/releases/download/ios-latest/DOOM.ipa"
     }
    ],
-   "version": "2026-11-09 07:18:51",
-   "versionDate": "2026-11-09T07:18:51Z",
-   "size": 39331020,
+   "version": "build 10",
+   "versionDate": "2026-11-09T22:19:14Z",
+   "size": 39331695,
    "downloadURL": "https://github.com/sithewok13-dev/UZDoom/releases/download/ios-latest/DOOM.ipa",
    "appPermissions": {}
   },
@@ -235,15 +235,15 @@
    "tintColor": "8e3aa8",
    "versions": [
     {
-     "version": "2026-11-09 12:53:10",
-     "date": "2026-11-09T12:53:10Z",
-     "size": 3381762,
+     "version": "build 7",
+     "date": "2026-11-09T22:16:01Z",
+     "size": 3381968,
      "downloadURL": "https://github.com/sithewok13-dev/Commander-Genius/releases/download/ios-latest/Keen-ios.ipa"
     }
    ],
-   "version": "2026-11-09 12:53:10",
-   "versionDate": "2026-11-09T12:53:10Z",
-   "size": 3381762,
+   "version": "build 7",
+   "versionDate": "2026-11-09T22:16:01Z",
+   "size": 3381968,
    "downloadURL": "https://github.com/sithewok13-dev/Commander-Genius/releases/download/ios-latest/Keen-ios.ipa",
    "appPermissions": {}
   },
