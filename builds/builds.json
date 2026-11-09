@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T19:29:35Z",
+ "updated": "2026-11-09T19:42:25Z",
  "apps": [
   {
    "id": "raze",
@@ -193,7 +193,14 @@
    "repo": "sithewok13-dev/sh2-ios-build",
    "bundle": "com.sithewok.sh2",
    "private": true,
-   "status": "no access"
+   "status": "ok",
+   "build": 26,
+   "date": "2026-11-09",
+   "built": "2026-11-09T17:41:17Z",
+   "size": 9895929,
+   "tag": "app",
+   "download": "https://github.com/sithewok13-dev/sh2-ios-build/releases/download/app/SH2.ipa",
+   "release": "https://github.com/sithewok13-dev/sh2-ios-build/releases/tag/app"
   },
   {
    "id": "sh3",
@@ -202,7 +209,14 @@
    "repo": "sithewok13-dev/sh3-ios-build",
    "bundle": "com.sithewok.sh3",
    "private": true,
-   "status": "no access"
+   "status": "ok",
+   "build": 12,
+   "date": "2026-11-09",
+   "built": "2026-11-09T17:26:26Z",
+   "size": 9336897,
+   "tag": "app",
+   "download": "https://github.com/sithewok13-dev/sh3-ios-build/releases/download/app/SH3.ipa",
+   "release": "https://github.com/sithewok13-dev/sh3-ios-build/releases/tag/app"
   },
   {
    "id": "conker",
@@ -211,7 +225,14 @@
    "repo": "sithewok13-dev/conker-ios",
    "bundle": "io.github.sithewok13.conker",
    "private": true,
-   "status": "no access"
+   "status": "ok",
+   "build": 13,
+   "date": "2026-11-09",
+   "built": "2026-11-09T16:59:46Z",
+   "size": 9679108,
+   "tag": "v0.3.3",
+   "download": "https://github.com/sithewok13-dev/conker-ios/releases/download/v0.3.3/Conker-iOS-0.3.3.ipa",
+   "release": "https://github.com/sithewok13-dev/conker-ios/releases/tag/v0.3.3"
   },
   {
    "id": "sote",
