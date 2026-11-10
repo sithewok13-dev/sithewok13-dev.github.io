@@ -12,6 +12,7 @@
     { "id": "samse", "name": "Sam SE", "about": "Serious Sam: The Second Encounter", "repo": "sithewok13-dev/SeriousSamClassic", "tags": ["ios-latest"], "asset": "^serioussamse-ios\\.ipa$", "bundle": "io.github.sithewok13.serioussam.se" },
     { "id": "doom", "name": "DOOM", "about": "DOOM, DOOM II and more (UZDoom)", "repo": "sithewok13-dev/UZDoom", "tags": ["ios-latest"], "asset": "^DOOM\\.ipa$", "bundle": "io.github.sithewok13.doom" },
     { "id": "keen", "name": "Commander Keen", "about": "Commander Genius", "repo": "sithewok13-dev/Commander-Genius", "tags": ["ios-latest"], "asset": "^Keen-ios\\.ipa$", "bundle": "io.github.sithewok13.keen" },
+    { "id": "wolf3d", "name": "Wolf3D", "about": "Wolfenstein 3D, Spear of Destiny (ECWolf)", "repo": "sithewok13-dev/ECWolf", "tags": ["ios-latest"], "asset": "^Wolf3D-ios\\.ipa$", "bundle": "io.github.sithewok13.wolf3d" },
     { "id": "doom3", "name": "DOOM 3", "about": "dhewm3", "repo": "sithewok13-dev/doom3-ios", "tags": ["ios-latest"], "asset": "\\.ipa$", "bundle": "com.sithewok.doom3" },
     { "id": "nolf1", "name": "NOLF", "about": "No One Lives Forever (relith)", "repo": "relith-dev/relith", "tags": ["ios-latest"], "asset": "\\.ipa$", "bundle": "net.relith.nolf", "private": true },
     { "id": "nolf2", "name": "NOLF2", "about": "No One Lives Forever 2", "repo": "sithewok13-dev/nolf2", "tags": ["ios-latest"], "asset": "\\.ipa$", "bundle": "io.github.sithewok13.nolf2" },
