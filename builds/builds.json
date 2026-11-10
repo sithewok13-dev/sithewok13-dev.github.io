@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T04:12:03Z",
+ "updated": "2026-11-10T15:40:51Z",
  "apps": [
   {
    "id": "raze",
@@ -313,6 +313,16 @@
    "tag": "ios-latest",
    "download": "https://github.com/sithewok13-dev/vpinball/releases/download/ios-latest/VPinballX_BGFX-ios.ipa",
    "release": "https://github.com/sithewok13-dev/vpinball/releases/tag/ios-latest"
+  },
+  {
+   "id": "feather",
+   "name": "Feather (custom)",
+   "about": "Feather with Select All, bulk sign & install, and self-update",
+   "repo": "sithewok13-dev/feather",
+   "bundle": "thewonderofyou.Feather",
+   "private": false,
+   "description": "Custom Feather build: Select All, bulk Sign & Install, Download/Sign/Install from sources, and updating itself.",
+   "status": "no release"
   }
  ]
 }
