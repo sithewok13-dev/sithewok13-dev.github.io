@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T17:57:15Z",
+ "updated": "2026-11-10T21:06:48Z",
  "apps": [
   {
    "id": "raze",
@@ -185,10 +185,10 @@
    "bundle": "io.github.sithewok13.wolf3d",
    "private": false,
    "status": "ok",
-   "build": 3,
+   "build": 6,
    "date": "2026-11-10",
-   "built": "2026-11-10T17:15:09Z",
-   "size": 1602152,
+   "built": "2026-11-10T21:03:54Z",
+   "size": 1658919,
    "tag": "ios-latest",
    "download": "https://github.com/sithewok13-dev/ECWolf/releases/download/ios-latest/Wolf3D-ios.ipa",
    "release": "https://github.com/sithewok13-dev/ECWolf/releases/tag/ios-latest"

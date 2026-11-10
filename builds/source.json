@@ -257,15 +257,15 @@
    "tintColor": "8e3aa8",
    "versions": [
     {
-     "version": "build 3",
-     "date": "2026-11-10T17:15:09Z",
-     "size": 1602152,
+     "version": "build 6",
+     "date": "2026-11-10T21:03:54Z",
+     "size": 1658919,
      "downloadURL": "https://github.com/sithewok13-dev/ECWolf/releases/download/ios-latest/Wolf3D-ios.ipa"
     }
    ],
-   "version": "build 3",
-   "versionDate": "2026-11-10T17:15:09Z",
-   "size": 1602152,
+   "version": "build 6",
+   "versionDate": "2026-11-10T21:03:54Z",
+   "size": 1658919,
    "downloadURL": "https://github.com/sithewok13-dev/ECWolf/releases/download/ios-latest/Wolf3D-ios.ipa",
    "appPermissions": {}
   },
