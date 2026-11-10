@@ -367,15 +367,15 @@
    "tintColor": "8e3aa8",
    "versions": [
     {
-     "version": "build 17",
-     "date": "2026-11-10T15:47:03Z",
-     "size": 14244092,
+     "version": "build 18",
+     "date": "2026-11-10T16:10:34Z",
+     "size": 14246070,
      "downloadURL": "https://github.com/sithewok13-dev/feather/releases/download/ios-latest/Feather.ipa"
     }
    ],
-   "version": "build 17",
-   "versionDate": "2026-11-10T15:47:03Z",
-   "size": 14244092,
+   "version": "build 18",
+   "versionDate": "2026-11-10T16:10:34Z",
+   "size": 14246070,
    "downloadURL": "https://github.com/sithewok13-dev/feather/releases/download/ios-latest/Feather.ipa",
    "appPermissions": {}
   }
