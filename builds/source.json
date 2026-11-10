@@ -248,6 +248,28 @@
    "appPermissions": {}
   },
   {
+   "name": "Wolf3D",
+   "bundleIdentifier": "io.github.sithewok13.wolf3d",
+   "developerName": "sithewok",
+   "subtitle": "Wolfenstein 3D, Spear of Destiny (ECWolf)",
+   "localizedDescription": "Wolfenstein 3D, Spear of Destiny (ECWolf). Test build; bring your own game files.",
+   "iconURL": "https://sithewok13-dev.github.io/builds/icons/wolf3d.png",
+   "tintColor": "8e3aa8",
+   "versions": [
+    {
+     "version": "build 2",
+     "date": "2026-11-10T04:10:51Z",
+     "size": 1601223,
+     "downloadURL": "https://github.com/sithewok13-dev/ECWolf/releases/download/ios-latest/Wolf3D-ios.ipa"
+    }
+   ],
+   "version": "build 2",
+   "versionDate": "2026-11-10T04:10:51Z",
+   "size": 1601223,
+   "downloadURL": "https://github.com/sithewok13-dev/ECWolf/releases/download/ios-latest/Wolf3D-ios.ipa",
+   "appPermissions": {}
+  },
+  {
    "name": "DOOM 3",
    "bundleIdentifier": "com.sithewok.doom3",
    "developerName": "sithewok",
