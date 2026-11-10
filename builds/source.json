@@ -147,15 +147,15 @@
    "tintColor": "8e3aa8",
    "versions": [
     {
-     "version": "build 81",
-     "date": "2026-11-09T17:07:20Z",
-     "size": 12585510,
+     "version": "build 83",
+     "date": "2026-11-10T01:48:56Z",
+     "size": 12590150,
      "downloadURL": "https://github.com/sithewok13-dev/xash3d-fwgs/releases/download/ios-latest/Xash3D-iOS-unsigned.ipa"
     }
    ],
-   "version": "build 81",
-   "versionDate": "2026-11-09T17:07:20Z",
-   "size": 12585510,
+   "version": "build 83",
+   "versionDate": "2026-11-10T01:48:56Z",
+   "size": 12590150,
    "downloadURL": "https://github.com/sithewok13-dev/xash3d-fwgs/releases/download/ios-latest/Xash3D-iOS-unsigned.ipa",
    "appPermissions": {}
   },

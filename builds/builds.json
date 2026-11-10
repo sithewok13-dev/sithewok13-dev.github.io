@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T22:30:04Z",
+ "updated": "2026-11-10T01:50:29Z",
  "apps": [
   {
    "id": "raze",
@@ -105,10 +105,10 @@
    "bundle": "com.sithewok.xash3d",
    "private": false,
    "status": "ok",
-   "build": 81,
-   "date": "2026-11-09",
-   "built": "2026-11-09T17:07:20Z",
-   "size": 12585510,
+   "build": 83,
+   "date": "2026-11-10",
+   "built": "2026-11-10T01:48:56Z",
+   "size": 12590150,
    "tag": "ios-latest",
    "download": "https://github.com/sithewok13-dev/xash3d-fwgs/releases/download/ios-latest/Xash3D-iOS-unsigned.ipa",
    "release": "https://github.com/sithewok13-dev/xash3d-fwgs/releases/tag/ios-latest"
