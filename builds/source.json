@@ -367,16 +367,38 @@
    "tintColor": "8e3aa8",
    "versions": [
     {
-     "version": "build 18",
-     "date": "2026-11-10T16:10:34Z",
-     "size": 14246070,
+     "version": "build 19",
+     "date": "2026-11-10T17:53:46Z",
+     "size": 14243967,
      "downloadURL": "https://github.com/sithewok13-dev/feather/releases/download/ios-latest/Feather.ipa"
     }
    ],
-   "version": "build 18",
-   "versionDate": "2026-11-10T16:10:34Z",
-   "size": 14246070,
+   "version": "build 19",
+   "versionDate": "2026-11-10T17:53:46Z",
+   "size": 14243967,
    "downloadURL": "https://github.com/sithewok13-dev/feather/releases/download/ios-latest/Feather.ipa",
+   "appPermissions": {}
+  },
+  {
+   "name": "Feather Updater",
+   "bundleIdentifier": "thewonderofyou.Feather.updater",
+   "developerName": "sithewok",
+   "subtitle": "Second copy of Feather used to install Feather updates",
+   "localizedDescription": "A second copy of the custom Feather with its own app ID. Use it to install updates to Feather (custom), since iOS won't let an app replace itself.",
+   "iconURL": "https://sithewok13-dev.github.io/builds/icons/feather-updater.png",
+   "tintColor": "8e3aa8",
+   "versions": [
+    {
+     "version": "build 19",
+     "date": "2026-11-10T17:53:45Z",
+     "size": 14243736,
+     "downloadURL": "https://github.com/sithewok13-dev/feather/releases/download/ios-latest/FeatherUpdater.ipa"
+    }
+   ],
+   "version": "build 19",
+   "versionDate": "2026-11-10T17:53:45Z",
+   "size": 14243736,
+   "downloadURL": "https://github.com/sithewok13-dev/feather/releases/download/ios-latest/FeatherUpdater.ipa",
    "appPermissions": {}
   }
  ],

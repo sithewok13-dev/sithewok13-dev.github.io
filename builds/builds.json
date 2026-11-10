@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T17:16:04Z",
+ "updated": "2026-11-10T17:57:15Z",
  "apps": [
   {
    "id": "raze",
@@ -323,10 +323,10 @@
    "private": false,
    "description": "Custom Feather build: Select All, bulk Sign & Install, Download/Sign/Install from sources, and updating itself.",
    "status": "ok",
-   "build": 18,
+   "build": 19,
    "date": "2026-11-10",
-   "built": "2026-11-10T16:10:34Z",
-   "size": 14246070,
+   "built": "2026-11-10T17:53:46Z",
+   "size": 14243967,
    "tag": "ios-latest",
    "download": "https://github.com/sithewok13-dev/feather/releases/download/ios-latest/Feather.ipa",
    "release": "https://github.com/sithewok13-dev/feather/releases/tag/ios-latest"
@@ -339,7 +339,13 @@
    "bundle": "thewonderofyou.Feather.updater",
    "private": false,
    "description": "A second copy of the custom Feather with its own app ID. Use it to install updates to Feather (custom), since iOS won't let an app replace itself.",
-   "status": "no download",
+   "status": "ok",
+   "build": 19,
+   "date": "2026-11-10",
+   "built": "2026-11-10T17:53:45Z",
+   "size": 14243736,
+   "tag": "ios-latest",
+   "download": "https://github.com/sithewok13-dev/feather/releases/download/ios-latest/FeatherUpdater.ipa",
    "release": "https://github.com/sithewok13-dev/feather/releases/tag/ios-latest"
   }
  ]
