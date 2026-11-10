@@ -367,15 +367,15 @@
    "tintColor": "8e3aa8",
    "versions": [
     {
-     "version": "build 19",
-     "date": "2026-11-10T17:53:46Z",
-     "size": 14243967,
+     "version": "build 20",
+     "date": "2026-11-10T21:30:43Z",
+     "size": 14249548,
      "downloadURL": "https://github.com/sithewok13-dev/feather/releases/download/ios-latest/Feather.ipa"
     }
    ],
-   "version": "build 19",
-   "versionDate": "2026-11-10T17:53:46Z",
-   "size": 14243967,
+   "version": "build 20",
+   "versionDate": "2026-11-10T21:30:43Z",
+   "size": 14249548,
    "downloadURL": "https://github.com/sithewok13-dev/feather/releases/download/ios-latest/Feather.ipa",
    "appPermissions": {}
   },
@@ -389,15 +389,15 @@
    "tintColor": "8e3aa8",
    "versions": [
     {
-     "version": "build 19",
-     "date": "2026-11-10T17:53:45Z",
-     "size": 14243736,
+     "version": "build 20",
+     "date": "2026-11-10T21:30:43Z",
+     "size": 14249315,
      "downloadURL": "https://github.com/sithewok13-dev/feather/releases/download/ios-latest/FeatherUpdater.ipa"
     }
    ],
-   "version": "build 19",
-   "versionDate": "2026-11-10T17:53:45Z",
-   "size": 14243736,
+   "version": "build 20",
+   "versionDate": "2026-11-10T21:30:43Z",
+   "size": 14249315,
    "downloadURL": "https://github.com/sithewok13-dev/feather/releases/download/ios-latest/FeatherUpdater.ipa",
    "appPermissions": {}
   }
