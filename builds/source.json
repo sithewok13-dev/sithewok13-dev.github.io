@@ -213,15 +213,15 @@
    "tintColor": "8e3aa8",
    "versions": [
     {
-     "version": "build 12",
-     "date": "2026-11-10T03:51:04Z",
-     "size": 39331116,
+     "version": "build 14",
+     "date": "2026-11-10T22:08:55Z",
+     "size": 39383397,
      "downloadURL": "https://github.com/sithewok13-dev/UZDoom/releases/download/ios-latest/DOOM.ipa"
     }
    ],
-   "version": "build 12",
-   "versionDate": "2026-11-10T03:51:04Z",
-   "size": 39331116,
+   "version": "build 14",
+   "versionDate": "2026-11-10T22:08:55Z",
+   "size": 39383397,
    "downloadURL": "https://github.com/sithewok13-dev/UZDoom/releases/download/ios-latest/DOOM.ipa",
    "appPermissions": {}
   },
