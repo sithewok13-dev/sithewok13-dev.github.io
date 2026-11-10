@@ -54,6 +54,8 @@ def one(app, cache):
     token = (owner_token or os.environ.get("RELEASES_TOKEN")) if priv else os.environ.get("GITHUB_TOKEN")
     out = {k: app.get(k) for k in ("id", "name", "about", "repo", "bundle")}
     out["private"] = priv
+    if app.get("description"):
+        out["description"] = app["description"]
     if priv and not token:
         out["status"] = "no access"
         return out
@@ -93,7 +95,7 @@ def source(apps):
         v = {"version": version, "date": a["built"], "size": a["size"], "downloadURL": a["download"]}
         e = {
             "name": a["name"], "bundleIdentifier": a["bundle"], "developerName": "sithewok",
-            "subtitle": a.get("about") or "", "localizedDescription": (a.get("about") or a["name"]) + ". Test build; bring your own game files.",
+            "subtitle": a.get("about") or "", "localizedDescription": a.get("description") or ((a.get("about") or a["name"]) + ". Test build; bring your own game files."),
             "iconURL": SITE + "icons/" + a["id"] + ".png", "tintColor": "8e3aa8",
             "versions": [v], "version": version, "versionDate": a["built"],
             "size": a["size"], "downloadURL": a["download"], "appPermissions": {},
