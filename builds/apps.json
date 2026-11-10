@@ -21,6 +21,7 @@
     { "id": "conker", "name": "Conker", "about": "Conker's Bad Fur Day", "repo": "sithewok13-dev/conker-ios", "tags": ["*"], "asset": "\\.ipa$", "bundle": "io.github.sithewok13.conker", "private": true },
     { "id": "sote", "name": "Shadows of the Empire", "about": "", "repo": "sithewok13-dev/sote-ios", "tags": ["ios-latest", "*"], "asset": "\\.ipa$", "bundle": "io.github.sithewok13.sote" },
     { "id": "vpx", "name": "Visual Pinball", "about": "", "repo": "sithewok13-dev/vpinball", "tags": ["ios-latest"], "asset": "\\.ipa$", "bundle": "org.vpinball.vpinball-bgfx" },
-    { "id": "feather", "name": "Feather (custom)", "about": "Feather with Select All, bulk sign & install, and self-update", "description": "Custom Feather build: Select All, bulk Sign & Install, Download/Sign/Install from sources, and updating itself.", "repo": "sithewok13-dev/feather", "tags": ["ios-latest"], "asset": "^Feather\\.ipa$", "bundle": "thewonderofyou.Feather" }
+    { "id": "feather", "name": "Feather (custom)", "about": "Feather with Select All, bulk sign & install, and self-update", "description": "Custom Feather build: Select All, bulk Sign & Install, Download/Sign/Install from sources, and updating itself.", "repo": "sithewok13-dev/feather", "tags": ["ios-latest"], "asset": "^Feather\\.ipa$", "bundle": "thewonderofyou.Feather" },
+    { "id": "feather-updater", "name": "Feather Updater", "about": "Second copy of Feather used to install Feather updates", "description": "A second copy of the custom Feather with its own app ID. Use it to install updates to Feather (custom), since iOS won't let an app replace itself.", "repo": "sithewok13-dev/feather", "tags": ["ios-latest"], "asset": "^FeatherUpdater\\.ipa$", "bundle": "thewonderofyou.Feather.updater" }
   ]
 }
