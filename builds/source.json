@@ -235,15 +235,15 @@
    "tintColor": "8e3aa8",
    "versions": [
     {
-     "version": "build 7",
-     "date": "2026-11-09T22:16:01Z",
-     "size": 3381968,
+     "version": "build 9",
+     "date": "2026-11-10T15:46:52Z",
+     "size": 3382172,
      "downloadURL": "https://github.com/sithewok13-dev/Commander-Genius/releases/download/ios-latest/Keen-ios.ipa"
     }
    ],
-   "version": "build 7",
-   "versionDate": "2026-11-09T22:16:01Z",
-   "size": 3381968,
+   "version": "build 9",
+   "versionDate": "2026-11-10T15:46:52Z",
+   "size": 3382172,
    "downloadURL": "https://github.com/sithewok13-dev/Commander-Genius/releases/download/ios-latest/Keen-ios.ipa",
    "appPermissions": {}
   },
@@ -355,6 +355,28 @@
    "versionDate": "2026-11-09T17:28:09Z",
    "size": 67214152,
    "downloadURL": "https://github.com/sithewok13-dev/vpinball/releases/download/ios-latest/VPinballX_BGFX-ios.ipa",
+   "appPermissions": {}
+  },
+  {
+   "name": "Feather (custom)",
+   "bundleIdentifier": "thewonderofyou.Feather",
+   "developerName": "sithewok",
+   "subtitle": "Feather with Select All, bulk sign & install, and self-update",
+   "localizedDescription": "Custom Feather build: Select All, bulk Sign & Install, Download/Sign/Install from sources, and updating itself.",
+   "iconURL": "https://sithewok13-dev.github.io/builds/icons/feather.png",
+   "tintColor": "8e3aa8",
+   "versions": [
+    {
+     "version": "build 17",
+     "date": "2026-11-10T15:47:03Z",
+     "size": 14244092,
+     "downloadURL": "https://github.com/sithewok13-dev/feather/releases/download/ios-latest/Feather.ipa"
+    }
+   ],
+   "version": "build 17",
+   "versionDate": "2026-11-10T15:47:03Z",
+   "size": 14244092,
+   "downloadURL": "https://github.com/sithewok13-dev/feather/releases/download/ios-latest/Feather.ipa",
    "appPermissions": {}
   }
  ],
