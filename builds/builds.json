@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T09:54:52Z",
+ "updated": "2026-11-11T17:44:57Z",
  "apps": [
   {
    "id": "raze",
@@ -25,10 +25,10 @@
    "bundle": "org.openjkdf2.openjkdf2",
    "private": false,
    "status": "ok",
-   "build": 135,
-   "date": "2026-11-09",
-   "built": "2026-11-09T16:40:43Z",
-   "size": 5442841,
+   "build": 136,
+   "date": "2026-11-11",
+   "built": "2026-11-11T13:31:07Z",
+   "size": 5447518,
    "tag": "ios-latest",
    "download": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/download/ios-latest/OpenJKDF2-iOS-unsigned.ipa",
    "release": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/tag/ios-latest"
@@ -41,10 +41,10 @@
    "bundle": "org.openjkdf2.openjkdf2.mots",
    "private": false,
    "status": "ok",
-   "build": 135,
-   "date": "2026-11-09",
-   "built": "2026-11-09T16:40:43Z",
-   "size": 5429568,
+   "build": 136,
+   "date": "2026-11-11",
+   "built": "2026-11-11T13:31:08Z",
+   "size": 5434245,
    "tag": "ios-latest",
    "download": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/download/ios-latest/OpenJKDF2-MotS-iOS-unsigned.ipa",
    "release": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/tag/ios-latest"
@@ -216,7 +216,14 @@
    "repo": "relith-dev/relith",
    "bundle": "net.relith.nolf",
    "private": true,
-   "status": "no access"
+   "status": "ok",
+   "build": 71,
+   "date": "2026-11-11",
+   "built": "2026-11-11T01:27:29Z",
+   "size": 5816297,
+   "tag": "ios-latest",
+   "download": "https://github.com/relith-dev/relith/releases/download/ios-latest/relith-nolf-ios-unsigned.ipa",
+   "release": "https://github.com/relith-dev/relith/releases/tag/ios-latest"
   },
   {
    "id": "nolf2",
