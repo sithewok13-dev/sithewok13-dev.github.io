@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T04:23:35Z",
+ "updated": "2026-11-12T13:06:31Z",
  "apps": [
   {
    "id": "raze",
@@ -25,10 +25,10 @@
    "bundle": "org.openjkdf2.openjkdf2",
    "private": false,
    "status": "ok",
-   "build": 137,
-   "date": "2026-11-11",
-   "built": "2026-11-11T23:53:50Z",
-   "size": 5487145,
+   "build": 138,
+   "date": "2026-11-12",
+   "built": "2026-11-12T04:57:15Z",
+   "size": 5492773,
    "tag": "ios-latest",
    "download": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/download/ios-latest/OpenJKDF2-iOS-unsigned.ipa",
    "release": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/tag/ios-latest"
@@ -41,10 +41,10 @@
    "bundle": "org.openjkdf2.openjkdf2.mots",
    "private": false,
    "status": "ok",
-   "build": 137,
-   "date": "2026-11-11",
-   "built": "2026-11-11T23:53:50Z",
-   "size": 5473874,
+   "build": 138,
+   "date": "2026-11-12",
+   "built": "2026-11-12T04:57:15Z",
+   "size": 5479497,
    "tag": "ios-latest",
    "download": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/download/ios-latest/OpenJKDF2-MotS-iOS-unsigned.ipa",
    "release": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/tag/ios-latest"
