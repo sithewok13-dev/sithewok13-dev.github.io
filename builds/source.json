@@ -37,15 +37,15 @@
    "tintColor": "8e3aa8",
    "versions": [
     {
-     "version": "build 138",
-     "date": "2026-11-12T04:57:15Z",
-     "size": 5492773,
+     "version": "build 140",
+     "date": "2026-11-13T04:26:05Z",
+     "size": 5492309,
      "downloadURL": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/download/ios-latest/OpenJKDF2-iOS-unsigned.ipa"
     }
    ],
-   "version": "build 138",
-   "versionDate": "2026-11-12T04:57:15Z",
-   "size": 5492773,
+   "version": "build 140",
+   "versionDate": "2026-11-13T04:26:05Z",
+   "size": 5492309,
    "downloadURL": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/download/ios-latest/OpenJKDF2-iOS-unsigned.ipa",
    "appPermissions": {}
   },
@@ -59,15 +59,15 @@
    "tintColor": "8e3aa8",
    "versions": [
     {
-     "version": "build 138",
-     "date": "2026-11-12T04:57:15Z",
-     "size": 5479497,
+     "version": "build 140",
+     "date": "2026-11-13T04:26:05Z",
+     "size": 5479036,
      "downloadURL": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/download/ios-latest/OpenJKDF2-MotS-iOS-unsigned.ipa"
     }
    ],
-   "version": "build 138",
-   "versionDate": "2026-11-12T04:57:15Z",
-   "size": 5479497,
+   "version": "build 140",
+   "versionDate": "2026-11-13T04:26:05Z",
+   "size": 5479036,
    "downloadURL": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/download/ios-latest/OpenJKDF2-MotS-iOS-unsigned.ipa",
    "appPermissions": {}
   },
@@ -301,15 +301,15 @@
    "tintColor": "8e3aa8",
    "versions": [
     {
-     "version": "build 10",
-     "date": "2026-11-11T04:56:11Z",
-     "size": 3597360,
+     "version": "build 13",
+     "date": "2026-11-13T04:21:56Z",
+     "size": 3598422,
      "downloadURL": "https://github.com/sithewok13-dev/nolf2/releases/download/ios-latest/NOLF2-ios.ipa"
     }
    ],
-   "version": "build 10",
-   "versionDate": "2026-11-11T04:56:11Z",
-   "size": 3597360,
+   "version": "build 13",
+   "versionDate": "2026-11-13T04:21:56Z",
+   "size": 3598422,
    "downloadURL": "https://github.com/sithewok13-dev/nolf2/releases/download/ios-latest/NOLF2-ios.ipa",
    "appPermissions": {}
   },
