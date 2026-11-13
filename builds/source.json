@@ -37,15 +37,15 @@
    "tintColor": "8e3aa8",
    "versions": [
     {
-     "version": "build 140",
-     "date": "2026-11-13T04:26:05Z",
-     "size": 5492309,
+     "version": "build 141",
+     "date": "2026-11-13T14:32:14Z",
+     "size": 5497050,
      "downloadURL": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/download/ios-latest/OpenJKDF2-iOS-unsigned.ipa"
     }
    ],
-   "version": "build 140",
-   "versionDate": "2026-11-13T04:26:05Z",
-   "size": 5492309,
+   "version": "build 141",
+   "versionDate": "2026-11-13T14:32:14Z",
+   "size": 5497050,
    "downloadURL": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/download/ios-latest/OpenJKDF2-iOS-unsigned.ipa",
    "appPermissions": {}
   },
@@ -59,15 +59,15 @@
    "tintColor": "8e3aa8",
    "versions": [
     {
-     "version": "build 140",
-     "date": "2026-11-13T04:26:05Z",
-     "size": 5479036,
+     "version": "build 141",
+     "date": "2026-11-13T14:32:14Z",
+     "size": 5483774,
      "downloadURL": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/download/ios-latest/OpenJKDF2-MotS-iOS-unsigned.ipa"
     }
    ],
-   "version": "build 140",
-   "versionDate": "2026-11-13T04:26:05Z",
-   "size": 5479036,
+   "version": "build 141",
+   "versionDate": "2026-11-13T14:32:14Z",
+   "size": 5483774,
    "downloadURL": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/download/ios-latest/OpenJKDF2-MotS-iOS-unsigned.ipa",
    "appPermissions": {}
   },
