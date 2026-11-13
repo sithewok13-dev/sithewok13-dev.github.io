@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T22:15:23Z",
+ "updated": "2026-11-13T22:58:28Z",
  "apps": [
   {
    "id": "raze",
@@ -25,10 +25,10 @@
    "bundle": "org.openjkdf2.openjkdf2",
    "private": false,
    "status": "ok",
-   "build": 142,
+   "build": 143,
    "date": "2026-11-13",
-   "built": "2026-11-13T18:58:31Z",
-   "size": 5503857,
+   "built": "2026-11-13T22:35:06Z",
+   "size": 5503969,
    "tag": "ios-latest",
    "download": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/download/ios-latest/OpenJKDF2-iOS-unsigned.ipa",
    "release": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/tag/ios-latest"
@@ -41,10 +41,10 @@
    "bundle": "org.openjkdf2.openjkdf2.mots",
    "private": false,
    "status": "ok",
-   "build": 142,
+   "build": 143,
    "date": "2026-11-13",
-   "built": "2026-11-13T18:58:31Z",
-   "size": 5490584,
+   "built": "2026-11-13T22:35:06Z",
+   "size": 5490697,
    "tag": "ios-latest",
    "download": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/download/ios-latest/OpenJKDF2-MotS-iOS-unsigned.ipa",
    "release": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/tag/ios-latest"
@@ -185,10 +185,10 @@
    "bundle": "io.github.sithewok13.wolf3d",
    "private": false,
    "status": "ok",
-   "build": 7,
-   "date": "2026-11-10",
-   "built": "2026-11-10T21:29:39Z",
-   "size": 1663860,
+   "build": 9,
+   "date": "2026-11-13",
+   "built": "2026-11-13T22:57:34Z",
+   "size": 1683924,
    "tag": "ios-latest",
    "download": "https://github.com/sithewok13-dev/ECWolf/releases/download/ios-latest/Wolf3D-ios.ipa",
    "release": "https://github.com/sithewok13-dev/ECWolf/releases/tag/ios-latest"
