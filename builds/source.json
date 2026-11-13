@@ -37,15 +37,15 @@
    "tintColor": "8e3aa8",
    "versions": [
     {
-     "version": "build 141",
-     "date": "2026-11-13T14:32:14Z",
-     "size": 5497050,
+     "version": "build 142",
+     "date": "2026-11-13T18:58:31Z",
+     "size": 5503857,
      "downloadURL": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/download/ios-latest/OpenJKDF2-iOS-unsigned.ipa"
     }
    ],
-   "version": "build 141",
-   "versionDate": "2026-11-13T14:32:14Z",
-   "size": 5497050,
+   "version": "build 142",
+   "versionDate": "2026-11-13T18:58:31Z",
+   "size": 5503857,
    "downloadURL": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/download/ios-latest/OpenJKDF2-iOS-unsigned.ipa",
    "appPermissions": {}
   },
@@ -59,15 +59,15 @@
    "tintColor": "8e3aa8",
    "versions": [
     {
-     "version": "build 141",
-     "date": "2026-11-13T14:32:14Z",
-     "size": 5483774,
+     "version": "build 142",
+     "date": "2026-11-13T18:58:31Z",
+     "size": 5490584,
      "downloadURL": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/download/ios-latest/OpenJKDF2-MotS-iOS-unsigned.ipa"
     }
    ],
-   "version": "build 141",
-   "versionDate": "2026-11-13T14:32:14Z",
-   "size": 5483774,
+   "version": "build 142",
+   "versionDate": "2026-11-13T18:58:31Z",
+   "size": 5490584,
    "downloadURL": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/releases/download/ios-latest/OpenJKDF2-MotS-iOS-unsigned.ipa",
    "appPermissions": {}
   },
@@ -213,15 +213,15 @@
    "tintColor": "8e3aa8",
    "versions": [
     {
-     "version": "build 15",
-     "date": "2026-11-10T23:32:10Z",
-     "size": 39385445,
+     "version": "build 21",
+     "date": "2026-11-13T22:04:20Z",
+     "size": 39407211,
      "downloadURL": "https://github.com/sithewok13-dev/UZDoom/releases/download/ios-latest/DOOM.ipa"
     }
    ],
-   "version": "build 15",
-   "versionDate": "2026-11-10T23:32:10Z",
-   "size": 39385445,
+   "version": "build 21",
+   "versionDate": "2026-11-13T22:04:20Z",
+   "size": 39407211,
    "downloadURL": "https://github.com/sithewok13-dev/UZDoom/releases/download/ios-latest/DOOM.ipa",
    "appPermissions": {}
   },
