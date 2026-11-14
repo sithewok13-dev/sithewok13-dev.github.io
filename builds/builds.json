@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T02:30:05Z",
+ "updated": "2026-11-14T02:31:43Z",
  "apps": [
   {
    "id": "raze",
@@ -9,10 +9,10 @@
    "bundle": "io.github.sithewok13.raze",
    "private": false,
    "status": "ok",
-   "build": 83,
+   "build": 85,
    "date": "2026-11-14",
-   "built": "2026-11-14T00:06:44Z",
-   "size": 21096485,
+   "built": "2026-11-14T02:30:31Z",
+   "size": 21113677,
    "tag": "ios-latest",
    "download": "https://github.com/sithewok13-dev/Raze-iOS-/releases/download/ios-latest/Raze.ipa",
    "release": "https://github.com/sithewok13-dev/Raze-iOS-/releases/tag/ios-latest"
