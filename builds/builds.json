@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T06:48:21Z",
+ "updated": "2026-11-16T03:19:28Z",
  "apps": [
   {
    "id": "raze",
@@ -9,10 +9,10 @@
    "bundle": "io.github.sithewok13.raze",
    "private": false,
    "status": "ok",
-   "build": 91,
-   "date": "2026-11-14",
-   "built": "2026-11-14T15:04:38Z",
-   "size": 21137774,
+   "build": 112,
+   "date": "2026-11-16",
+   "built": "2026-11-16T00:46:35Z",
+   "size": 21421343,
    "tag": "ios-latest",
    "download": "https://github.com/sithewok13-dev/Raze-iOS-/releases/download/ios-latest/Raze.ipa",
    "release": "https://github.com/sithewok13-dev/Raze-iOS-/releases/tag/ios-latest"
@@ -153,10 +153,10 @@
    "bundle": "io.github.sithewok13.doom",
    "private": false,
    "status": "ok",
-   "build": 31,
-   "date": "2026-11-15",
-   "built": "2026-11-15T03:02:45Z",
-   "size": 39411892,
+   "build": 35,
+   "date": "2026-11-16",
+   "built": "2026-11-16T02:26:00Z",
+   "size": 39420004,
    "tag": "ios-latest",
    "download": "https://github.com/sithewok13-dev/UZDoom/releases/download/ios-latest/DOOM.ipa",
    "release": "https://github.com/sithewok13-dev/UZDoom/releases/tag/ios-latest"
@@ -185,10 +185,10 @@
    "bundle": "io.github.sithewok13.wolf3d",
    "private": false,
    "status": "ok",
-   "build": 9,
-   "date": "2026-11-13",
-   "built": "2026-11-13T22:57:34Z",
-   "size": 1683924,
+   "build": 23,
+   "date": "2026-11-16",
+   "built": "2026-11-16T00:44:21Z",
+   "size": 1888529,
    "tag": "ios-latest",
    "download": "https://github.com/sithewok13-dev/ECWolf/releases/download/ios-latest/Wolf3D-ios.ipa",
    "release": "https://github.com/sithewok13-dev/ECWolf/releases/tag/ios-latest"
