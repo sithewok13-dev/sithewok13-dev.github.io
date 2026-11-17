@@ -15,15 +15,15 @@
    "tintColor": "8e3aa8",
    "versions": [
     {
-     "version": "build 112",
-     "date": "2026-11-16T00:46:35Z",
-     "size": 21421343,
+     "version": "build 124",
+     "date": "2026-11-17T03:24:04Z",
+     "size": 21474480,
      "downloadURL": "https://github.com/sithewok13-dev/Raze-iOS-/releases/download/ios-latest/Raze.ipa"
     }
    ],
-   "version": "build 112",
-   "versionDate": "2026-11-16T00:46:35Z",
-   "size": 21421343,
+   "version": "build 124",
+   "versionDate": "2026-11-17T03:24:04Z",
+   "size": 21474480,
    "downloadURL": "https://github.com/sithewok13-dev/Raze-iOS-/releases/download/ios-latest/Raze.ipa",
    "appPermissions": {}
   },
@@ -147,15 +147,15 @@
    "tintColor": "8e3aa8",
    "versions": [
     {
-     "version": "build 85",
-     "date": "2026-11-10T02:12:53Z",
-     "size": 12589796,
+     "version": "build 96",
+     "date": "2026-11-17T03:09:40Z",
+     "size": 12592854,
      "downloadURL": "https://github.com/sithewok13-dev/xash3d-fwgs/releases/download/ios-latest/Xash3D-iOS-unsigned.ipa"
     }
    ],
-   "version": "build 85",
-   "versionDate": "2026-11-10T02:12:53Z",
-   "size": 12589796,
+   "version": "build 96",
+   "versionDate": "2026-11-17T03:09:40Z",
+   "size": 12592854,
    "downloadURL": "https://github.com/sithewok13-dev/xash3d-fwgs/releases/download/ios-latest/Xash3D-iOS-unsigned.ipa",
    "appPermissions": {}
   },
@@ -169,15 +169,15 @@
    "tintColor": "8e3aa8",
    "versions": [
     {
-     "version": "build 40",
-     "date": "2026-11-09T17:33:54Z",
-     "size": 8139548,
+     "version": "build 41",
+     "date": "2026-11-17T02:57:13Z",
+     "size": 8140856,
      "downloadURL": "https://github.com/sithewok13-dev/SeriousSamClassic/releases/download/ios-latest/serioussam-ios.ipa"
     }
    ],
-   "version": "build 40",
-   "versionDate": "2026-11-09T17:33:54Z",
-   "size": 8139548,
+   "version": "build 41",
+   "versionDate": "2026-11-17T02:57:13Z",
+   "size": 8140856,
    "downloadURL": "https://github.com/sithewok13-dev/SeriousSamClassic/releases/download/ios-latest/serioussam-ios.ipa",
    "appPermissions": {}
   },
@@ -191,15 +191,15 @@
    "tintColor": "8e3aa8",
    "versions": [
     {
-     "version": "build 40",
-     "date": "2026-11-09T17:33:54Z",
-     "size": 8405050,
+     "version": "build 41",
+     "date": "2026-11-17T02:57:13Z",
+     "size": 8404567,
      "downloadURL": "https://github.com/sithewok13-dev/SeriousSamClassic/releases/download/ios-latest/serioussamse-ios.ipa"
     }
    ],
-   "version": "build 40",
-   "versionDate": "2026-11-09T17:33:54Z",
-   "size": 8405050,
+   "version": "build 41",
+   "versionDate": "2026-11-17T02:57:13Z",
+   "size": 8404567,
    "downloadURL": "https://github.com/sithewok13-dev/SeriousSamClassic/releases/download/ios-latest/serioussamse-ios.ipa",
    "appPermissions": {}
   },
