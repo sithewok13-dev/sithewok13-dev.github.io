@@ -1,0 +1,96 @@
+{
+ "_note": "One landing page per game: tools/make_game_pages.py writes <slug>/index.html from this.",
+ "games": [
+  {
+   "slug": "serious-sam",
+   "repo": "sithewok13-dev/SeriousSamClassic",
+   "title": "Serious Sam: The First Encounter and The Second Encounter for iPhone",
+   "page_title": "Serious Sam on iPhone: The First and Second Encounter for iOS (unofficial)",
+   "description": "Serious Sam: The First Encounter and The Second Encounter on iPhone with touch controls, a weapon wheel, selfies with the horde and Action Freeze. Bring your own game files.",
+   "lead": "Serious Sam: The First Encounter and The Second Encounter on iPhone, as two apps, Sam FE and Sam SE, on Croteam's Serious Engine 1, with touch controls.",
+   "need": "You need your own copy of Serious Sam Classic (Steam or GOG). No game files are included.",
+   "source": "https://raw.githubusercontent.com/sithewok13-dev/SeriousSamClassic/ios/altsource.json",
+   "icon": "https://raw.githubusercontent.com/sithewok13-dev/SeriousSamClassic/ios/SamTFE/serioussam.png",
+   "keywords": [
+    "Serious Sam iPhone",
+    "Serious Sam iOS",
+    "Serious Sam The First Encounter iPhone",
+    "Serious Sam The Second Encounter iOS",
+    "Serious Engine iOS"
+   ],
+   "screenshots": [
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/SeriousSamClassic/ios/docs/ios/screenshots/fe-kleer-horde-minigun.jpg",
+     "alt": "The First Encounter: the minigun firing into a horde of charging Kleer skeletons, Beheaded behind them, between two Egyptian temple gates at sunset"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/SeriousSamClassic/ios/docs/ios/screenshots/se-selfie-horde.jpg",
+     "alt": "A CAMERA selfie in The Second Encounter: Sam with the minigun raised and a crowd of the game's monsters posing behind him in Persepolis"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/SeriousSamClassic/ios/docs/ios/screenshots/fe-selfie-crowd.jpg",
+     "alt": "A CAMERA selfie in The First Encounter: Sam points the minigun at the camera among Kleer skeletons, a Werebull, Beheaded and Biomechs"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/SeriousSamClassic/ios/docs/ios/screenshots/se-kleer-minigun.jpg",
+     "alt": "The Second Encounter: the minigun firing into a line of Kleer skeletons in Persepolis"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/SeriousSamClassic/ios/docs/ios/screenshots/se-action-freeze.jpg",
+     "alt": "Action Freeze: a Kleer skeleton stopped mid-leap while Sam fires in the distance"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/SeriousSamClassic/ios/docs/ios/screenshots/se-biomech-minigun.jpg",
+     "alt": "A Biomech blowing apart under minigun fire, with the game's HUD"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/SeriousSamClassic/ios/docs/ios/screenshots/se-cannon-beheaded.jpg",
+     "alt": "The cannon smashing into a group of Beheaded"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/SeriousSamClassic/ios/docs/ios/screenshots/fe-karnak-temple.jpg",
+     "alt": "The First Encounter: the temple of Karnak in Egypt, with palms and a lion statue"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/SeriousSamClassic/ios/docs/ios/screenshots/fe-karnak-pyramid.jpg",
+     "alt": "The First Encounter: an obelisk, temple walls and a pyramid at Karnak"
+    }
+   ],
+   "shots_note": "From the game running on a computer, with the cheat on; the enemies were brought together for the pictures.",
+   "features": [
+    "**Touch controls made for Serious Sam:** a move stick wherever your left thumb lands, drag anywhere to look, and FIRE, JUMP, USE and CROUCH under your right thumb. LOOK sets how fast dragging turns (0.5x to 3x).",
+    "**A weapon wheel:** slide off NEXT WPN or PREV WPN and every weapon you carry is laid out round your thumb, with its icon and ammo. In single player the game holds still while you pick.",
+    "**CAMERA, with selfies:** tap for a photo, slide for a burst. Hold it for a **selfie**: up to 48 of the nearest enemies pose round Sam, frozen in moves from their own animations. Photos go straight to your Photos app.",
+    "**Action Freeze:** slide CAMERA down and the fight stops mid-explosion; fly the camera round it and take your shot. Slide up for a **cinematic burst**, five photos as the camera sweeps round the action.",
+    "**A cheat for relaxed play,** sithewok: god mode, endless ammo, flying, walking through walls, being caught when you fall into a pit, and a list of every level to jump to.",
+    "**Tilt aiming** (gyro), if you want it: OFF, TOUCH (while a thumb is down) or ALWAYS.",
+    "**60 or 120 frames a second,** drawn through ANGLE on Metal, Apple's modern graphics system.",
+    "**Quick save and quick load** on a short hold, so a stray tap can't undo your progress.",
+    "**Network games:** co-op, scorematch and fragmatch with friends on the same Wi-Fi (SEARCH LAN finds them), with the games' own multiplayer and the same touch controls.",
+    "**A HUD that fits** notched and Dynamic Island screens, the iPhone keyboard for the game's text boxes, and sound even with the phone on silent."
+   ],
+   "sorry": [
+    "This is an unofficial beta, and it has bugs. Thank you for trying it anyway. Back up your saves now and then (the release page says where they are).",
+    "Found a bug? Please [report it here](https://github.com/sithewok13-dev/SeriousSamClassic/issues), not to the upstream SeriousSamClassic project. Say which app, which iPhone, and the build (hold MENU: it's under the tray, for example build 41 · Nov 17)."
+   ],
+   "thanks": [
+    "**[Croteam](https://github.com/Croteam-official/Serious-Engine)**, for making Serious Sam, and for releasing Serious Engine 1's source code to everyone, under the GNU GPL v2, in 2016.",
+    "**[tx00100xt](https://github.com/tx00100xt)**, who maintains **[SeriousSamClassic](https://github.com/tx00100xt/SeriousSamClassic)**, the cross-platform version this is forked from. It keeps both games building on Linux, the BSDs, macOS and more, and added widescreen support for the menus, NETRICSA and the HUD, which every iPhone screen needs.",
+    "The people who first brought the engine beyond Windows, whose work SeriousSamClassic carries on: **[Ryan C. Gordon](https://github.com/icculus)** (the first Linux port), **[ptitSeb](https://github.com/ptitSeb)** (ARM and handheld ports, and **gl4es**, which these apps draw with), **[Daniel Gibson](https://github.com/DanielGibson)**, **[zcaliptium](https://github.com/zcaliptium)**, and every contributor in the [change log](https://github.com/sithewok13-dev/SeriousSamClassic/blob/ios/CHANGELOG.old).",
+    "**[SDL](https://github.com/libsdl-org/SDL)**, **[ANGLE](https://github.com/google/angle)** and **[Xiph.Org](https://xiph.org/)** (Ogg Vorbis, for the music)."
+   ],
+   "thanks_lead": "This port stands on the work of many people. Thank you to:",
+   "buttons": [
+    {
+     "text": "Releases (download the .ipa)",
+     "url": "https://github.com/sithewok13-dev/SeriousSamClassic/releases"
+    },
+    {
+     "text": "Release notes and full guide",
+     "url": "https://github.com/sithewok13-dev/SeriousSamClassic/blob/ios/ios/RELEASE_NOTES.md"
+    }
+   ],
+   "footer": "Based on [Serious Sam Classic](https://github.com/tx00100xt/SeriousSamClassic) and Croteam's [Serious Engine 1](https://github.com/Croteam-official/Serious-Engine). Unofficial fan port, not affiliated with or endorsed by Croteam or Devolver Digital."
+  }
+ ]
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sithewok13-dev.github.io/sitemap.xml

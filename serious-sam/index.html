@@ -1,0 +1,126 @@
+<!doctype html>
+<!-- Made by tools/make_game_pages.py from games.json: edit those, not this file. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Serious Sam on iPhone: The First and Second Encounter for iOS (unofficial)</title>
+<meta name="description" content="Serious Sam: The First Encounter and The Second Encounter on iPhone with touch controls, a weapon wheel, selfies with the horde and Action Freeze. Bring your own game files.">
+<meta name="keywords" content="Serious Sam iPhone, Serious Sam iOS, Serious Sam The First Encounter iPhone, Serious Sam The Second Encounter iOS, Serious Engine iOS">
+<link rel="canonical" href="https://sithewok13-dev.github.io/serious-sam/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sithewok's Game Ports">
+<meta property="og:title" content="Serious Sam: The First Encounter and The Second Encounter for iPhone">
+<meta property="og:description" content="Serious Sam: The First Encounter and The Second Encounter on iPhone with touch controls, a weapon wheel, selfies with the horde and Action Freeze. Bring your own game files.">
+<meta property="og:url" content="https://sithewok13-dev.github.io/serious-sam/">
+<meta property="og:image" content="https://raw.githubusercontent.com/sithewok13-dev/SeriousSamClassic/ios/docs/ios/screenshots/fe-kleer-horde-minigun.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Serious Sam: The First Encounter and The Second Encounter for iPhone">
+<meta name="twitter:description" content="Serious Sam: The First Encounter and The Second Encounter on iPhone with touch controls, a weapon wheel, selfies with the horde and Action Freeze. Bring your own game files.">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/sithewok13-dev/SeriousSamClassic/ios/docs/ios/screenshots/fe-kleer-horde-minigun.jpg">
+<link rel="icon" href="https://raw.githubusercontent.com/sithewok13-dev/SeriousSamClassic/ios/SamTFE/serioussam.png">
+<link rel="apple-touch-icon" href="https://raw.githubusercontent.com/sithewok13-dev/SeriousSamClassic/ios/SamTFE/serioussam.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Serious Sam: The First Encounter and The Second Encounter for iPhone", "operatingSystem": "iOS", "applicationCategory": "GameApplication", "description": "Serious Sam: The First Encounter and The Second Encounter on iPhone with touch controls, a weapon wheel, selfies with the horde and Action Freeze. Bring your own game files.", "url": "https://sithewok13-dev.github.io/serious-sam/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "screenshot": ["https://raw.githubusercontent.com/sithewok13-dev/SeriousSamClassic/ios/docs/ios/screenshots/fe-kleer-horde-minigun.jpg", "https://raw.githubusercontent.com/sithewok13-dev/SeriousSamClassic/ios/docs/ios/screenshots/se-selfie-horde.jpg", "https://raw.githubusercontent.com/sithewok13-dev/SeriousSamClassic/ios/docs/ios/screenshots/fe-selfie-crowd.jpg", "https://raw.githubusercontent.com/sithewok13-dev/SeriousSamClassic/ios/docs/ios/screenshots/se-kleer-minigun.jpg"]}</script>
+<style>
+  :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #5f5f66; --accent: #8e3aa8; --on-accent: #ffffff; --line: #d9d9de; --code: #f2f2f5; --card: #f6f6f8; --note: #fff6dc; --note-line: #e8d38f; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #141416; --fg: #f2f2f5; --muted: #a8a8b0; --accent: #c77ddf; --on-accent: #141416; --line: #34343a; --code: #232327; --card: #1d1d21; --note: #2c2617; --note-line: #5c4d22; }
+  }
+  :root[data-theme="dark"] { --bg: #141416; --fg: #f2f2f5; --muted: #a8a8b0; --accent: #c77ddf; --on-accent: #141416; --line: #34343a; --code: #232327; --card: #1d1d21; --note: #2c2617; --note-line: #5c4d22; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+  nav { font-size: 0.9em; margin-bottom: 12px; }
+  h1 { font-size: 1.6em; line-height: 1.2; margin: 0 0 8px; }
+  h2 { font-size: 1.15em; margin: 28px 0 8px; }
+  .lead { color: var(--muted); margin-top: 0; }
+  a { color: var(--accent); }
+  .hero { width: 100%; height: auto; border-radius: 12px; display: block; margin: 16px 0; }
+  .buttons { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0; }
+  .button { display: inline-block; padding: 12px 18px; border-radius: 12px; background: var(--accent); color: var(--on-accent); text-decoration: none; font-weight: 600; }
+  .button.secondary { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+  code { background: var(--code); border-radius: 6px; padding: 2px 5px; font-size: 0.85em; overflow-wrap: anywhere; }
+  ul { padding-left: 1.2em; }
+  li + li { margin-top: 4px; }
+  li, p { overflow-wrap: break-word; }
+  .note { background: var(--note); border: 1px solid var(--note-line); border-radius: 12px; padding: 12px 14px; margin: 20px 0; }
+  .note p { margin: 0; }
+  .note p + p { margin-top: 6px; }
+  .shots { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; margin: 16px 0; }
+  @media (min-width: 700px) { .shots { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .shots figure { margin: 0; }
+  .shots img { width: 100%; height: auto; border-radius: 8px; display: block; }
+  .shots figcaption { color: var(--muted); font-size: 0.8em; margin-top: 3px; }
+  .small { color: var(--muted); font-size: 0.85em; }
+  footer { margin-top: 36px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.85em; }
+  footer p { margin: 0 0 8px; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="https://sithewok13-dev.github.io/">Sithewok's Game Ports</a></nav>
+  <h1>Serious Sam: The First Encounter and The Second Encounter for iPhone</h1>
+  <p class="lead">Serious Sam: The First Encounter and The Second Encounter on iPhone, as two apps, Sam FE and Sam SE, on Croteam&#x27;s Serious Engine 1, with touch controls.</p>
+  <img class="hero" src="https://raw.githubusercontent.com/sithewok13-dev/SeriousSamClassic/ios/docs/ios/screenshots/fe-kleer-horde-minigun.jpg" alt="The First Encounter: the minigun firing into a horde of charging Kleer skeletons, Beheaded behind them, between two Egyptian temple gates at sunset">
+  <p><b>You need your own copy of Serious Sam Classic (Steam or GOG). No game files are included.</b></p>
+  <h2>Install</h2>
+  <p>Easiest, in SideStore or AltStore (Classic): add the source, then install the app from it. Updates come the same way.</p>
+  <div class="buttons">
+    <a class="button" id="add-sidestore-button" href="sidestore://source?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsithewok13-dev%2FSeriousSamClassic%2Fios%2Faltsource.json">Add to SideStore</a>
+    <a class="button" id="add-altstore-button" href="altstore://source?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsithewok13-dev%2FSeriousSamClassic%2Fios%2Faltsource.json">Add to AltStore</a>
+  </div>
+  <p class="small">These buttons only work once SideStore or AltStore is on your phone. If a button does nothing, add the source by hand (in the app's Sources, tap +) with this address:<br><code>https://raw.githubusercontent.com/sithewok13-dev/SeriousSamClassic/ios/altsource.json</code></p>
+  <p>Or download the .ipa from the releases page and install it with any sideloading tool (Feather, Sideloadly, a signing service):</p>
+  <div class="buttons">
+    <a class="button secondary" href="https://github.com/sithewok13-dev/SeriousSamClassic/releases">Releases (download the .ipa)</a>
+    <a class="button secondary" href="https://github.com/sithewok13-dev/SeriousSamClassic/blob/ios/ios/RELEASE_NOTES.md">Release notes and full guide</a>
+  </div>
+  <h2>Cool features</h2>
+  <ul>
+    <li><b>Touch controls made for Serious Sam:</b> a move stick wherever your left thumb lands, drag anywhere to look, and FIRE, JUMP, USE and CROUCH under your right thumb. LOOK sets how fast dragging turns (0.5x to 3x).</li>
+    <li><b>A weapon wheel:</b> slide off NEXT WPN or PREV WPN and every weapon you carry is laid out round your thumb, with its icon and ammo. In single player the game holds still while you pick.</li>
+    <li><b>CAMERA, with selfies:</b> tap for a photo, slide for a burst. Hold it for a <b>selfie</b>: up to 48 of the nearest enemies pose round Sam, frozen in moves from their own animations. Photos go straight to your Photos app.</li>
+    <li><b>Action Freeze:</b> slide CAMERA down and the fight stops mid-explosion; fly the camera round it and take your shot. Slide up for a <b>cinematic burst</b>, five photos as the camera sweeps round the action.</li>
+    <li><b>A cheat for relaxed play,</b> sithewok: god mode, endless ammo, flying, walking through walls, being caught when you fall into a pit, and a list of every level to jump to.</li>
+    <li><b>Tilt aiming</b> (gyro), if you want it: OFF, TOUCH (while a thumb is down) or ALWAYS.</li>
+    <li><b>60 or 120 frames a second,</b> drawn through ANGLE on Metal, Apple&#x27;s modern graphics system.</li>
+    <li><b>Quick save and quick load</b> on a short hold, so a stray tap can&#x27;t undo your progress.</li>
+    <li><b>Network games:</b> co-op, scorematch and fragmatch with friends on the same Wi-Fi (SEARCH LAN finds them), with the games&#x27; own multiplayer and the same touch controls.</li>
+    <li><b>A HUD that fits</b> notched and Dynamic Island screens, the iPhone keyboard for the game&#x27;s text boxes, and sound even with the phone on silent.</li>
+  </ul>
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/SeriousSamClassic/ios/docs/ios/screenshots/se-selfie-horde.jpg" alt="A CAMERA selfie in The Second Encounter: Sam with the minigun raised and a crowd of the game&#x27;s monsters posing behind him in Persepolis" loading="lazy"><figcaption>A CAMERA selfie in The Second Encounter: Sam with the minigun raised and a crowd of the game&#x27;s monsters posing behind him in Persepolis</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/SeriousSamClassic/ios/docs/ios/screenshots/fe-selfie-crowd.jpg" alt="A CAMERA selfie in The First Encounter: Sam points the minigun at the camera among Kleer skeletons, a Werebull, Beheaded and Biomechs" loading="lazy"><figcaption>A CAMERA selfie in The First Encounter: Sam points the minigun at the camera among Kleer skeletons, a Werebull, Beheaded and Biomechs</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/SeriousSamClassic/ios/docs/ios/screenshots/se-kleer-minigun.jpg" alt="The Second Encounter: the minigun firing into a line of Kleer skeletons in Persepolis" loading="lazy"><figcaption>The Second Encounter: the minigun firing into a line of Kleer skeletons in Persepolis</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/SeriousSamClassic/ios/docs/ios/screenshots/se-action-freeze.jpg" alt="Action Freeze: a Kleer skeleton stopped mid-leap while Sam fires in the distance" loading="lazy"><figcaption>Action Freeze: a Kleer skeleton stopped mid-leap while Sam fires in the distance</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/SeriousSamClassic/ios/docs/ios/screenshots/se-biomech-minigun.jpg" alt="A Biomech blowing apart under minigun fire, with the game&#x27;s HUD" loading="lazy"><figcaption>A Biomech blowing apart under minigun fire, with the game&#x27;s HUD</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/SeriousSamClassic/ios/docs/ios/screenshots/se-cannon-beheaded.jpg" alt="The cannon smashing into a group of Beheaded" loading="lazy"><figcaption>The cannon smashing into a group of Beheaded</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/SeriousSamClassic/ios/docs/ios/screenshots/fe-karnak-temple.jpg" alt="The First Encounter: the temple of Karnak in Egypt, with palms and a lion statue" loading="lazy"><figcaption>The First Encounter: the temple of Karnak in Egypt, with palms and a lion statue</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/SeriousSamClassic/ios/docs/ios/screenshots/fe-karnak-pyramid.jpg" alt="The First Encounter: an obelisk, temple walls and a pyramid at Karnak" loading="lazy"><figcaption>The First Encounter: an obelisk, temple walls and a pyramid at Karnak</figcaption></figure>
+  </div>
+  <p class="small">From the game running on a computer, with the cheat on; the enemies were brought together for the pictures.</p>
+  <div class="note"><p>This is an unofficial beta, and it has bugs. Thank you for trying it anyway. Back up your saves now and then (the release page says where they are).</p><p>Found a bug? Please <a href="https://github.com/sithewok13-dev/SeriousSamClassic/issues">report it here</a>, not to the upstream SeriousSamClassic project. Say which app, which iPhone, and the build (hold MENU: it&#x27;s under the tray, for example build 41 · Nov 17).</p></div>
+  <h2>Thank you</h2>
+  <p>This port stands on the work of many people. Thank you to:</p>
+  <ul>
+    <li><b><a href="https://github.com/Croteam-official/Serious-Engine">Croteam</a></b>, for making Serious Sam, and for releasing Serious Engine 1&#x27;s source code to everyone, under the GNU GPL v2, in 2016.</li>
+    <li><b><a href="https://github.com/tx00100xt">tx00100xt</a></b>, who maintains <b><a href="https://github.com/tx00100xt/SeriousSamClassic">SeriousSamClassic</a></b>, the cross-platform version this is forked from. It keeps both games building on Linux, the BSDs, macOS and more, and added widescreen support for the menus, NETRICSA and the HUD, which every iPhone screen needs.</li>
+    <li>The people who first brought the engine beyond Windows, whose work SeriousSamClassic carries on: <b><a href="https://github.com/icculus">Ryan C. Gordon</a></b> (the first Linux port), <b><a href="https://github.com/ptitSeb">ptitSeb</a></b> (ARM and handheld ports, and <b>gl4es</b>, which these apps draw with), <b><a href="https://github.com/DanielGibson">Daniel Gibson</a></b>, <b><a href="https://github.com/zcaliptium">zcaliptium</a></b>, and every contributor in the <a href="https://github.com/sithewok13-dev/SeriousSamClassic/blob/ios/CHANGELOG.old">change log</a>.</li>
+    <li><b><a href="https://github.com/libsdl-org/SDL">SDL</a></b>, <b><a href="https://github.com/google/angle">ANGLE</a></b> and <b><a href="https://xiph.org/">Xiph.Org</a></b> (Ogg Vorbis, for the music).</li>
+  </ul>
+  <h2>More</h2>
+  <ul>
+    <li><a href="https://github.com/sithewok13-dev/SeriousSamClassic">Source code on GitHub</a></li>
+    <li><a href="https://github.com/sithewok13-dev/SeriousSamClassic/issues">Report a bug</a> (here, not to the upstream project)</li>
+  </ul>
+  <footer><p>Based on <a href="https://github.com/tx00100xt/SeriousSamClassic">Serious Sam Classic</a> and Croteam&#x27;s <a href="https://github.com/Croteam-official/Serious-Engine">Serious Engine 1</a>. Unofficial fan port, not affiliated with or endorsed by Croteam or Devolver Digital.</p></footer>
+</main>
+<script>
+  // #add-sidestore / #add-altstore: open that app's "add source" screen at once
+  (function () {
+    var id = { "#add-sidestore": "add-sidestore-button", "#add-altstore": "add-altstore-button" }[location.hash];
+    if (id) location.href = document.getElementById(id).href;
+  })();
+</script>
+</body>
+</html>
