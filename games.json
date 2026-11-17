@@ -179,6 +179,89 @@
     }
    ],
    "footer": "Based on [Serious Sam Classic](https://github.com/tx00100xt/SeriousSamClassic) and Croteam's [Serious Engine 1](https://github.com/Croteam-official/Serious-Engine). Unofficial fan port, not affiliated with or endorsed by Croteam or Devolver Digital."
+  },
+  {
+   "slug": "doom3",
+   "repo": "sithewok13-dev/doom3-ios",
+   "title": "DOOM 3 for iPhone and iPad",
+   "page_title": "DOOM 3 on iPhone and iPad: dhewm3 for iOS (unofficial)",
+   "description": "Play the original DOOM 3 and Resurrection of Evil on iPhone and iPad with touch controls: an unofficial dhewm3 port. Bring your own game files.",
+   "lead": "The original 2004 DOOM 3 and Resurrection of Evil on iPhone and iPad, on dhewm3, with touch controls.",
+   "need": "You need your own copy of DOOM 3 (Steam or GOG). No game files are included.",
+   "source": "https://raw.githubusercontent.com/sithewok13-dev/doom3-ios/ios/altsource.json",
+   "icon": "https://raw.githubusercontent.com/sithewok13-dev/doom3-ios/ios/ios/Assets.xcassets/AppIcon.appiconset/Icon-1024.png",
+   "keywords": [
+    "DOOM 3 iPhone",
+    "DOOM 3 iOS",
+    "dhewm3 iOS",
+    "Resurrection of Evil iPhone"
+   ],
+   "screenshots": [
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/doom3-ios/ios/docs/ios/screenshots/cyberdemon-bfg.jpg",
+     "alt": "In Hell, a BFG blast flies at the Cyberdemon as one of its rockets comes in, over a lake of lava"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/doom3-ios/ios/docs/ios/screenshots/imp-flashlight.jpg",
+     "alt": "An imp lunges out of the dark in a UAC corridor, lit by the flashlight"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/doom3-ios/ios/docs/ios/screenshots/hell-plasma.jpg",
+     "alt": "Plasma fire at a Hell Knight in Hell, over a glowing pentagram and lava, under a giant skull"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/doom3-ios/ios/docs/ios/screenshots/revenant-shotgun.jpg",
+     "alt": "A Revenant lit up by a shotgun blast in the Delta Labs elevator"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/doom3-ios/ios/docs/ios/screenshots/imp-fireball.jpg",
+     "alt": "An imp's fireball comes down a corridor at the flashlight"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/doom3-ios/ios/docs/ios/screenshots/bfg-pinky.jpg",
+     "alt": "A BFG shot leaves the gun as a Pinky demon charges into Mars City's elevator"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/doom3-ios/ios/docs/ios/screenshots/pinky-chainsaw.jpg",
+     "alt": "A Pinky demon walks up to the chainsaw"
+    }
+   ],
+   "shots_note": "All from the game running on a computer, with the game's own files, not from an iPhone.",
+   "features": [
+    "**Touch controls made for DOOM 3:** a move stick wherever your left thumb lands, with a run marker above it; drag anywhere else to look; FIRE with JUMP, CROUCH, RELOAD and the flashlight round it.",
+    "**A weapon wheel:** slide off NEXT WPN and every weapon is there, with its ammo.",
+    "**Tilt aiming (gyro)**, a look speed to suit your thumb, SAVE and LOAD that open the game's own pages with a tap and quick save or load with a short hold, and an OPACITY slider for the buttons.",
+    "**CAMERA:** photos of the game without the HUD, selfies, bursts, **Action Freeze** (stop the world and fly a camera round it) and a **cinematic burst** that sweeps round you. They go to your Photos app.",
+    "**The PDA by touch:** tap to click, drag to scroll the emails and logs.",
+    "**Both games in one app,** with a main menu laid out for the phone.",
+    "**Cheat mode** for a relaxed run: god mode, every weapon with endless ammo, a cheat menu (Noclip, Notarget, Slow motion), and a list of every level to jump to.",
+    "**Multiplayer and co-op** (from [LibreCoop](https://github.com/Stradex/librecoop)), on the same Wi-Fi or by address. Not tested yet: see below.",
+    "**Sound with the phone on silent,** as a game should be."
+   ],
+   "sorry": [
+    "This is an unofficial beta, made by a fan and played by very few people so far. Expect bugs, and save often.",
+    "Found a bug? [Report it here](https://github.com/sithewok13-dev/doom3-ios/issues), not to dhewm3 or LibreCoop. Every report helps."
+   ],
+   "thanks": [
+    "**id Software**, who made DOOM 3 and released its source code under the GPL in 2011 ([id-Software/DOOM-3](https://github.com/id-Software/DOOM-3)).",
+    "**Daniel Gibson and the dhewm3 contributors**, who have kept that code running on today's computers for over a decade ([dhewm3](https://github.com/dhewm/dhewm3)). This app is dhewm3 1.5.5 underneath.",
+    "**Tom Kidd** ([tomkidd](https://github.com/tomkidd)), whose [DOOM3-iOS](https://github.com/tomkidd/DOOM3-iOS) this repository was forked from, with contributions from Dave Nicolson and Yoshi Sugawara. Its OpenGL ES renderer still draws the game here.",
+    "**Gabriel Cuvillier**, for [d3wasm](https://github.com/gabrielcuvillier/d3wasm), DOOM 3 in a web browser, whose OpenGL ES work that renderer shares.",
+    "**Stradex**, for [LibreCoop](https://github.com/Stradex/librecoop), the co-op and survival modes.",
+    "The people behind [SDL](https://www.libsdl.org), [OpenAL Soft](https://openal-soft.org) and [ANGLE](https://chromium.googlesource.com/angle/angle)."
+   ],
+   "thanks_lead": "This port stands on the work of many people. Thank you to:",
+   "buttons": [
+    {
+     "text": "Releases (download the .ipa)",
+     "url": "https://github.com/sithewok13-dev/doom3-ios/releases"
+    },
+    {
+     "text": "Release notes and full guide",
+     "url": "https://github.com/sithewok13-dev/doom3-ios/blob/ios/docs/ios/RELEASE_NOTES.md"
+    }
+   ],
+   "footer": "Based on [dhewm3](https://github.com/dhewm/dhewm3) and Tom Kidd's [DOOM3-iOS](https://github.com/tomkidd/DOOM3-iOS). Unofficial fan port, not affiliated with or endorsed by id Software or Bethesda. DOOM is a trademark of id Software."
   }
  ]
 }
