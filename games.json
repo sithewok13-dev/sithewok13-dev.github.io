@@ -262,6 +262,92 @@
     }
    ],
    "footer": "Based on [dhewm3](https://github.com/dhewm/dhewm3) and Tom Kidd's [DOOM3-iOS](https://github.com/tomkidd/DOOM3-iOS). Unofficial fan port, not affiliated with or endorsed by id Software or Bethesda. DOOM is a trademark of id Software."
+  },
+  {
+   "slug": "wolf3d",
+   "repo": "sithewok13-dev/ECWolf",
+   "title": "Wolfenstein 3D and Spear of Destiny for iPhone and iPad",
+   "page_title": "Wolfenstein 3D on iPhone and iPad: ECWolf for iOS (unofficial)",
+   "description": "Wolfenstein 3D and Spear of Destiny on iPhone and iPad with touch controls, selfies and Action Freeze: an unofficial ECWolf port. Bring your own game files.",
+   "lead": "Wolfenstein 3D and Spear of Destiny on iPhone and iPad: an unofficial port of ECWolf, with touch controls and a camera for selfies with the guards.",
+   "need": "You need your own copy of Wolfenstein 3D or Spear of Destiny (Steam or GOG). No game files are included.",
+   "source": "https://raw.githubusercontent.com/sithewok13-dev/ECWolf/ios/packaging/ios/altstore-source.json",
+   "icon": "https://raw.githubusercontent.com/sithewok13-dev/ECWolf/ios/src/macosx/icon.iconset/icon_512x512@2x.png",
+   "keywords": [
+    "Wolfenstein 3D iPhone",
+    "Wolf3D iOS",
+    "Spear of Destiny iPhone",
+    "ECWolf iOS"
+   ],
+   "screenshots": [
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/ECWolf/ios/docs/ios/screenshots/mecha-hitler.jpg",
+     "alt": "Mecha Hitler fires both chain guns at close range while BJ fires back with his own chain gun"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/ECWolf/ios/docs/ios/screenshots/e1m1-cells.jpg",
+     "alt": "Floor 1: a guard shoots at BJ in the blue prison corridor, with the original status bar"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/ECWolf/ios/docs/ios/screenshots/e1m1-guard.jpg",
+     "alt": "Floor 1: a guard goes down under BJ's machine gun"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/ECWolf/ios/docs/ios/screenshots/hans-grosse.jpg",
+     "alt": "Hans Grosse, the first boss, fires both chain guns down a corridor"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/ECWolf/ios/docs/ios/screenshots/selfie.jpg",
+     "alt": "A selfie: BJ grins in the corner while six guards and a dog pose in the prison corridor"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/ECWolf/ios/docs/ios/screenshots/action-freeze.jpg",
+     "alt": "Action Freeze: time stopped while Mecha Hitler fires both chain guns"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/ECWolf/ios/docs/ios/screenshots/spear-death-knight.jpg",
+     "alt": "Spear of Destiny: the Death Knight up close"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/ECWolf/ios/docs/ios/screenshots/spear-trans-grosse.jpg",
+     "alt": "Spear of Destiny: Trans Grosse comes down the tunnel"
+    }
+   ],
+   "shots_note": "From the game running on a computer, with the game's own files; some enemies were moved into place for the pictures.",
+   "features": [
+    "**Widescreen at a steady 60 frames a second**, in crisp, sharp pixels.",
+    "**Touch controls made for the game.** The move stick appears wherever your left thumb lands; slide up onto the little ^^ to run. Drag anywhere else to turn. FIRE, USE, MAP (the automap) and NEXT WPN are where your thumbs are.",
+    "**A weapon wheel.** Slide NEXT WPN and pick knife, pistol, machine gun or chain gun from a wheel; the game waits while it's open.",
+    "**Quick save and quick load** with a short hold on SAVE or LOAD.",
+    "**Six HUD looks.** A modern one with BJ's face, health, lives, ammo and keys in two small pills, or the original status bar (whole, or split to the corners), in three sizes, with an opacity slider.",
+    "**A camera.** Take photos of the action, bursts, and selfies: BJ grins in the corner while the guards and dogs around you pose for the group shot. **Action Freeze** stops time so you can fly the camera around the moment. Pictures go to your Photos.",
+    "**The sithewok cheat.** Type it, or switch it on from the menu: a golden Ark of the Covenant button opens, and you get god mode, every weapon, every key and full ammo. Hold USE to walk through walls (noclip).",
+    "**Jump to any level** from a list, in Wolfenstein 3D or Spear of Destiny.",
+    "**All your games in one app.** Have both games' files? Switch between them from the menu."
+   ],
+   "sorry": [
+    "This is an unofficial beta, made by a fan, so expect bugs. Sorry about them! Back up your saves (Files > On My iPhone > Wolf3D > ECWolf) before you update or reinstall.",
+    "Found a bug? Please [report it here](https://github.com/sithewok13-dev/ECWolf/issues), not to upstream ECWolf."
+   ],
+   "thanks": [
+    "**Braden \"Blzut3\" Obrzut** and the ECWolf contributors, for [ECWolf](https://maniacsvault.net/ecwolf/) ([source](https://github.com/ECWolfEngine/ECWolf)): years of careful work that keep Wolfenstein 3D playing well on today's machines, with widescreen, modern controls and a great automap.",
+    "**Moritz \"Ripper\" Kroll**, for Wolf4SDL, the SDL port of the original code that ECWolf grew from.",
+    "**id Software** (John Carmack, John Romero, Adrian Carmack, Tom Hall and the team), for making Wolfenstein 3D and Spear of Destiny, and for releasing the source code in 1995.",
+    "**Randy Heit, Christoph Oelckers and Teemu Piippo**, whose ZDoom code ECWolf builds on.",
+    "**The SDL team** (Sam Lantinga and contributors), for SDL, SDL_mixer and SDL_net, and the **DOSBox** and **MAME** teams, for the OPL sound emulators that play the game's music."
+   ],
+   "thanks_lead": "This port stands on the work of many people. Thank you to:",
+   "buttons": [
+    {
+     "text": "Releases (download the .ipa)",
+     "url": "https://github.com/sithewok13-dev/ECWolf/releases"
+    },
+    {
+     "text": "Release notes and full guide",
+     "url": "https://github.com/sithewok13-dev/ECWolf/blob/ios/docs/ios/RELEASE_NOTES.md"
+    }
+   ],
+   "footer": "Based on [ECWolf](https://bitbucket.org/ecwolf/ecwolf). Unofficial fan port, not affiliated with or endorsed by id Software, Bethesda or the ECWolf developers. Wolfenstein is a trademark of ZeniMax."
   }
  ]
 }
