@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T13:07:04Z",
+ "updated": "2026-11-17T21:45:16Z",
  "apps": [
   {
    "id": "raze",
@@ -153,10 +153,10 @@
    "bundle": "io.github.sithewok13.doom",
    "private": false,
    "status": "ok",
-   "build": 39,
+   "build": 46,
    "date": "2026-11-17",
-   "built": "2026-11-17T06:34:59Z",
-   "size": 39427178,
+   "built": "2026-11-17T19:42:35Z",
+   "size": 39432799,
    "tag": "ios-latest",
    "download": "https://github.com/sithewok13-dev/UZDoom/releases/download/ios-latest/DOOM.ipa",
    "release": "https://github.com/sithewok13-dev/UZDoom/releases/tag/ios-latest"
@@ -201,10 +201,10 @@
    "bundle": "com.sithewok.doom3",
    "private": false,
    "status": "ok",
-   "build": 42,
+   "build": 44,
    "date": "2026-11-17",
-   "built": "2026-11-17T04:54:26Z",
-   "size": 10572714,
+   "built": "2026-11-17T19:03:37Z",
+   "size": 10575751,
    "tag": "ios-latest",
    "download": "https://github.com/sithewok13-dev/doom3-ios/releases/download/ios-latest/DOOM3-iOS-unsigned.ipa",
    "release": "https://github.com/sithewok13-dev/doom3-ios/releases/tag/ios-latest"
