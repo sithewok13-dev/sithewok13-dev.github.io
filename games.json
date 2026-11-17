@@ -2,6 +2,94 @@
  "_note": "One landing page per game: tools/make_game_pages.py writes <slug>/index.html from this.",
  "games": [
   {
+   "slug": "raze",
+   "repo": "sithewok13-dev/Raze-iOS-",
+   "title": "Duke Nukem 3D, Blood, Shadow Warrior, Redneck Rampage and PowerSlave for iPhone",
+   "page_title": "Duke Nukem 3D, Blood, Shadow Warrior on iPhone: Raze for iOS (unofficial)",
+   "description": "Duke Nukem 3D, Blood, Shadow Warrior, Redneck Rampage and PowerSlave on iPhone and iPad with touch controls: an unofficial Raze port. Bring your own game files.",
+   "lead": "Five Build engine classics in one app: Duke Nukem 3D, Blood, Shadow Warrior, Redneck Rampage and PowerSlave, on iPhone and iPad, with touch controls.",
+   "need": "You need your own copies of the games (Steam or GOG). No game files are included.",
+   "source": "https://raw.githubusercontent.com/sithewok13-dev/Raze-iOS-/ios/ios/altstore-source.json",
+   "icon": "https://raw.githubusercontent.com/sithewok13-dev/Raze-iOS-/ios/docs/ios/icon-1024.png",
+   "keywords": [
+    "Duke Nukem 3D iPhone",
+    "Blood iOS",
+    "Shadow Warrior iPhone",
+    "Redneck Rampage iOS",
+    "PowerSlave Exhumed iPhone",
+    "Raze iOS",
+    "Build engine iPhone"
+   ],
+   "screenshots": [
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/Raze-iOS-/ios/docs/ios/screenshots/duke-classic-hud.jpg",
+     "alt": "Duke Nukem 3D, Hollywood Holocaust: an Octabrain, Assault Troopers and a Pig Cop on the rooftop, with the shrinker and the game's own status bar split into the two corners"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/Raze-iOS-/ios/docs/ios/screenshots/duke-pipebomb.jpg",
+     "alt": "Duke Nukem 3D: a pipe bomb in hand as a Pig Cop, an Assault Trooper and an Octabrain close in, with the iOS HUD panels"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/Raze-iOS-/ios/docs/ios/screenshots/blood-tommygun.jpg",
+     "alt": "Blood: the tommy gun fires at a cultist, shells flying over a coffin"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/Raze-iOS-/ios/docs/ios/screenshots/sw-katana.jpg",
+     "alt": "Shadow Warrior: Lo Wang draws his katana in the Dojo of Death"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/Raze-iOS-/ios/docs/ios/screenshots/sw-uzis.jpg",
+     "alt": "Shadow Warrior: two Uzis against a ninja up close"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/Raze-iOS-/ios/docs/ios/screenshots/redneck-shotgun.jpg",
+     "alt": "Redneck Rampage: the shotgun on a dirt road under a red sky, a chicken and three locals ahead"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/Raze-iOS-/ios/docs/ios/screenshots/powerslave-mummy.jpg",
+     "alt": "PowerSlave: a mummy in a sunlit temple courtyard, flamethrower in hand"
+    }
+   ],
+   "shots_note": "All from the game running on a computer, with the game's own files, not from an iPhone.",
+   "features": [
+    "**Five games, one app.** A card for each game you copied in; hold a card for its add-ons (Duke It Out in D.C., Nuclear Winter, Cryptic Passage, Twin Dragon, Rides Again and more).",
+    "**Touch controls made for these games.** A stick under your left thumb, drag to look, FIRE with JUMP, USE and CROUCH round it, KICK in Duke and ALT FIRE in Blood.",
+    "**Weapon wheel.** Slide from NEXT WPN or PREV WPN and pick a weapon by its own picture, with its ammo.",
+    "**A button for every item you carry,** with the item's own picture: Duke's jetpack and HoloDuke, Blood's crystal ball, Lo Wang's smoke bombs. Duke's jetpack flies where you look.",
+    "**Six HUD looks,** among them the game's own status bar split into the two bottom corners.",
+    "**60 or 120 frames a second,** drawn with Vulkan on Metal. Sharp or smooth pixels, and smoother textures if you like.",
+    "**CAMERA:** photos, bursts, selfies with the enemies posing, Action Freeze and a cinematic burst, straight to your Photos.",
+    "**The cheat** (sithewok): god mode, every weapon, full ammo, walk through walls, fly in Shadow Warrior. **LEVEL** jumps to any level.",
+    "**Tilt aiming,** quick save and quick load on a short hold, game controllers, and LAN multiplayer on Wi-Fi (see below)."
+   ],
+   "sorry": [
+    "This is an unofficial beta, so please expect bugs, and back up your saves. **Multiplayer especially:** LAN games have only been tried between copies of the game on one computer, never between two real iPhones, so they may not connect or may fall out of step. Sorry; it's being worked on.",
+    "Found a bug? Please [report it here](https://github.com/sithewok13-dev/Raze-iOS-/issues), not to upstream Raze."
+   ],
+   "thanks": [
+    "**[Raze](https://github.com/ZDoom/Raze)** by Christoph Oelckers and Mitchell Richters, with the [ZDoom and GZDoom](https://zdoom.org/) teams and contributors.",
+    "**Ken Silverman**, for the [Build engine](http://www.advsys.net/ken).",
+    "**3D Realms**, who released the Duke Nukem 3D and Shadow Warrior source code.",
+    "**Jonathon Fowler** (JonoF) for JFDuke3D, and the **[EDuke32](https://eduke32.com/)** team: Richard Gobeille (TerminX), Evan Ramos (Hendricks266), pogokeen, Plagman and Helixhorned.",
+    "**[NBlood](https://github.com/nukeykt/NBlood)** by Nuke.YKT, NoOne and sirlemonhead (Blood), and Nuke.YKT's reconstructed Redneck Rampage source.",
+    "**VoidSW** and SWP (Shadow Warrior), **PCExhumed** by sirlemonhead, Nuke.YKT and NY00123 (PowerSlave), and BuildGDX by M210.",
+    "The games' makers: 3D Realms, Monolith Productions, Xatrix Entertainment and Lobotomy Software.",
+    "[SDL](https://www.libsdl.org/), [OpenAL Soft](https://openal-soft.org/), [ZMusic](https://github.com/ZDoom/ZMusic), [libvpx](https://github.com/webmproject/libvpx) and [MoltenVK](https://github.com/KhronosGroup/MoltenVK)."
+   ],
+   "thanks_lead": "This port stands on the work of many people. Thank you to:",
+   "buttons": [
+    {
+     "text": "Releases (download the .ipa)",
+     "url": "https://github.com/sithewok13-dev/Raze-iOS-/releases"
+    },
+    {
+     "text": "Release notes and full guide",
+     "url": "https://github.com/sithewok13-dev/Raze-iOS-/blob/ios/ios/RELEASE_NOTES.md"
+    }
+   ],
+   "footer": "Based on [Raze](https://github.com/ZDoom/Raze). Unofficial fan port, not affiliated with or endorsed by Gearbox, 3D Realms, Atari, Nightdive Studios, Interplay, Lobotomy or the Raze team. All trademarks belong to their owners."
+  },
+  {
    "slug": "serious-sam",
    "repo": "sithewok13-dev/SeriousSamClassic",
    "title": "Serious Sam: The First Encounter and The Second Encounter for iPhone",

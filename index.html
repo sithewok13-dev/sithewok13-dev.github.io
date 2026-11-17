@@ -12,7 +12,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sithewok's Game Ports</title>
-<meta name="description" content="Unofficial fan ports of classic PC games for iPhone and iPad, with touch controls: Jedi Knight, Mysteries of the Sith, Serious Sam, DOOM 3 and Half-Life. Bring your own game files.">
+<meta name="description" content="Unofficial fan ports of classic games for iPhone and iPad, with touch controls: Jedi Knight, Serious Sam, Duke Nukem 3D, Blood, Shadow Warrior, Redneck Rampage, PowerSlave, DOOM 3 and Half-Life. Bring your own game files.">
 <link rel="canonical" href="https://sithewok13-dev.github.io/">
 <style>
   :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #5f5f66; --accent: #8e3aa8; --on-accent: #ffffff; --line: #d9d9de; --card: #f6f6f8; --note: #fff6dc; --note-line: #e8d38f; --tag: #e9e9ee; }
@@ -29,6 +29,8 @@
   .note { background: var(--note); border: 1px solid var(--note-line); border-radius: 12px; padding: 12px 14px; margin: 0 0 24px; }
   .note p { margin: 0; }
   .note p + p { margin-top: 6px; }
+  .thumb { width: 100%; height: auto; aspect-ratio: 16 / 7.4; object-fit: cover; border-radius: 10px; display: block; margin: 0 0 12px; }
+  a.title { color: inherit; text-decoration: none; }
   .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px 16px; margin: 0 0 16px; }
   .apps { color: var(--muted); margin: 0 0 12px; font-size: 0.95em; }
   .release { margin: 0 0 4px; }
@@ -49,7 +51,7 @@
 <body>
 <main>
   <h1>Sithewok's Game Ports</h1>
-  <p class="lead">Unofficial fan ports of classic PC games, with touch controls, for iPhone and iPad.</p>
+  <p class="lead">Unofficial fan ports of classic games, with touch controls, for iPhone and iPad.</p>
 
   <div class="note">
     <p><b>Made for iPhone and touchscreens first.</b> These ports are mainly for iOS, played with the on-screen touch controls, and that's where they're tested.</p>
@@ -61,7 +63,7 @@
 
   <footer>
     <p><b>Bring your own game.</b> No game files are included or shared here: each app needs your own copy of the game, and each guide says how to copy it in.</p>
-    <p>Fan projects, not affiliated with or endorsed by Lucasfilm, Disney, Croteam, Devolver Digital, id Software, Bethesda or Valve. All trademarks belong to their owners.</p>
+    <p>Fan projects, not affiliated with or endorsed by Lucasfilm, Disney, Croteam, Devolver Digital, id Software, Bethesda, Valve, Gearbox, 3D Realms, Atari, Nightdive Studios, Running With Scissors, Konami, Rare, Microsoft or Nintendo. All trademarks belong to their owners.</p>
     <p>Each game's newest release is read from GitHub when this page opens.</p>
   </footer>
 </main>
@@ -70,31 +72,44 @@
 // The games on this page, in order. To add one, add an entry here.
 const GAMES = [
   {
-    repo: "sithewok13-dev/OpenJKDF2-iOS",
-    title: "Star Wars Jedi Knight: Dark Forces II and Mysteries of the Sith",
-    apps: "Apps: OpenJKDF2 and OpenMoTS, built on OpenJKDF2",
-    guide: "https://github.com/sithewok13-dev/OpenJKDF2-iOS/blob/HEAD/docs/ios/README.md",
-    sidestore: "https://sithewok13-dev.github.io/OpenJKDF2-iOS/",
-    other: "Android: an experiment, not released, and not yet tried on a real Android device."
+    "repo": "sithewok13-dev/OpenJKDF2-iOS",
+    "title": "Star Wars Jedi Knight: Dark Forces II and Mysteries of the Sith",
+    "apps": "Apps: OpenJKDF2 and OpenMoTS, built on OpenJKDF2",
+    "guide": "https://github.com/sithewok13-dev/OpenJKDF2-iOS/blob/HEAD/docs/ios/README.md",
+    "sidestore": "https://sithewok13-dev.github.io/OpenJKDF2-iOS/",
+    "image": "https://raw.githubusercontent.com/sithewok13-dev/OpenJKDF2-iOS/HEAD/docs/ios/screenshots/jerec-cross-fold.jpg",
+    "other": "Android: an experiment, not released, and not yet tried on a real Android device."
   },
   {
-    repo: "sithewok13-dev/SeriousSamClassic",
-    title: "Serious Sam: The First Encounter and The Second Encounter",
-    apps: "Apps: Sam FE and Sam SE, built on Croteam's Serious Engine 1",
-    guide: "https://github.com/sithewok13-dev/SeriousSamClassic/blob/HEAD/ios/RELEASE_NOTES.md",
-    other: "Android: planned, not available yet."
+    "repo": "sithewok13-dev/SeriousSamClassic",
+    "title": "Serious Sam: The First Encounter and The Second Encounter",
+    "apps": "Apps: Sam FE and Sam SE, built on Croteam's Serious Engine 1",
+    "other": "Android: planned, not available yet.",
+    "page": "https://sithewok13-dev.github.io/serious-sam/",
+    "image": "https://raw.githubusercontent.com/sithewok13-dev/SeriousSamClassic/ios/docs/ios/screenshots/fe-kleer-horde-minigun.jpg",
+    "guide": "https://github.com/sithewok13-dev/SeriousSamClassic/blob/ios/ios/RELEASE_NOTES.md",
+    "sidestore": "https://sithewok13-dev.github.io/serious-sam/#add-sidestore"
   },
   {
-    repo: "sithewok13-dev/doom3-ios",
-    title: "DOOM 3",
-    apps: "App: DOOM 3, built on dhewm3",
-    guide: "https://github.com/sithewok13-dev/doom3-ios/blob/ios/docs/ios/RELEASE_NOTES.md"
+    "repo": "sithewok13-dev/doom3-ios",
+    "title": "DOOM 3",
+    "apps": "App: DOOM 3, built on dhewm3",
+    "guide": "https://github.com/sithewok13-dev/doom3-ios/blob/ios/docs/ios/RELEASE_NOTES.md"
   },
   {
-    repo: "sithewok13-dev/xash3d-fwgs",
-    title: "Half-Life, Opposing Force and Blue Shift",
-    apps: "App: Half-Life (all three games in one), built on Xash3D FWGS",
-    guide: "https://github.com/sithewok13-dev/xash3d-fwgs/blob/HEAD/Documentation/ios-port.md"
+    "repo": "sithewok13-dev/xash3d-fwgs",
+    "title": "Half-Life, Opposing Force and Blue Shift",
+    "apps": "App: Half-Life (all three games in one), built on Xash3D FWGS",
+    "guide": "https://github.com/sithewok13-dev/xash3d-fwgs/blob/HEAD/Documentation/ios-port.md"
+  },
+  {
+    "repo": "sithewok13-dev/Raze-iOS-",
+    "title": "Duke Nukem 3D, Blood, Shadow Warrior, Redneck Rampage and PowerSlave",
+    "apps": "App: Raze, all five games in one",
+    "page": "https://sithewok13-dev.github.io/raze/",
+    "image": "https://raw.githubusercontent.com/sithewok13-dev/Raze-iOS-/ios/docs/ios/screenshots/duke-classic-hud.jpg",
+    "guide": "https://github.com/sithewok13-dev/Raze-iOS-/blob/ios/ios/RELEASE_NOTES.md",
+    "sidestore": "https://sithewok13-dev.github.io/raze/#add-sidestore"
   }
 ];
 
@@ -124,9 +139,16 @@ function card(g) {
   if (g.other) platforms.append(el("li", { className: "exp", textContent: g.other }));
 
   const c = el("section", { className: "card" },
-    el("h2", { textContent: g.title }),
+    g.image ? el("a", { href: g.page || g.guide }, el("img", { className: "thumb", src: g.image, alt: g.title, loading: "lazy" })) : null,
+    el("h2", {}, g.page ? el("a", { href: g.page, textContent: g.title, className: "title" }) : g.title),
     el("p", { className: "apps", textContent: g.apps }),
     status, buttons, platforms);
+  if (g.builder) {
+    status.replaceChildren(el("p", { className: "sub", textContent: "Build the app yourself, for free, from your own copy of the game: GitHub makes it in your own private copy of the builder." }));
+    buttons.append(button("Build your own", g.guide), button("About it", g.page, true));
+    platforms.remove();
+    return c;
+  }
 
   function fill(list) {
     const real = list.filter(r => !r.draft && !TEST_TAGS.includes(r.tag_name))
@@ -150,6 +172,7 @@ function card(g) {
   }
 
   function finish(testUrl) {
+    if (g.page) buttons.append(button("Game page", g.page, true));
     buttons.append(button("Setup guide", g.guide, true));
     if (g.sidestore) buttons.append(button("Add to SideStore", g.sidestore, true));
     if (testUrl) status.append(el("p", { className: "sub" }, "Or try the ", el("a", { href: testUrl, textContent: "latest test build" }), " (changes often, may have bugs)."));
