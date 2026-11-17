@@ -213,15 +213,15 @@
    "tintColor": "8e3aa8",
    "versions": [
     {
-     "version": "build 37",
-     "date": "2026-11-16T03:37:37Z",
-     "size": 39420809,
+     "version": "build 39",
+     "date": "2026-11-17T06:34:59Z",
+     "size": 39427178,
      "downloadURL": "https://github.com/sithewok13-dev/UZDoom/releases/download/ios-latest/DOOM.ipa"
     }
    ],
-   "version": "build 37",
-   "versionDate": "2026-11-16T03:37:37Z",
-   "size": 39420809,
+   "version": "build 39",
+   "versionDate": "2026-11-17T06:34:59Z",
+   "size": 39427178,
    "downloadURL": "https://github.com/sithewok13-dev/UZDoom/releases/download/ios-latest/DOOM.ipa",
    "appPermissions": {}
   },
@@ -279,15 +279,15 @@
    "tintColor": "8e3aa8",
    "versions": [
     {
-     "version": "build 40",
-     "date": "2026-11-09T17:28:09Z",
-     "size": 10566056,
+     "version": "build 42",
+     "date": "2026-11-17T04:54:26Z",
+     "size": 10572714,
      "downloadURL": "https://github.com/sithewok13-dev/doom3-ios/releases/download/ios-latest/DOOM3-iOS-unsigned.ipa"
     }
    ],
-   "version": "build 40",
-   "versionDate": "2026-11-09T17:28:09Z",
-   "size": 10566056,
+   "version": "build 42",
+   "versionDate": "2026-11-17T04:54:26Z",
+   "size": 10572714,
    "downloadURL": "https://github.com/sithewok13-dev/doom3-ios/releases/download/ios-latest/DOOM3-iOS-unsigned.ipa",
    "appPermissions": {}
   },
