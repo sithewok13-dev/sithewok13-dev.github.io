@@ -1,0 +1,94 @@
+<!doctype html>
+<!-- Made by tools/make_game_pages.py from games.json: edit those, not this file. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conker&#x27;s Bad Fur Day on iPhone: build your own (unofficial)</title>
+<meta name="description" content="Conker&#x27;s Bad Fur Day on iPhone, recompiled to native code from your own N64 ROM, with touch controls, gyro and 120 fps. Built for free on GitHub.">
+<meta name="keywords" content="Conker&#x27;s Bad Fur Day iPhone, Conker iOS, N64 recomp iPhone, CBFD-Recompiled iOS">
+<link rel="canonical" href="https://sithewok13-dev.github.io/conker/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sithewok's Game Ports">
+<meta property="og:title" content="Conker&#x27;s Bad Fur Day for iPhone: build your own">
+<meta property="og:description" content="Conker&#x27;s Bad Fur Day on iPhone, recompiled to native code from your own N64 ROM, with touch controls, gyro and 120 fps. Built for free on GitHub.">
+<meta property="og:url" content="https://sithewok13-dev.github.io/conker/">
+<meta property="og:image" content="">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Conker&#x27;s Bad Fur Day for iPhone: build your own">
+<meta name="twitter:description" content="Conker&#x27;s Bad Fur Day on iPhone, recompiled to native code from your own N64 ROM, with touch controls, gyro and 120 fps. Built for free on GitHub.">
+<meta name="twitter:image" content="">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Conker's Bad Fur Day for iPhone: build your own", "operatingSystem": "iOS", "applicationCategory": "GameApplication", "description": "Conker's Bad Fur Day on iPhone, recompiled to native code from your own N64 ROM, with touch controls, gyro and 120 fps. Built for free on GitHub.", "url": "https://sithewok13-dev.github.io/conker/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+<style>
+  :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #5f5f66; --accent: #8e3aa8; --on-accent: #ffffff; --line: #d9d9de; --code: #f2f2f5; --card: #f6f6f8; --note: #fff6dc; --note-line: #e8d38f; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #141416; --fg: #f2f2f5; --muted: #a8a8b0; --accent: #c77ddf; --on-accent: #141416; --line: #34343a; --code: #232327; --card: #1d1d21; --note: #2c2617; --note-line: #5c4d22; }
+  }
+  :root[data-theme="dark"] { --bg: #141416; --fg: #f2f2f5; --muted: #a8a8b0; --accent: #c77ddf; --on-accent: #141416; --line: #34343a; --code: #232327; --card: #1d1d21; --note: #2c2617; --note-line: #5c4d22; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+  nav { font-size: 0.9em; margin-bottom: 12px; }
+  h1 { font-size: 1.6em; line-height: 1.2; margin: 0 0 8px; }
+  h2 { font-size: 1.15em; margin: 28px 0 8px; }
+  .lead { color: var(--muted); margin-top: 0; }
+  a { color: var(--accent); }
+  .hero { width: 100%; height: auto; border-radius: 12px; display: block; margin: 16px 0; }
+  .buttons { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0; }
+  .button { display: inline-block; padding: 12px 18px; border-radius: 12px; background: var(--accent); color: var(--on-accent); text-decoration: none; font-weight: 600; }
+  .button.secondary { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+  code { background: var(--code); border-radius: 6px; padding: 2px 5px; font-size: 0.85em; overflow-wrap: anywhere; }
+  ul { padding-left: 1.2em; }
+  li + li { margin-top: 4px; }
+  li, p { overflow-wrap: break-word; }
+  .note { background: var(--note); border: 1px solid var(--note-line); border-radius: 12px; padding: 12px 14px; margin: 20px 0; }
+  .note p { margin: 0; }
+  .note p + p { margin-top: 6px; }
+  .shots { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; margin: 16px 0; }
+  @media (min-width: 700px) { .shots { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .shots figure { margin: 0; }
+  .shots img { width: 100%; height: auto; border-radius: 8px; display: block; }
+  .shots figcaption { color: var(--muted); font-size: 0.8em; margin-top: 3px; }
+  .small { color: var(--muted); font-size: 0.85em; }
+  footer { margin-top: 36px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.85em; }
+  footer p { margin: 0 0 8px; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="https://sithewok13-dev.github.io/">Sithewok's Game Ports</a></nav>
+  <h1>Conker&#x27;s Bad Fur Day for iPhone: build your own</h1>
+  <p class="lead">Conker&#x27;s Bad Fur Day on iPhone, recompiled into native iPhone code (not an emulator), built for free from your own N64 ROM.</p>
+  <p><b>You need your own US Conker&#x27;s Bad Fur Day ROM, dumped from your cartridge. The builder contains nothing of the game.</b></p>
+  <h2>Install</h2>
+  <p>You make the app yourself, for free, from your phone: make your own private copy of the builder, give it a link to your game, and GitHub builds the app for you. The builder&#x27;s page walks you through it step by step.</p>
+  <div class="buttons">
+    <a class="button" href="https://github.com/sithewok13-dev/conker-builder">Build your own</a>
+  </div>
+  <h2>Cool features</h2>
+  <ul>
+    <li><b>Native, not emulated:</b> the N64 game recompiled into iPhone code (CBFD-Recompiled, N64Recomp, RT64 on Metal).</li>
+    <li><b>Touch controls:</b> a move stick under your left thumb, drag to look, a right stick for the camera, A, B, the C buttons, Z, L and R.</li>
+    <li><b>Gyro aiming</b>, button opacity and a D-pad, all in START&#x27;s tray.</li>
+    <li><b>60 or 120 frames a second</b>, the in-between frames made smooth.</li>
+    <li><b>The intro skipped</b>, and a tap skips any cutscene.</li>
+    <li><b>Controllers</b> (Xbox, PlayStation, MFi) work too.</li>
+  </ul>
+  <div class="note"><p>This is early, so please expect bugs. It has only been lightly tested on an iPhone so far. Sorry for anything that goes wrong; please <a href="https://github.com/sithewok13-dev/conker-builder/issues">report it here</a>. There&#x27;s no multiplayer in this build.</p></div>
+  <h2>Thank you</h2>
+  <p>Thank you to:</p>
+  <ul>
+    <li><b>Sean Ciaschi and the contributors of <a href="https://github.com/sciaschi/CBFD-Recompiled">CBFD-Recompiled</a></b>, the PC port this is built on, and <a href="https://github.com/nitrostemp">nitrostemp</a> for its macOS port.</li>
+    <li><b>The <a href="https://github.com/mkst/conker">Conker&#x27;s Bad Fur Day decompilation</a> team</b> (mkst and contributors).</li>
+    <li><b>Wiseguy (Mr-Wiseguy) and contributors</b> for <a href="https://github.com/N64Recomp/N64Recomp">N64Recomp</a>, <a href="https://github.com/N64Recomp/N64ModernRuntime">N64ModernRuntime</a> and <a href="https://github.com/N64Recomp/RecompFrontend">RecompFrontend</a>.</li>
+    <li><b>Darío and contributors</b> for the <a href="https://github.com/rt64/rt64">RT64</a> renderer and <a href="https://github.com/renderbag/plume">plume</a>.</li>
+    <li><b><a href="https://github.com/DahSidiAbdallah/ConkerBFDReloaded">ConkerBFDReloaded</a></b> by dahmedvall95, and <b><a href="https://www.libsdl.org">SDL</a></b> and <b><a href="https://freetype.org">FreeType</a></b>.</li>
+  </ul>
+  <h2>More</h2>
+  <ul>
+    <li><a href="https://github.com/sithewok13-dev/conker-builder">Source code on GitHub</a></li>
+    <li><a href="https://github.com/sithewok13-dev/conker-builder/issues">Report a bug</a> (here, not to the upstream project)</li>
+  </ul>
+  <footer><p>Conker&#x27;s Bad Fur Day and Conker are trademarks of Rare Ltd. and Microsoft. Not affiliated with or endorsed by Rare, Microsoft or Nintendo.</p></footer>
+</main>
+</body>
+</html>

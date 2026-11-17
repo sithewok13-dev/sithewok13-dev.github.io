@@ -41,6 +41,7 @@ STYLE = """
   code { background: var(--code); border-radius: 6px; padding: 2px 5px; font-size: 0.85em; overflow-wrap: anywhere; }
   ul { padding-left: 1.2em; }
   li + li { margin-top: 4px; }
+  li, p { overflow-wrap: break-word; }
   .note { background: var(--note); border: 1px solid var(--note-line); border-radius: 12px; padding: 12px 14px; margin: 20px 0; }
   .note p { margin: 0; }
   .note p + p { margin-top: 6px; }
@@ -65,7 +66,7 @@ def inline(s):
     while i < len(s):
         if s.startswith("**", i) and "**" in s[i + 2:]:
             j = s.index("**", i + 2)
-            out.append("<b>" + e(s[i + 2:j]) + "</b>")
+            out.append("<b>" + inline(s[i + 2:j]) + "</b>")
             i = j + 2
         elif s[i] == "[" and "](" in s[i:] and ")" in s[s.index("](", i):]:
             j = s.index("](", i)
@@ -94,7 +95,7 @@ def page(g):
     parts.append("<h1>%s</h1>" % e(g["title"]))
     parts.append('<p class="lead">%s</p>' % inline(g["lead"]))
     if hero:
-        parts.append('<img class="hero" src="%s" alt="%s" width="1600" height="740">' % (e(hero["url"]), e(hero["alt"])))
+        parts.append('<img class="hero" src="%s" alt="%s">' % (e(hero["url"]), e(hero["alt"])))
     parts.append('<p><b>%s</b></p>' % inline(g["need"]))
 
     parts.append("<h2>Install</h2>")
@@ -119,7 +120,7 @@ def page(g):
     if len(shots) > 1:
         figs = []
         for s in shots[1:]:
-            figs.append('    <figure><img src="%s" alt="%s" loading="lazy" width="1600" height="740"><figcaption>%s</figcaption></figure>' % (e(s["url"]), e(s["alt"]), e(s.get("caption", s["alt"]))))
+            figs.append('    <figure><img src="%s" alt="%s" loading="lazy"><figcaption>%s</figcaption></figure>' % (e(s["url"]), e(s["alt"]), e(s.get("caption", s["alt"]))))
         parts.append('<h2>Screenshots</h2>\n  <div class="shots">\n' + "\n".join(figs) + "\n  </div>")
         if g.get("shots_note"):
             parts.append('<p class="small">%s</p>' % inline(g["shots_note"]))

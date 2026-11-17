@@ -1,0 +1,119 @@
+<!doctype html>
+<!-- Made by tools/make_game_pages.py from games.json: edit those, not this file. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Visual Pinball (VPX) on iPhone: a phone-first build (unofficial)</title>
+<meta name="description" content="Visual Pinball X tables on an upright iPhone: tables that fill the screen, vivid looks, thumb-friendly touch and autoplay. Unofficial; no tables included except the example table.">
+<meta name="keywords" content="Visual Pinball iPhone, VPX iOS, pinball iPhone, vpinball iOS">
+<link rel="canonical" href="https://sithewok13-dev.github.io/vpinball/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sithewok's Game Ports">
+<meta property="og:title" content="Visual Pinball for iPhone: a phone-first build">
+<meta property="og:description" content="Visual Pinball X tables on an upright iPhone: tables that fill the screen, vivid looks, thumb-friendly touch and autoplay. Unofficial; no tables included except the example table.">
+<meta property="og:url" content="https://sithewok13-dev.github.io/vpinball/">
+<meta property="og:image" content="https://raw.githubusercontent.com/sithewok13-dev/vpinball/refs/heads/claude/ios-port-discussion-5jm3ys/docs/ios/screenshots/hero-looks.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Visual Pinball for iPhone: a phone-first build">
+<meta name="twitter:description" content="Visual Pinball X tables on an upright iPhone: tables that fill the screen, vivid looks, thumb-friendly touch and autoplay. Unofficial; no tables included except the example table.">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/sithewok13-dev/vpinball/refs/heads/claude/ios-port-discussion-5jm3ys/docs/ios/screenshots/hero-looks.jpg">
+<link rel="icon" href="https://raw.githubusercontent.com/sithewok13-dev/vpinball/refs/heads/claude/ios-port-discussion-5jm3ys/apps/ios/VPinball/Assets.xcassets/AppIcon.appiconset/Icon-Light-1024x1024.png">
+<link rel="apple-touch-icon" href="https://raw.githubusercontent.com/sithewok13-dev/vpinball/refs/heads/claude/ios-port-discussion-5jm3ys/apps/ios/VPinball/Assets.xcassets/AppIcon.appiconset/Icon-Light-1024x1024.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Visual Pinball for iPhone: a phone-first build", "operatingSystem": "iOS", "applicationCategory": "GameApplication", "description": "Visual Pinball X tables on an upright iPhone: tables that fill the screen, vivid looks, thumb-friendly touch and autoplay. Unofficial; no tables included except the example table.", "url": "https://sithewok13-dev.github.io/vpinball/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "screenshot": ["https://raw.githubusercontent.com/sithewok13-dev/vpinball/refs/heads/claude/ios-port-discussion-5jm3ys/docs/ios/screenshots/hero-looks.jpg", "https://raw.githubusercontent.com/sithewok13-dev/vpinball/refs/heads/claude/ios-port-discussion-5jm3ys/docs/ios/screenshots/bumpers.jpg", "https://raw.githubusercontent.com/sithewok13-dev/vpinball/refs/heads/claude/ios-port-discussion-5jm3ys/docs/ios/screenshots/touch-areas.jpg", "https://raw.githubusercontent.com/sithewok13-dev/vpinball/refs/heads/claude/ios-port-discussion-5jm3ys/docs/ios/screenshots/flipper.jpg"]}</script>
+<style>
+  :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #5f5f66; --accent: #8e3aa8; --on-accent: #ffffff; --line: #d9d9de; --code: #f2f2f5; --card: #f6f6f8; --note: #fff6dc; --note-line: #e8d38f; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #141416; --fg: #f2f2f5; --muted: #a8a8b0; --accent: #c77ddf; --on-accent: #141416; --line: #34343a; --code: #232327; --card: #1d1d21; --note: #2c2617; --note-line: #5c4d22; }
+  }
+  :root[data-theme="dark"] { --bg: #141416; --fg: #f2f2f5; --muted: #a8a8b0; --accent: #c77ddf; --on-accent: #141416; --line: #34343a; --code: #232327; --card: #1d1d21; --note: #2c2617; --note-line: #5c4d22; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+  nav { font-size: 0.9em; margin-bottom: 12px; }
+  h1 { font-size: 1.6em; line-height: 1.2; margin: 0 0 8px; }
+  h2 { font-size: 1.15em; margin: 28px 0 8px; }
+  .lead { color: var(--muted); margin-top: 0; }
+  a { color: var(--accent); }
+  .hero { width: 100%; height: auto; border-radius: 12px; display: block; margin: 16px 0; }
+  .buttons { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0; }
+  .button { display: inline-block; padding: 12px 18px; border-radius: 12px; background: var(--accent); color: var(--on-accent); text-decoration: none; font-weight: 600; }
+  .button.secondary { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+  code { background: var(--code); border-radius: 6px; padding: 2px 5px; font-size: 0.85em; overflow-wrap: anywhere; }
+  ul { padding-left: 1.2em; }
+  li + li { margin-top: 4px; }
+  li, p { overflow-wrap: break-word; }
+  .note { background: var(--note); border: 1px solid var(--note-line); border-radius: 12px; padding: 12px 14px; margin: 20px 0; }
+  .note p { margin: 0; }
+  .note p + p { margin-top: 6px; }
+  .shots { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; margin: 16px 0; }
+  @media (min-width: 700px) { .shots { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .shots figure { margin: 0; }
+  .shots img { width: 100%; height: auto; border-radius: 8px; display: block; }
+  .shots figcaption { color: var(--muted); font-size: 0.8em; margin-top: 3px; }
+  .small { color: var(--muted); font-size: 0.85em; }
+  footer { margin-top: 36px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.85em; }
+  footer p { margin: 0 0 8px; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="https://sithewok13-dev.github.io/">Sithewok's Game Ports</a></nav>
+  <h1>Visual Pinball for iPhone: a phone-first build</h1>
+  <p class="lead">Visual Pinball X on an upright iPhone, built for the phone first: tables that fill the screen, vivid looks and flippers under your thumbs.</p>
+  <img class="hero" src="https://raw.githubusercontent.com/sithewok13-dev/vpinball/refs/heads/claude/ios-port-discussion-5jm3ys/docs/ios/screenshots/hero-looks.jpg" alt="The example table four times side by side, upright as on an iPhone: Table&#x27;s Own, Vivid, Arcade and Daylight looks">
+  <p><b>No tables are included except Visual Pinball&#x27;s own example table: bring your own .vpx tables.</b></p>
+  <h2>Install</h2>
+  <p>Easiest, in SideStore or AltStore (Classic): add the source, then install the app from it. Updates come the same way.</p>
+  <div class="buttons">
+    <a class="button" id="add-sidestore-button" href="sidestore://source?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsithewok13-dev%2Fvpinball%2Frefs%2Fheads%2Fclaude%2Fios-port-discussion-5jm3ys%2Fapps%2Fios%2Faltsource.json">Add to SideStore</a>
+    <a class="button" id="add-altstore-button" href="altstore://source?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsithewok13-dev%2Fvpinball%2Frefs%2Fheads%2Fclaude%2Fios-port-discussion-5jm3ys%2Fapps%2Fios%2Faltsource.json">Add to AltStore</a>
+  </div>
+  <p class="small">These buttons only work once SideStore or AltStore is on your phone. If a button does nothing, add the source by hand (in the app's Sources, tap +) with this address:<br><code>https://raw.githubusercontent.com/sithewok13-dev/vpinball/refs/heads/claude/ios-port-discussion-5jm3ys/apps/ios/altsource.json</code></p>
+  <p>Or download the .ipa from the releases page and install it with any sideloading tool (Feather, Sideloadly, a signing service):</p>
+  <div class="buttons">
+    <a class="button secondary" href="https://github.com/sithewok13-dev/vpinball/releases">Releases (download the .ipa)</a>
+    <a class="button secondary" href="https://github.com/sithewok13-dev/vpinball/blob/claude/ios-port-discussion-5jm3ys/docs/ios/RELEASE_NOTES.md">Release notes and full guide</a>
+  </div>
+  <h2>Cool features</h2>
+  <ul>
+    <li><b>Tables fill an upright phone screen</b>, seen head on like a real machine, instead of a view made for a wide monitor.</li>
+    <li><b>Five looks</b> for bright, vivid play (Vivid, Punchy, Vivid Bright, Arcade, Daylight) or the table&#x27;s own, switched live from the in-game menu.</li>
+    <li><b>Thumb-friendly touch:</b> each flipper gets its whole half of the lower screen, nudges on the sides, and nothing in between that tilts the table by accident.</li>
+    <li><b>One tap on START</b> puts in a coin and starts, and on an iPhone games start by themselves.</li>
+    <li><b>The score display at the top</b>, see-through; hold it to move, resize or fade it.</li>
+    <li><b>Autoplay:</b> the table plays itself until you touch the screen.</li>
+    <li><b>60 or 120 FPS</b> on 120 Hz screens.</li>
+    <li><b>Easier importing:</b> whole folders, an Import folder in Files, ROMs put where they belong, a warning when a ROM is missing, and fixed scripts fetched from the community&#x27;s <a href="https://github.com/jsm174/vpx-standalone-scripts">vpx-standalone-scripts</a>.</li>
+  </ul>
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/vpinball/refs/heads/claude/ios-port-discussion-5jm3ys/docs/ios/screenshots/bumpers.jpg" alt="The ball between the pop bumpers, two of them lit" loading="lazy"><figcaption>The ball between the pop bumpers, two of them lit</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/vpinball/refs/heads/claude/ios-port-discussion-5jm3ys/docs/ios/screenshots/touch-areas.jpg" alt="The touch areas shown labelled when a table starts: COIN, MENU, NUDGE, FLIPPER, START and LAUNCH" loading="lazy"><figcaption>The touch areas shown labelled when a table starts: COIN, MENU, NUDGE, FLIPPER, START and LAUNCH</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/vpinball/refs/heads/claude/ios-port-discussion-5jm3ys/docs/ios/screenshots/flipper.jpg" alt="The ball between the flippers, the right one up" loading="lazy"><figcaption>The ball between the flippers, the right one up</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/vpinball/refs/heads/claude/ios-port-discussion-5jm3ys/docs/ios/screenshots/shot.jpg" alt="The ball shooting back up the table after a flip" loading="lazy"><figcaption>The ball shooting back up the table after a flip</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/vpinball/refs/heads/claude/ios-port-discussion-5jm3ys/docs/ios/screenshots/daylight.jpg" alt="The Daylight look, the table lit as in a bright room" loading="lazy"><figcaption>The Daylight look, the table lit as in a bright room</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/vpinball/refs/heads/claude/ios-port-discussion-5jm3ys/docs/ios/screenshots/arcade.jpg" alt="The Arcade look" loading="lazy"><figcaption>The Arcade look</figcaption></figure>
+  </div>
+  <p class="small">Visual Pinball&#x27;s example table, drawn by this build running on a computer at an iPhone&#x27;s screen size, not from an iPhone.</p>
+  <div class="note"><p>This is an unofficial beta, made by one fan on top of the Visual Pinball team&#x27;s work, and only a few tables have been tried. Expect bugs, and sorry for the ones you meet. There&#x27;s no online or Wi-Fi multiplayer (Visual Pinball doesn&#x27;t have it either); taking turns on one phone is up to each table and hasn&#x27;t been tried here. It uses the same app ID as the official app, so the two may not install side by side.</p><p>Found a bug? <a href="https://github.com/sithewok13-dev/vpinball/issues">Report it here</a>, not to the Visual Pinball team.</p></div>
+  <h2>Thank you</h2>
+  <ul>
+    <li>Visual Pinball was started by <b>Randy Davis</b>, open-sourced in 2010, and has been carried on for years by the Visual Pinball team and many volunteers: <b>toxie</b>, <b>Vincent Bousquet</b>, <b>fuzzel</b>, <b>francisdb</b>, <b>DJRobX</b> and <a href="https://github.com/vpinball/vpinball/graphs/contributors">many more</a>. <b>Jason Millard (jsm174)</b> built the standalone player and the iPhone, iPad and Android apps this build starts from. Thank you: this build is a few changes on top of more than twenty years of your work.</li>
+    <li>It also rests on <a href="https://github.com/vpinball/pinmame">PinMAME</a> (the PinMAME team), <a href="https://github.com/vpinball/libdmdutil">libdmdutil</a>, <a href="https://github.com/PPUC/libzedmd">libzedmd</a> and <a href="https://github.com/PPUC/libserum">libserum</a> (mkalkbrenner, zesinger and others), <a href="https://github.com/bkaradzic/bgfx">bgfx</a> (Branimir Karadžić), <a href="https://github.com/libsdl-org/SDL">SDL</a>, <a href="https://github.com/ocornut/imgui">Dear ImGui</a> (Omar Cornut) and the community&#x27;s fixed table scripts. The example table is by fuzzel, jimmyfingers, jpsalas, toxie and unclewilly.</li>
+  </ul>
+  <h2>More</h2>
+  <ul>
+    <li><a href="https://github.com/sithewok13-dev/vpinball">Source code on GitHub</a></li>
+    <li><a href="https://github.com/sithewok13-dev/vpinball/issues">Report a bug</a> (here, not to the upstream project)</li>
+  </ul>
+  <footer><p>Based on <a href="https://github.com/vpinball/vpinball">Visual Pinball</a>. Unofficial build, not affiliated with or endorsed by the Visual Pinball team.</p></footer>
+</main>
+<script>
+  // #add-sidestore / #add-altstore: open that app's "add source" screen at once
+  (function () {
+    var id = { "#add-sidestore": "add-sidestore-button", "#add-altstore": "add-altstore-button" }[location.hash];
+    if (id) location.href = document.getElementById(id).href;
+  })();
+</script>
+</body>
+</html>

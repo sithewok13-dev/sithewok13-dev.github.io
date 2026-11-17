@@ -1,0 +1,124 @@
+<!doctype html>
+<!-- Made by tools/make_game_pages.py from games.json: edit those, not this file. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DOOM and DOOM II on iPhone and iPad: UZDoom for iOS (unofficial)</title>
+<meta name="description" content="Play DOOM, DOOM II, TNT and Plutonia on iPhone and iPad with touch controls, a weapon wheel, selfies and LAN play: an unofficial UZDoom port. Bring your own game files.">
+<meta name="keywords" content="DOOM iPhone, DOOM II iOS, UZDoom iOS, GZDoom iPhone, SIGIL iPhone">
+<link rel="canonical" href="https://sithewok13-dev.github.io/doom/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sithewok's Game Ports">
+<meta property="og:title" content="DOOM and DOOM II for iPhone and iPad">
+<meta property="og:description" content="Play DOOM, DOOM II, TNT and Plutonia on iPhone and iPad with touch controls, a weapon wheel, selfies and LAN play: an unofficial UZDoom port. Bring your own game files.">
+<meta property="og:url" content="https://sithewok13-dev.github.io/doom/">
+<meta property="og:image" content="https://raw.githubusercontent.com/sithewok13-dev/UZDoom/ios/docs/ios/screenshots/e3m6-inferno.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DOOM and DOOM II for iPhone and iPad">
+<meta name="twitter:description" content="Play DOOM, DOOM II, TNT and Plutonia on iPhone and iPad with touch controls, a weapon wheel, selfies and LAN play: an unofficial UZDoom port. Bring your own game files.">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/sithewok13-dev/UZDoom/ios/docs/ios/screenshots/e3m6-inferno.jpg">
+<link rel="icon" href="https://raw.githubusercontent.com/sithewok13-dev/UZDoom/ios/branding/misc/appicon.png">
+<link rel="apple-touch-icon" href="https://raw.githubusercontent.com/sithewok13-dev/UZDoom/ios/branding/misc/appicon.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "DOOM and DOOM II for iPhone and iPad", "operatingSystem": "iOS", "applicationCategory": "GameApplication", "description": "Play DOOM, DOOM II, TNT and Plutonia on iPhone and iPad with touch controls, a weapon wheel, selfies and LAN play: an unofficial UZDoom port. Bring your own game files.", "url": "https://sithewok13-dev.github.io/doom/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "screenshot": ["https://raw.githubusercontent.com/sithewok13-dev/UZDoom/ios/docs/ios/screenshots/e3m6-inferno.jpg", "https://raw.githubusercontent.com/sithewok13-dev/UZDoom/ios/docs/ios/screenshots/selfie.jpg", "https://raw.githubusercontent.com/sithewok13-dev/UZDoom/ios/docs/ios/screenshots/freeze.jpg", "https://raw.githubusercontent.com/sithewok13-dev/UZDoom/ios/docs/ios/screenshots/cyberdemon.jpg"]}</script>
+<style>
+  :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #5f5f66; --accent: #8e3aa8; --on-accent: #ffffff; --line: #d9d9de; --code: #f2f2f5; --card: #f6f6f8; --note: #fff6dc; --note-line: #e8d38f; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #141416; --fg: #f2f2f5; --muted: #a8a8b0; --accent: #c77ddf; --on-accent: #141416; --line: #34343a; --code: #232327; --card: #1d1d21; --note: #2c2617; --note-line: #5c4d22; }
+  }
+  :root[data-theme="dark"] { --bg: #141416; --fg: #f2f2f5; --muted: #a8a8b0; --accent: #c77ddf; --on-accent: #141416; --line: #34343a; --code: #232327; --card: #1d1d21; --note: #2c2617; --note-line: #5c4d22; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+  nav { font-size: 0.9em; margin-bottom: 12px; }
+  h1 { font-size: 1.6em; line-height: 1.2; margin: 0 0 8px; }
+  h2 { font-size: 1.15em; margin: 28px 0 8px; }
+  .lead { color: var(--muted); margin-top: 0; }
+  a { color: var(--accent); }
+  .hero { width: 100%; height: auto; border-radius: 12px; display: block; margin: 16px 0; }
+  .buttons { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0; }
+  .button { display: inline-block; padding: 12px 18px; border-radius: 12px; background: var(--accent); color: var(--on-accent); text-decoration: none; font-weight: 600; }
+  .button.secondary { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+  code { background: var(--code); border-radius: 6px; padding: 2px 5px; font-size: 0.85em; overflow-wrap: anywhere; }
+  ul { padding-left: 1.2em; }
+  li + li { margin-top: 4px; }
+  li, p { overflow-wrap: break-word; }
+  .note { background: var(--note); border: 1px solid var(--note-line); border-radius: 12px; padding: 12px 14px; margin: 20px 0; }
+  .note p { margin: 0; }
+  .note p + p { margin-top: 6px; }
+  .shots { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; margin: 16px 0; }
+  @media (min-width: 700px) { .shots { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .shots figure { margin: 0; }
+  .shots img { width: 100%; height: auto; border-radius: 8px; display: block; }
+  .shots figcaption { color: var(--muted); font-size: 0.8em; margin-top: 3px; }
+  .small { color: var(--muted); font-size: 0.85em; }
+  footer { margin-top: 36px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.85em; }
+  footer p { margin: 0 0 8px; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="https://sithewok13-dev.github.io/">Sithewok's Game Ports</a></nav>
+  <h1>DOOM and DOOM II for iPhone and iPad</h1>
+  <p class="lead">DOOM, DOOM II, Final DOOM (TNT and Plutonia) and add-ons like SIGIL on iPhone and iPad: an unofficial port of UZDoom, with touch controls made for DOOM.</p>
+  <img class="hero" src="https://raw.githubusercontent.com/sithewok13-dev/UZDoom/ios/docs/ios/screenshots/e3m6-inferno.jpg" alt="DOOM, Inferno: a shotgun blast hits a cacodemon while imps and a baron close in, under a red sky">
+  <p><b>You need your own copy of DOOM or DOOM II (Steam or GOG). No game files are included.</b></p>
+  <h2>Install</h2>
+  <p>Easiest, in SideStore or AltStore (Classic): add the source, then install the app from it. Updates come the same way.</p>
+  <div class="buttons">
+    <a class="button" id="add-sidestore-button" href="sidestore://source?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsithewok13-dev%2FUZDoom%2Fios%2Fpackaging%2Fios%2Faltstore-source.json">Add to SideStore</a>
+    <a class="button" id="add-altstore-button" href="altstore://source?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsithewok13-dev%2FUZDoom%2Fios%2Fpackaging%2Fios%2Faltstore-source.json">Add to AltStore</a>
+  </div>
+  <p class="small">These buttons only work once SideStore or AltStore is on your phone. If a button does nothing, add the source by hand (in the app's Sources, tap +) with this address:<br><code>https://raw.githubusercontent.com/sithewok13-dev/UZDoom/ios/packaging/ios/altstore-source.json</code></p>
+  <p>Or download the .ipa from the releases page and install it with any sideloading tool (Feather, Sideloadly, a signing service):</p>
+  <div class="buttons">
+    <a class="button secondary" href="https://github.com/sithewok13-dev/UZDoom/releases">Releases (download the .ipa)</a>
+    <a class="button secondary" href="https://github.com/sithewok13-dev/UZDoom/blob/ios/docs/ios/RELEASE_NOTES.md">Release notes and full guide</a>
+  </div>
+  <h2>Cool features</h2>
+  <ul>
+    <li><b>Touch controls made for DOOM:</b> a move stick wherever your thumb lands, drag anywhere to look, FIRE with USE, JUMP and CROUCH around it.</li>
+    <li><b>A weapon wheel:</b> slide off NEXT WPN or PREV WPN and your whole arsenal fans out, with the game&#x27;s own pictures and ammo.</li>
+    <li><b>A game picker:</b> DOOM, DOOM II, TNT and PLUTONIA, and the add-ons SIGIL, SIGIL II, No Rest for the Living, The Master Levels and Legacy of Rust.</li>
+    <li><b>Six HUD looks:</b> DOOM&#x27;s classic status bar, cut-down versions of it, or small modern pills with the doomguy&#x27;s face, in three sizes.</li>
+    <li><b>A camera:</b> photos, bursts, and selfies where the doomguy poses with the nearest monsters. <b>Action Freeze</b> stops time so you can fly round a fight.</li>
+    <li><b>The sithewok cheat:</b> god mode, every weapon and NOCLIP, and <b>LEVEL</b> to jump to any map.</li>
+    <li><b>Tilt aiming</b>, <b>60 or 120 frames a second</b>, and <b>Vulkan</b> graphics on Metal.</li>
+    <li><b>LAN co-op and deathmatch</b> for up to 8 players on the same Wi-Fi (new, see below).</li>
+  </ul>
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/UZDoom/ios/docs/ios/screenshots/selfie.jpg" alt="A selfie with the camera: the doomguy floats above a baron, zombies, a lost soul and an imp, under a red sky" loading="lazy"><figcaption>A selfie with the camera: the doomguy floats above a baron, zombies, a lost soul and an imp, under a red sky</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/UZDoom/ios/docs/ios/screenshots/freeze.jpg" alt="Action Freeze: the camera flown round a frozen fight, the doomguy firing at imps as a rocket explodes" loading="lazy"><figcaption>Action Freeze: the camera flown round a frozen fight, the doomguy firing at imps as a rocket explodes</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/UZDoom/ios/docs/ios/screenshots/cyberdemon.jpg" alt="The Cyberdemon strides across the Tower of Babel in DOOM" loading="lazy"><figcaption>The Cyberdemon strides across the Tower of Babel in DOOM</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/UZDoom/ios/docs/ios/screenshots/chainsaw.jpg" alt="The chainsaw against a pinky demon in DOOM&#x27;s first room, E1M1" loading="lazy"><figcaption>The chainsaw against a pinky demon in DOOM&#x27;s first room, E1M1</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/UZDoom/ios/docs/ios/screenshots/bfg-blast.jpg" alt="A BFG 9000 blast tears through a crowd of monsters in DOOM II" loading="lazy"><figcaption>A BFG 9000 blast tears through a crowd of monsters in DOOM II</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/UZDoom/ios/docs/ios/screenshots/icon-of-sin.jpg" alt="DOOM II&#x27;s last level: a hell knight and an imp in front of the Icon of Sin" loading="lazy"><figcaption>DOOM II&#x27;s last level: a hell knight and an imp in front of the Icon of Sin</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/UZDoom/ios/docs/ios/screenshots/sigil.jpg" alt="SIGIL: a cacodemon and other demons in John Romero&#x27;s blood-red episode" loading="lazy"><figcaption>SIGIL: a cacodemon and other demons in John Romero&#x27;s blood-red episode</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/UZDoom/ios/docs/ios/screenshots/classic-hud.jpg" alt="DOOM II with the classic status bar: the super shotgun against a revenant and a pinky" loading="lazy"><figcaption>DOOM II with the classic status bar: the super shotgun against a revenant and a pinky</figcaption></figure>
+  </div>
+  <p class="small">All from the game running on a computer, with the game&#x27;s own files, not from an iPhone.</p>
+  <div class="note"><p>This is an unofficial beta, so please expect bugs, and back up your saves. <b>Multiplayer may well be broken:</b> LAN games are brand new and have only been tried on a computer, never between two iPhones yet. Sorry, it&#x27;s being worked on. iPads have never been tried either.</p><p>Found a bug? Please <a href="https://github.com/sithewok13-dev/UZDoom/issues">report it here</a>, not to upstream UZDoom, and say which build you have (it&#x27;s under the MENU tray).</p></div>
+  <h2>Thank you</h2>
+  <p>This port stands on the work of many people. Thank you to:</p>
+  <ul>
+    <li><b><a href="https://www.idsoftware.com/">id Software</a></b>, for DOOM and DOOM II, and for releasing DOOM&#x27;s source code in 1997.</li>
+    <li><b>Marisa &quot;Randi&quot; Heit</b>, who created <a href="https://github.com/rheit/zdoom">ZDoom</a>; <b>Christoph &quot;Graf Zahl&quot; Oelckers</b>, who created <a href="https://github.com/ZDoom/gzdoom">GZDoom</a>; <b>Rachael &quot;Eruanna&quot; Alexanderson</b> and everyone who has kept GZDoom and now <b><a href="https://github.com/UZDoom/UZDoom">UZDoom</a></b> going; and every name in <a href="https://github.com/UZDoom/UZDoom/blob/trunk/CONTRIBUTORS">CONTRIBUTORS</a>.</li>
+    <li><b><a href="https://www.libsdl.org/">SDL</a></b> (Sam Lantinga and contributors), <b><a href="https://github.com/KhronosGroup/MoltenVK">MoltenVK</a></b> (the Khronos Group and contributors), <b><a href="https://openal-soft.org/">OpenAL Soft</a></b> (Chris Robinson), FluidSynth, libsndfile and libvpx.</li>
+    <li><b>Nightdive Studios</b> and id Software for the re-release, and <b>John Romero</b> for SIGIL and SIGIL II.</li>
+  </ul>
+  <h2>More</h2>
+  <ul>
+    <li><a href="https://github.com/sithewok13-dev/UZDoom">Source code on GitHub</a></li>
+    <li><a href="https://github.com/sithewok13-dev/UZDoom/issues">Report a bug</a> (here, not to the upstream project)</li>
+  </ul>
+  <footer><p>Based on <a href="https://github.com/UZDoom/UZDoom">UZDoom</a>. Unofficial fan port, not affiliated with or endorsed by id Software, Bethesda, Nightdive Studios or the UZDoom team. DOOM is a trademark of id Software.</p></footer>
+</main>
+<script>
+  // #add-sidestore / #add-altstore: open that app's "add source" screen at once
+  (function () {
+    var id = { "#add-sidestore": "add-sidestore-button", "#add-altstore": "add-altstore-button" }[location.hash];
+    if (id) location.href = document.getElementById(id).href;
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!doctype html>
+<!-- Made by tools/make_game_pages.py from games.json: edit those, not this file. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Duke Nukem 3D, Blood, Shadow Warrior on iPhone: Raze for iOS (unofficial)</title>
+<meta name="description" content="Duke Nukem 3D, Blood, Shadow Warrior, Redneck Rampage and PowerSlave on iPhone and iPad with touch controls: an unofficial Raze port. Bring your own game files.">
+<meta name="keywords" content="Duke Nukem 3D iPhone, Blood iOS, Shadow Warrior iPhone, Redneck Rampage iOS, PowerSlave Exhumed iPhone, Raze iOS, Build engine iPhone">
+<link rel="canonical" href="https://sithewok13-dev.github.io/raze/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sithewok's Game Ports">
+<meta property="og:title" content="Duke Nukem 3D, Blood, Shadow Warrior, Redneck Rampage and PowerSlave for iPhone">
+<meta property="og:description" content="Duke Nukem 3D, Blood, Shadow Warrior, Redneck Rampage and PowerSlave on iPhone and iPad with touch controls: an unofficial Raze port. Bring your own game files.">
+<meta property="og:url" content="https://sithewok13-dev.github.io/raze/">
+<meta property="og:image" content="https://raw.githubusercontent.com/sithewok13-dev/Raze-iOS-/ios/docs/ios/screenshots/duke-classic-hud.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Duke Nukem 3D, Blood, Shadow Warrior, Redneck Rampage and PowerSlave for iPhone">
+<meta name="twitter:description" content="Duke Nukem 3D, Blood, Shadow Warrior, Redneck Rampage and PowerSlave on iPhone and iPad with touch controls: an unofficial Raze port. Bring your own game files.">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/sithewok13-dev/Raze-iOS-/ios/docs/ios/screenshots/duke-classic-hud.jpg">
+<link rel="icon" href="https://raw.githubusercontent.com/sithewok13-dev/Raze-iOS-/ios/docs/ios/icon-1024.png">
+<link rel="apple-touch-icon" href="https://raw.githubusercontent.com/sithewok13-dev/Raze-iOS-/ios/docs/ios/icon-1024.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Duke Nukem 3D, Blood, Shadow Warrior, Redneck Rampage and PowerSlave for iPhone", "operatingSystem": "iOS", "applicationCategory": "GameApplication", "description": "Duke Nukem 3D, Blood, Shadow Warrior, Redneck Rampage and PowerSlave on iPhone and iPad with touch controls: an unofficial Raze port. Bring your own game files.", "url": "https://sithewok13-dev.github.io/raze/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "screenshot": ["https://raw.githubusercontent.com/sithewok13-dev/Raze-iOS-/ios/docs/ios/screenshots/duke-classic-hud.jpg", "https://raw.githubusercontent.com/sithewok13-dev/Raze-iOS-/ios/docs/ios/screenshots/duke-pipebomb.jpg", "https://raw.githubusercontent.com/sithewok13-dev/Raze-iOS-/ios/docs/ios/screenshots/blood-tommygun.jpg", "https://raw.githubusercontent.com/sithewok13-dev/Raze-iOS-/ios/docs/ios/screenshots/sw-katana.jpg"]}</script>
+<style>
+  :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #5f5f66; --accent: #8e3aa8; --on-accent: #ffffff; --line: #d9d9de; --code: #f2f2f5; --card: #f6f6f8; --note: #fff6dc; --note-line: #e8d38f; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #141416; --fg: #f2f2f5; --muted: #a8a8b0; --accent: #c77ddf; --on-accent: #141416; --line: #34343a; --code: #232327; --card: #1d1d21; --note: #2c2617; --note-line: #5c4d22; }
+  }
+  :root[data-theme="dark"] { --bg: #141416; --fg: #f2f2f5; --muted: #a8a8b0; --accent: #c77ddf; --on-accent: #141416; --line: #34343a; --code: #232327; --card: #1d1d21; --note: #2c2617; --note-line: #5c4d22; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+  nav { font-size: 0.9em; margin-bottom: 12px; }
+  h1 { font-size: 1.6em; line-height: 1.2; margin: 0 0 8px; }
+  h2 { font-size: 1.15em; margin: 28px 0 8px; }
+  .lead { color: var(--muted); margin-top: 0; }
+  a { color: var(--accent); }
+  .hero { width: 100%; height: auto; border-radius: 12px; display: block; margin: 16px 0; }
+  .buttons { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0; }
+  .button { display: inline-block; padding: 12px 18px; border-radius: 12px; background: var(--accent); color: var(--on-accent); text-decoration: none; font-weight: 600; }
+  .button.secondary { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+  code { background: var(--code); border-radius: 6px; padding: 2px 5px; font-size: 0.85em; overflow-wrap: anywhere; }
+  ul { padding-left: 1.2em; }
+  li + li { margin-top: 4px; }
+  li, p { overflow-wrap: break-word; }
+  .note { background: var(--note); border: 1px solid var(--note-line); border-radius: 12px; padding: 12px 14px; margin: 20px 0; }
+  .note p { margin: 0; }
+  .note p + p { margin-top: 6px; }
+  .shots { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; margin: 16px 0; }
+  @media (min-width: 700px) { .shots { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .shots figure { margin: 0; }
+  .shots img { width: 100%; height: auto; border-radius: 8px; display: block; }
+  .shots figcaption { color: var(--muted); font-size: 0.8em; margin-top: 3px; }
+  .small { color: var(--muted); font-size: 0.85em; }
+  footer { margin-top: 36px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.85em; }
+  footer p { margin: 0 0 8px; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="https://sithewok13-dev.github.io/">Sithewok's Game Ports</a></nav>
+  <h1>Duke Nukem 3D, Blood, Shadow Warrior, Redneck Rampage and PowerSlave for iPhone</h1>
+  <p class="lead">Five Build engine classics in one app: Duke Nukem 3D, Blood, Shadow Warrior, Redneck Rampage and PowerSlave, on iPhone and iPad, with touch controls.</p>
+  <img class="hero" src="https://raw.githubusercontent.com/sithewok13-dev/Raze-iOS-/ios/docs/ios/screenshots/duke-classic-hud.jpg" alt="Duke Nukem 3D, Hollywood Holocaust: an Octabrain, Assault Troopers and a Pig Cop on the rooftop, with the shrinker and the game&#x27;s own status bar split into the two corners">
+  <p><b>You need your own copies of the games (Steam or GOG). No game files are included.</b></p>
+  <h2>Install</h2>
+  <p>Easiest, in SideStore or AltStore (Classic): add the source, then install the app from it. Updates come the same way.</p>
+  <div class="buttons">
+    <a class="button" id="add-sidestore-button" href="sidestore://source?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsithewok13-dev%2FRaze-iOS-%2Fios%2Fios%2Faltstore-source.json">Add to SideStore</a>
+    <a class="button" id="add-altstore-button" href="altstore://source?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsithewok13-dev%2FRaze-iOS-%2Fios%2Fios%2Faltstore-source.json">Add to AltStore</a>
+  </div>
+  <p class="small">These buttons only work once SideStore or AltStore is on your phone. If a button does nothing, add the source by hand (in the app's Sources, tap +) with this address:<br><code>https://raw.githubusercontent.com/sithewok13-dev/Raze-iOS-/ios/ios/altstore-source.json</code></p>
+  <p>Or download the .ipa from the releases page and install it with any sideloading tool (Feather, Sideloadly, a signing service):</p>
+  <div class="buttons">
+    <a class="button secondary" href="https://github.com/sithewok13-dev/Raze-iOS-/releases">Releases (download the .ipa)</a>
+    <a class="button secondary" href="https://github.com/sithewok13-dev/Raze-iOS-/blob/ios/ios/RELEASE_NOTES.md">Release notes and full guide</a>
+  </div>
+  <h2>Cool features</h2>
+  <ul>
+    <li><b>Five games, one app.</b> A card for each game you copied in; hold a card for its add-ons (Duke It Out in D.C., Nuclear Winter, Cryptic Passage, Twin Dragon, Rides Again and more).</li>
+    <li><b>Touch controls made for these games.</b> A stick under your left thumb, drag to look, FIRE with JUMP, USE and CROUCH round it, KICK in Duke and ALT FIRE in Blood.</li>
+    <li><b>Weapon wheel.</b> Slide from NEXT WPN or PREV WPN and pick a weapon by its own picture, with its ammo.</li>
+    <li><b>A button for every item you carry,</b> with the item&#x27;s own picture: Duke&#x27;s jetpack and HoloDuke, Blood&#x27;s crystal ball, Lo Wang&#x27;s smoke bombs. Duke&#x27;s jetpack flies where you look.</li>
+    <li><b>Six HUD looks,</b> among them the game&#x27;s own status bar split into the two bottom corners.</li>
+    <li><b>60 or 120 frames a second,</b> drawn with Vulkan on Metal. Sharp or smooth pixels, and smoother textures if you like.</li>
+    <li><b>CAMERA:</b> photos, bursts, selfies with the enemies posing, Action Freeze and a cinematic burst, straight to your Photos.</li>
+    <li><b>The cheat</b> (sithewok): god mode, every weapon, full ammo, walk through walls, fly in Shadow Warrior. <b>LEVEL</b> jumps to any level.</li>
+    <li><b>Tilt aiming,</b> quick save and quick load on a short hold, game controllers, and LAN multiplayer on Wi-Fi (see below).</li>
+  </ul>
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/Raze-iOS-/ios/docs/ios/screenshots/duke-pipebomb.jpg" alt="Duke Nukem 3D: a pipe bomb in hand as a Pig Cop, an Assault Trooper and an Octabrain close in, with the iOS HUD panels" loading="lazy"><figcaption>Duke Nukem 3D: a pipe bomb in hand as a Pig Cop, an Assault Trooper and an Octabrain close in, with the iOS HUD panels</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/Raze-iOS-/ios/docs/ios/screenshots/blood-tommygun.jpg" alt="Blood: the tommy gun fires at a cultist, shells flying over a coffin" loading="lazy"><figcaption>Blood: the tommy gun fires at a cultist, shells flying over a coffin</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/Raze-iOS-/ios/docs/ios/screenshots/sw-katana.jpg" alt="Shadow Warrior: Lo Wang draws his katana in the Dojo of Death" loading="lazy"><figcaption>Shadow Warrior: Lo Wang draws his katana in the Dojo of Death</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/Raze-iOS-/ios/docs/ios/screenshots/sw-uzis.jpg" alt="Shadow Warrior: two Uzis against a ninja up close" loading="lazy"><figcaption>Shadow Warrior: two Uzis against a ninja up close</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/Raze-iOS-/ios/docs/ios/screenshots/redneck-shotgun.jpg" alt="Redneck Rampage: the shotgun on a dirt road under a red sky, a chicken and three locals ahead" loading="lazy"><figcaption>Redneck Rampage: the shotgun on a dirt road under a red sky, a chicken and three locals ahead</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/Raze-iOS-/ios/docs/ios/screenshots/powerslave-mummy.jpg" alt="PowerSlave: a mummy in a sunlit temple courtyard, flamethrower in hand" loading="lazy"><figcaption>PowerSlave: a mummy in a sunlit temple courtyard, flamethrower in hand</figcaption></figure>
+  </div>
+  <p class="small">All from the game running on a computer, with the game&#x27;s own files, not from an iPhone.</p>
+  <div class="note"><p>This is an unofficial beta, so please expect bugs, and back up your saves. <b>Multiplayer especially:</b> LAN games have only been tried between copies of the game on one computer, never between two real iPhones, so they may not connect or may fall out of step. Sorry; it&#x27;s being worked on.</p><p>Found a bug? Please <a href="https://github.com/sithewok13-dev/Raze-iOS-/issues">report it here</a>, not to upstream Raze.</p></div>
+  <h2>Thank you</h2>
+  <p>This port stands on the work of many people. Thank you to:</p>
+  <ul>
+    <li><b><a href="https://github.com/ZDoom/Raze">Raze</a></b> by Christoph Oelckers and Mitchell Richters, with the <a href="https://zdoom.org/">ZDoom and GZDoom</a> teams and contributors.</li>
+    <li><b>Ken Silverman</b>, for the <a href="http://www.advsys.net/ken">Build engine</a>.</li>
+    <li><b>3D Realms</b>, who released the Duke Nukem 3D and Shadow Warrior source code.</li>
+    <li><b>Jonathon Fowler</b> (JonoF) for JFDuke3D, and the <b><a href="https://eduke32.com/">EDuke32</a></b> team: Richard Gobeille (TerminX), Evan Ramos (Hendricks266), pogokeen, Plagman and Helixhorned.</li>
+    <li><b><a href="https://github.com/nukeykt/NBlood">NBlood</a></b> by Nuke.YKT, NoOne and sirlemonhead (Blood), and Nuke.YKT&#x27;s reconstructed Redneck Rampage source.</li>
+    <li><b>VoidSW</b> and SWP (Shadow Warrior), <b>PCExhumed</b> by sirlemonhead, Nuke.YKT and NY00123 (PowerSlave), and BuildGDX by M210.</li>
+    <li>The games&#x27; makers: 3D Realms, Monolith Productions, Xatrix Entertainment and Lobotomy Software.</li>
+    <li><a href="https://www.libsdl.org/">SDL</a>, <a href="https://openal-soft.org/">OpenAL Soft</a>, <a href="https://github.com/ZDoom/ZMusic">ZMusic</a>, <a href="https://github.com/webmproject/libvpx">libvpx</a> and <a href="https://github.com/KhronosGroup/MoltenVK">MoltenVK</a>.</li>
+  </ul>
+  <h2>More</h2>
+  <ul>
+    <li><a href="https://github.com/sithewok13-dev/Raze-iOS-">Source code on GitHub</a></li>
+    <li><a href="https://github.com/sithewok13-dev/Raze-iOS-/issues">Report a bug</a> (here, not to the upstream project)</li>
+  </ul>
+  <footer><p>Based on <a href="https://github.com/ZDoom/Raze">Raze</a>. Unofficial fan port, not affiliated with or endorsed by Gearbox, 3D Realms, Atari, Nightdive Studios, Interplay, Lobotomy or the Raze team. All trademarks belong to their owners.</p></footer>
+</main>
+<script>
+  // #add-sidestore / #add-altstore: open that app's "add source" screen at once
+  (function () {
+    var id = { "#add-sidestore": "add-sidestore-button", "#add-altstore": "add-altstore-button" }[location.hash];
+    if (id) location.href = document.getElementById(id).href;
+  })();
+</script>
+</body>
+</html>

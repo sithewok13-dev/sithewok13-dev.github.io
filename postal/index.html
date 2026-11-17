@@ -1,0 +1,124 @@
+<!doctype html>
+<!-- Made by tools/make_game_pages.py from games.json: edit those, not this file. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>POSTAL on iPhone and iPad: the open-source POSTAL for iOS (unofficial)</title>
+<meta name="description" content="Running With Scissors&#x27; POSTAL (1997) on iPhone and iPad with twin-stick touch controls, a weapon wheel and quick save. Bring your own copy of POSTAL: Classic and Uncut.">
+<meta name="keywords" content="POSTAL iPhone, POSTAL iOS, POSTAL Classic and Uncut iPhone, Running With Scissors iOS">
+<link rel="canonical" href="https://sithewok13-dev.github.io/postal/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sithewok's Game Ports">
+<meta property="og:title" content="POSTAL for iPhone and iPad">
+<meta property="og:description" content="Running With Scissors&#x27; POSTAL (1997) on iPhone and iPad with twin-stick touch controls, a weapon wheel and quick save. Bring your own copy of POSTAL: Classic and Uncut.">
+<meta property="og:url" content="https://sithewok13-dev.github.io/postal/">
+<meta property="og:image" content="https://raw.githubusercontent.com/sithewok13-dev/POSTAL-SourceCode/ios/docs/ios/screenshots/truckstop-fire.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="POSTAL for iPhone and iPad">
+<meta name="twitter:description" content="Running With Scissors&#x27; POSTAL (1997) on iPhone and iPad with twin-stick touch controls, a weapon wheel and quick save. Bring your own copy of POSTAL: Classic and Uncut.">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/sithewok13-dev/POSTAL-SourceCode/ios/docs/ios/screenshots/truckstop-fire.jpg">
+<link rel="icon" href="https://raw.githubusercontent.com/sithewok13-dev/POSTAL-SourceCode/ios/ios/icon.png">
+<link rel="apple-touch-icon" href="https://raw.githubusercontent.com/sithewok13-dev/POSTAL-SourceCode/ios/ios/icon.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "POSTAL for iPhone and iPad", "operatingSystem": "iOS", "applicationCategory": "GameApplication", "description": "Running With Scissors' POSTAL (1997) on iPhone and iPad with twin-stick touch controls, a weapon wheel and quick save. Bring your own copy of POSTAL: Classic and Uncut.", "url": "https://sithewok13-dev.github.io/postal/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "screenshot": ["https://raw.githubusercontent.com/sithewok13-dev/POSTAL-SourceCode/ios/docs/ios/screenshots/truckstop-fire.jpg", "https://raw.githubusercontent.com/sithewok13-dev/POSTAL-SourceCode/ios/docs/ios/screenshots/tokyo-flamethrower-touch.jpg", "https://raw.githubusercontent.com/sithewok13-dev/POSTAL-SourceCode/ios/docs/ios/screenshots/weapon-wheel.jpg", "https://raw.githubusercontent.com/sithewok13-dev/POSTAL-SourceCode/ios/docs/ios/screenshots/city-explosion.jpg"]}</script>
+<style>
+  :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #5f5f66; --accent: #8e3aa8; --on-accent: #ffffff; --line: #d9d9de; --code: #f2f2f5; --card: #f6f6f8; --note: #fff6dc; --note-line: #e8d38f; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #141416; --fg: #f2f2f5; --muted: #a8a8b0; --accent: #c77ddf; --on-accent: #141416; --line: #34343a; --code: #232327; --card: #1d1d21; --note: #2c2617; --note-line: #5c4d22; }
+  }
+  :root[data-theme="dark"] { --bg: #141416; --fg: #f2f2f5; --muted: #a8a8b0; --accent: #c77ddf; --on-accent: #141416; --line: #34343a; --code: #232327; --card: #1d1d21; --note: #2c2617; --note-line: #5c4d22; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+  nav { font-size: 0.9em; margin-bottom: 12px; }
+  h1 { font-size: 1.6em; line-height: 1.2; margin: 0 0 8px; }
+  h2 { font-size: 1.15em; margin: 28px 0 8px; }
+  .lead { color: var(--muted); margin-top: 0; }
+  a { color: var(--accent); }
+  .hero { width: 100%; height: auto; border-radius: 12px; display: block; margin: 16px 0; }
+  .buttons { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0; }
+  .button { display: inline-block; padding: 12px 18px; border-radius: 12px; background: var(--accent); color: var(--on-accent); text-decoration: none; font-weight: 600; }
+  .button.secondary { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+  code { background: var(--code); border-radius: 6px; padding: 2px 5px; font-size: 0.85em; overflow-wrap: anywhere; }
+  ul { padding-left: 1.2em; }
+  li + li { margin-top: 4px; }
+  li, p { overflow-wrap: break-word; }
+  .note { background: var(--note); border: 1px solid var(--note-line); border-radius: 12px; padding: 12px 14px; margin: 20px 0; }
+  .note p { margin: 0; }
+  .note p + p { margin-top: 6px; }
+  .shots { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; margin: 16px 0; }
+  @media (min-width: 700px) { .shots { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .shots figure { margin: 0; }
+  .shots img { width: 100%; height: auto; border-radius: 8px; display: block; }
+  .shots figcaption { color: var(--muted); font-size: 0.8em; margin-top: 3px; }
+  .small { color: var(--muted); font-size: 0.85em; }
+  footer { margin-top: 36px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.85em; }
+  footer p { margin: 0 0 8px; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="https://sithewok13-dev.github.io/">Sithewok's Game Ports</a></nav>
+  <h1>POSTAL for iPhone and iPad</h1>
+  <p class="lead">POSTAL (1997), Running With Scissors&#x27; isometric shooter, on iPhone and iPad, from its released source code, with twin-stick touch controls.</p>
+  <img class="hero" src="https://raw.githubusercontent.com/sithewok13-dev/POSTAL-SourceCode/ios/docs/ios/screenshots/truckstop-fire.jpg" alt="The Truck Stop at night: the Honey Hole doughnut shop on fire while the police close in">
+  <p><b>You need your own copy of POSTAL: Classic and Uncut (Steam or GOG). No game files are included.</b></p>
+  <h2>Install</h2>
+  <p>Easiest, in SideStore or AltStore (Classic): add the source, then install the app from it. Updates come the same way.</p>
+  <div class="buttons">
+    <a class="button" id="add-sidestore-button" href="sidestore://source?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsithewok13-dev%2FPOSTAL-SourceCode%2Fios%2Fios%2Faltstore-source.json">Add to SideStore</a>
+    <a class="button" id="add-altstore-button" href="altstore://source?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsithewok13-dev%2FPOSTAL-SourceCode%2Fios%2Fios%2Faltstore-source.json">Add to AltStore</a>
+  </div>
+  <p class="small">These buttons only work once SideStore or AltStore is on your phone. If a button does nothing, add the source by hand (in the app's Sources, tap +) with this address:<br><code>https://raw.githubusercontent.com/sithewok13-dev/POSTAL-SourceCode/ios/ios/altstore-source.json</code></p>
+  <p>Or download the .ipa from the releases page and install it with any sideloading tool (Feather, Sideloadly, a signing service):</p>
+  <div class="buttons">
+    <a class="button secondary" href="https://github.com/sithewok13-dev/POSTAL-SourceCode/releases">Releases (download the .ipa)</a>
+    <a class="button secondary" href="https://github.com/sithewok13-dev/POSTAL-SourceCode/blob/ios/ios/RELEASE_NOTES.md">Release notes and full guide</a>
+  </div>
+  <h2>Cool features</h2>
+  <ul>
+    <li><b>Twin-stick touch controls.</b> Your left thumb moves (push to the edge to run). Your right thumb aims, and pushing it all the way fires. Big FIRE and DUCK buttons, and an EXECUTE button that only shows up when it can do something.</li>
+    <li><b>The whole screen.</b> POSTAL draws its own wider view to fit the iPhone, so nothing is stretched.</li>
+    <li><b>Weapon wheel.</b> Slide NEXT WPN or PREV WPN and every weapon is there at once, with the game&#x27;s own icons and ammo counts.</li>
+    <li><b>Quick save and quick load.</b> Hold SAVE or LOAD.</li>
+    <li><b>A cheat button</b> (a hand grenade): you can&#x27;t die, you get every weapon with endless ammo, and the secret Deathwad.</li>
+    <li><b>Jump to any level.</b> With the cheat on, LEVEL lists all 22 levels of POSTAL: Classic and Uncut, Special Delivery and Super Postal included.</li>
+    <li><b>Slow motion</b> at half or quarter speed, and a <b>follow cam</b> that watches someone else in the level.</li>
+    <li><b>Camera button.</b> One tap saves a screenshot to your Photos, without the buttons.</li>
+    <li><b>Tap the menus</b>, with a BACK button, and type the game&#x27;s own cheat codes on the iPhone keyboard.</li>
+  </ul>
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/POSTAL-SourceCode/ios/docs/ios/screenshots/tokyo-flamethrower-touch.jpg" alt="Tokyo: the flamethrower down a neon street, with the touch controls" loading="lazy"><figcaption>Tokyo: the flamethrower down a neon street, with the touch controls</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/POSTAL-SourceCode/ios/docs/ios/screenshots/weapon-wheel.jpg" alt="The weapon wheel open over a Tokyo street, Napalm picked" loading="lazy"><figcaption>The weapon wheel open over a Tokyo street, Napalm picked</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/POSTAL-SourceCode/ios/docs/ios/screenshots/city-explosion.jpg" alt="The City: an explosion in front of the Used Fruit shop" loading="lazy"><figcaption>The City: an explosion in front of the Used Fruit shop</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/POSTAL-SourceCode/ios/docs/ios/screenshots/home-snow-fire.jpg" alt="Home: a fireball by the police car on a snowy street" loading="lazy"><figcaption>Home: a fireball by the police car on a snowy street</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/POSTAL-SourceCode/ios/docs/ios/screenshots/truckstop-night.jpg" alt="The Truck Stop at night, under the Honey Hole doughnut" loading="lazy"><figcaption>The Truck Stop at night, under the Honey Hole doughnut</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/POSTAL-SourceCode/ios/docs/ios/screenshots/construction-site.jpg" alt="The Construction Site: armed hostiles run in past a bulldozer" loading="lazy"><figcaption>The Construction Site: armed hostiles run in past a bulldozer</figcaption></figure>
+  </div>
+  <p class="small">From the game running on a computer, with the game&#x27;s own files. The two with buttons have the app&#x27;s iPhone controls drawn on from its own layout code.</p>
+  <div class="note"><p>This is an unofficial beta, made by a fan, and it has had little testing on real iPhones so far (none on iPad). Expect bugs, and back up your saves (they&#x27;re in Files &gt; On My iPhone &gt; POSTAL &gt; savegame).</p><p>Found a bug? Please <a href="https://github.com/sithewok13-dev/POSTAL-SourceCode/issues">report it here</a>, not to Running With Scissors.</p></div>
+  <h2>Thank you</h2>
+  <p>This port stands on the work of many people. Thank you to:</p>
+  <ul>
+    <li><b>Running With Scissors</b> made POSTAL and gave its source code to the fans: Vince Desi, Mike Riedel, Jeff Diamond, Bill Harman, Jonathan Isabelle, Randy Briley and the whole team in the game&#x27;s credits. Thank you for sharing it.</li>
+    <li><b>Ryan C. Gordon</b> (<a href="https://icculus.org/">icculus</a>) moved POSTAL to SDL for Linux and Mac in the 2013 update (his notes are all through the code); this port is built on that work.</li>
+    <li><b>Emile Belanger</b> made the Android port; the iPhone menus use its tap-to-choose code. <b>Lana Foltz</b> and Emile did the 2015 update.</li>
+    <li><b><a href="https://github.com/Mystyle-48">Mystyle-48</a></b> brought the newest open-source changes into <a href="https://github.com/RWS-Studios/POSTAL-SourceCode">RWS-Studios/POSTAL-SourceCode</a>, and <b><a href="https://github.com/OtterCodes101">OtterCodes101</a></b> fixed the credits.</li>
+    <li><b><a href="https://www.libsdl.org/">SDL</a></b> runs the game&#x27;s window, sound and input on iPhone.</li>
+  </ul>
+  <h2>More</h2>
+  <ul>
+    <li><a href="https://github.com/sithewok13-dev/POSTAL-SourceCode">Source code on GitHub</a></li>
+    <li><a href="https://github.com/sithewok13-dev/POSTAL-SourceCode/issues">Report a bug</a> (here, not to the upstream project)</li>
+  </ul>
+  <footer><p>Based on <a href="https://github.com/RWS-Studios/POSTAL-SourceCode">POSTAL&#x27;s released source code</a>. Unofficial fan port, not affiliated with or endorsed by Running With Scissors. POSTAL is a trademark of Running With Scissors.</p></footer>
+</main>
+<script>
+  // #add-sidestore / #add-altstore: open that app's "add source" screen at once
+  (function () {
+    var id = { "#add-sidestore": "add-sidestore-button", "#add-altstore": "add-altstore-button" }[location.hash];
+    if (id) location.href = document.getElementById(id).href;
+  })();
+</script>
+</body>
+</html>

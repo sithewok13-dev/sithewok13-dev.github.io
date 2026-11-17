@@ -1,0 +1,98 @@
+<!doctype html>
+<!-- Made by tools/make_game_pages.py from games.json: edit those, not this file. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Silent Hill 3 on iPhone: build your own (unofficial)</title>
+<meta name="description" content="Silent Hill 3 on iPhone, built for free from your own PC copy, with touch controls and 60 fps.">
+<meta name="keywords" content="Silent Hill 3 iPhone, Silent Hill 3 iOS, SH3 iPhone">
+<link rel="canonical" href="https://sithewok13-dev.github.io/silent-hill-3/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sithewok's Game Ports">
+<meta property="og:title" content="Silent Hill 3 for iPhone: build your own">
+<meta property="og:description" content="Silent Hill 3 on iPhone, built for free from your own PC copy, with touch controls and 60 fps.">
+<meta property="og:url" content="https://sithewok13-dev.github.io/silent-hill-3/">
+<meta property="og:image" content="https://raw.githubusercontent.com/sithewok13-dev/silent-hill-3-builder/main/docs/screenshots/touch-controls.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Silent Hill 3 for iPhone: build your own">
+<meta name="twitter:description" content="Silent Hill 3 on iPhone, built for free from your own PC copy, with touch controls and 60 fps.">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/sithewok13-dev/silent-hill-3-builder/main/docs/screenshots/touch-controls.jpg">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Silent Hill 3 for iPhone: build your own", "operatingSystem": "iOS", "applicationCategory": "GameApplication", "description": "Silent Hill 3 on iPhone, built for free from your own PC copy, with touch controls and 60 fps.", "url": "https://sithewok13-dev.github.io/silent-hill-3/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "screenshot": ["https://raw.githubusercontent.com/sithewok13-dev/silent-hill-3-builder/main/docs/screenshots/touch-controls.jpg"]}</script>
+<style>
+  :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #5f5f66; --accent: #8e3aa8; --on-accent: #ffffff; --line: #d9d9de; --code: #f2f2f5; --card: #f6f6f8; --note: #fff6dc; --note-line: #e8d38f; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #141416; --fg: #f2f2f5; --muted: #a8a8b0; --accent: #c77ddf; --on-accent: #141416; --line: #34343a; --code: #232327; --card: #1d1d21; --note: #2c2617; --note-line: #5c4d22; }
+  }
+  :root[data-theme="dark"] { --bg: #141416; --fg: #f2f2f5; --muted: #a8a8b0; --accent: #c77ddf; --on-accent: #141416; --line: #34343a; --code: #232327; --card: #1d1d21; --note: #2c2617; --note-line: #5c4d22; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+  nav { font-size: 0.9em; margin-bottom: 12px; }
+  h1 { font-size: 1.6em; line-height: 1.2; margin: 0 0 8px; }
+  h2 { font-size: 1.15em; margin: 28px 0 8px; }
+  .lead { color: var(--muted); margin-top: 0; }
+  a { color: var(--accent); }
+  .hero { width: 100%; height: auto; border-radius: 12px; display: block; margin: 16px 0; }
+  .buttons { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0; }
+  .button { display: inline-block; padding: 12px 18px; border-radius: 12px; background: var(--accent); color: var(--on-accent); text-decoration: none; font-weight: 600; }
+  .button.secondary { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+  code { background: var(--code); border-radius: 6px; padding: 2px 5px; font-size: 0.85em; overflow-wrap: anywhere; }
+  ul { padding-left: 1.2em; }
+  li + li { margin-top: 4px; }
+  li, p { overflow-wrap: break-word; }
+  .note { background: var(--note); border: 1px solid var(--note-line); border-radius: 12px; padding: 12px 14px; margin: 20px 0; }
+  .note p { margin: 0; }
+  .note p + p { margin-top: 6px; }
+  .shots { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; margin: 16px 0; }
+  @media (min-width: 700px) { .shots { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .shots figure { margin: 0; }
+  .shots img { width: 100%; height: auto; border-radius: 8px; display: block; }
+  .shots figcaption { color: var(--muted); font-size: 0.8em; margin-top: 3px; }
+  .small { color: var(--muted); font-size: 0.85em; }
+  footer { margin-top: 36px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.85em; }
+  footer p { margin: 0 0 8px; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="https://sithewok13-dev.github.io/">Sithewok's Game Ports</a></nav>
+  <h1>Silent Hill 3 for iPhone: build your own</h1>
+  <p class="lead">Silent Hill 3 on iPhone, running natively (no emulator), built for free from your own PC copy of the game.</p>
+  <img class="hero" src="https://raw.githubusercontent.com/sithewok13-dev/silent-hill-3-builder/main/docs/screenshots/touch-controls.jpg" alt="The Silent Hill 3 port&#x27;s touch controls and settings tray, on a plain background">
+  <p><b>You need your own copy of Silent Hill 3 for PC. The builder contains nothing of the game.</b></p>
+  <h2>Install</h2>
+  <p>You make the app yourself, for free, from your phone: make your own private copy of the builder, give it a link to your game, and GitHub builds the app for you. The builder&#x27;s page walks you through it step by step.</p>
+  <div class="buttons">
+    <a class="button" href="https://github.com/sithewok13-dev/silent-hill-3-builder">Build your own</a>
+  </div>
+  <h2>Cool features</h2>
+  <ul>
+    <li><b>Native, not emulated:</b> the PC game&#x27;s own code turned into iPhone code, so it runs smoothly.</li>
+    <li><b>60 frames a second</b>, held steady with SilentHill3.FusionFix&#x27;s frame pacing fix. Or 30, for a cooler phone.</li>
+    <li><b>Full-screen widescreen</b> that fills your phone&#x27;s screen.</li>
+    <li><b>Touch controls made for the game:</b> a stick appears under your left thumb (push past its ring to run), drag to look, and big FIRE, AIM and ACTION buttons. A quick tap does ACTION.</li>
+    <li><b>Modern or classic controls:</b> the stick points where Heather goes, or the original tank controls.</li>
+    <li><b>Free camera:</b> swap the fixed camera angles for a camera over Heather&#x27;s shoulder that you turn with your thumb.</li>
+    <li><b>Photo camera:</b> take photos, bursts and selfies (the game freezes and the camera swings round to face Heather), or freeze a moment and walk the camera round it. Photos go to your Photos app.</li>
+    <li><b>A cheat:</b> hold the Halo of the Sun button and Heather can&#x27;t die.</li>
+    <li><b>Controllers:</b> Xbox, PlayStation and MFi controllers work; the touch buttons hide while one is connected.</li>
+  </ul>
+  <div class="note"><p>This is an unofficial fan project and the iPhone version is very new, so please expect bugs. It&#x27;s little tested on an iPhone and nobody has played it all the way through yet: it may crash or draw something wrong in places we haven&#x27;t reached. Things we know about:</p><p>There&#x27;s no multiplayer to worry about (it&#x27;s a single-player game). Sorry about the rough edges. If something goes wrong, please <a href="https://github.com/sithewok13-dev/silent-hill-3-builder/issues">open an issue</a> and attach sh3.log (and sh3-crash.log, if there is one).</p><p>The game&#x27;s movies (FMVs) are skipped for now.</p><p>After the cutscene in the Office Building bathroom the screen can stay black: press ACTION to carry on.</p><p>The Konami logos and the credits are stretched on a wide screen.</p><p>The photo camera&#x27;s frozen views can have gaps where the game never drew anything.</p></div>
+  <h2>Thank you</h2>
+  <p>Thank you to:</p>
+  <ul>
+    <li><b><a href="https://github.com/cutarev">cutarev</a></b>, who made <a href="https://github.com/cutarev/sh3-nx">sh3-nx</a> (and <a href="https://github.com/cutarev/sh2-nx">sh2-nx</a> before it): Silent Hill 3&#x27;s PC code turned into native code. The iPhone version is built on it. Thank you!</li>
+    <li><b><a href="https://github.com/Ligux01">Ligux01</a></b>, for fixing the broken car windows after the Missionary fight.</li>
+    <li><b>ThirteenAG</b>, for the <a href="https://github.com/ThirteenAG/WidescreenFixesPack">widescreen fix</a> and SilentHill3.FusionFix: its frame pacing fix and modern camera are where this port&#x27;s steady 60 fps and free camera come from.</li>
+    <li><b><a href="https://github.com/sp00nznet/xboxrecomp">sp00nznet</a></b> for the code translator, and the SDL and <a href="https://chromium.googlesource.com/angle/angle">ANGLE</a> projects.</li>
+    <li><b>Konami and Team Silent</b>, for making Silent Hill 3.</li>
+  </ul>
+  <h2>More</h2>
+  <ul>
+    <li><a href="https://github.com/sithewok13-dev/silent-hill-3-builder">Source code on GitHub</a></li>
+    <li><a href="https://github.com/sithewok13-dev/silent-hill-3-builder/issues">Report a bug</a> (here, not to the upstream project)</li>
+  </ul>
+  <footer><p>Silent Hill is a trademark of Konami. Not affiliated with or endorsed by Konami.</p></footer>
+</main>
+</body>
+</html>

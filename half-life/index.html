@@ -1,0 +1,125 @@
+<!doctype html>
+<!-- Made by tools/make_game_pages.py from games.json: edit those, not this file. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Half-Life on iPhone and iPad: Xash3D FWGS for iOS (unofficial)</title>
+<meta name="description" content="Half-Life, Opposing Force and Blue Shift on iPhone with touch controls, plus experimental co-op, Multiplayer Modes and Counter-Strike 1.6: an unofficial Xash3D FWGS port. Bring your own Steam copy.">
+<meta name="keywords" content="Half-Life iPhone, Half-Life iOS, Opposing Force iPhone, Blue Shift iOS, Xash3D iOS, Counter-Strike 1.6 iPhone">
+<link rel="canonical" href="https://sithewok13-dev.github.io/half-life/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sithewok's Game Ports">
+<meta property="og:title" content="Half-Life, Opposing Force and Blue Shift for iPhone">
+<meta property="og:description" content="Half-Life, Opposing Force and Blue Shift on iPhone with touch controls, plus experimental co-op, Multiplayer Modes and Counter-Strike 1.6: an unofficial Xash3D FWGS port. Bring your own Steam copy.">
+<meta property="og:url" content="https://sithewok13-dev.github.io/half-life/">
+<meta property="og:image" content="https://raw.githubusercontent.com/sithewok13-dev/xash3d-fwgs/master/docs/ios/screenshots/gargantua.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Half-Life, Opposing Force and Blue Shift for iPhone">
+<meta name="twitter:description" content="Half-Life, Opposing Force and Blue Shift on iPhone with touch controls, plus experimental co-op, Multiplayer Modes and Counter-Strike 1.6: an unofficial Xash3D FWGS port. Bring your own Steam copy.">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/sithewok13-dev/xash3d-fwgs/master/docs/ios/screenshots/gargantua.jpg">
+<link rel="icon" href="https://raw.githubusercontent.com/sithewok13-dev/xash3d-fwgs/master/game_launch/icon-xash-material.png">
+<link rel="apple-touch-icon" href="https://raw.githubusercontent.com/sithewok13-dev/xash3d-fwgs/master/game_launch/icon-xash-material.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Half-Life, Opposing Force and Blue Shift for iPhone", "operatingSystem": "iOS", "applicationCategory": "GameApplication", "description": "Half-Life, Opposing Force and Blue Shift on iPhone with touch controls, plus experimental co-op, Multiplayer Modes and Counter-Strike 1.6: an unofficial Xash3D FWGS port. Bring your own Steam copy.", "url": "https://sithewok13-dev.github.io/half-life/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "screenshot": ["https://raw.githubusercontent.com/sithewok13-dev/xash3d-fwgs/master/docs/ios/screenshots/gargantua.jpg", "https://raw.githubusercontent.com/sithewok13-dev/xash3d-fwgs/master/docs/ios/screenshots/black-mesa-lobby.jpg", "https://raw.githubusercontent.com/sithewok13-dev/xash3d-fwgs/master/docs/ios/screenshots/zombie-headcrabs.jpg", "https://raw.githubusercontent.com/sithewok13-dev/xash3d-fwgs/master/docs/ios/screenshots/surface-tension-marines.jpg"]}</script>
+<style>
+  :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #5f5f66; --accent: #8e3aa8; --on-accent: #ffffff; --line: #d9d9de; --code: #f2f2f5; --card: #f6f6f8; --note: #fff6dc; --note-line: #e8d38f; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #141416; --fg: #f2f2f5; --muted: #a8a8b0; --accent: #c77ddf; --on-accent: #141416; --line: #34343a; --code: #232327; --card: #1d1d21; --note: #2c2617; --note-line: #5c4d22; }
+  }
+  :root[data-theme="dark"] { --bg: #141416; --fg: #f2f2f5; --muted: #a8a8b0; --accent: #c77ddf; --on-accent: #141416; --line: #34343a; --code: #232327; --card: #1d1d21; --note: #2c2617; --note-line: #5c4d22; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+  nav { font-size: 0.9em; margin-bottom: 12px; }
+  h1 { font-size: 1.6em; line-height: 1.2; margin: 0 0 8px; }
+  h2 { font-size: 1.15em; margin: 28px 0 8px; }
+  .lead { color: var(--muted); margin-top: 0; }
+  a { color: var(--accent); }
+  .hero { width: 100%; height: auto; border-radius: 12px; display: block; margin: 16px 0; }
+  .buttons { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0; }
+  .button { display: inline-block; padding: 12px 18px; border-radius: 12px; background: var(--accent); color: var(--on-accent); text-decoration: none; font-weight: 600; }
+  .button.secondary { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+  code { background: var(--code); border-radius: 6px; padding: 2px 5px; font-size: 0.85em; overflow-wrap: anywhere; }
+  ul { padding-left: 1.2em; }
+  li + li { margin-top: 4px; }
+  li, p { overflow-wrap: break-word; }
+  .note { background: var(--note); border: 1px solid var(--note-line); border-radius: 12px; padding: 12px 14px; margin: 20px 0; }
+  .note p { margin: 0; }
+  .note p + p { margin-top: 6px; }
+  .shots { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; margin: 16px 0; }
+  @media (min-width: 700px) { .shots { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .shots figure { margin: 0; }
+  .shots img { width: 100%; height: auto; border-radius: 8px; display: block; }
+  .shots figcaption { color: var(--muted); font-size: 0.8em; margin-top: 3px; }
+  .small { color: var(--muted); font-size: 0.85em; }
+  footer { margin-top: 36px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.85em; }
+  footer p { margin: 0 0 8px; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="https://sithewok13-dev.github.io/">Sithewok's Game Ports</a></nav>
+  <h1>Half-Life, Opposing Force and Blue Shift for iPhone</h1>
+  <p class="lead">Half-Life, Opposing Force and Blue Shift in one iPhone app, on the Xash3D FWGS engine, with touch controls.</p>
+  <img class="hero" src="https://raw.githubusercontent.com/sithewok13-dev/xash3d-fwgs/master/docs/ios/screenshots/gargantua.jpg" alt="Surface Tension: a Gargantua charges through rocket smoke towards Gordon&#x27;s rocket launcher">
+  <p><b>You need your own copy of Half-Life from Steam. No game files are included.</b></p>
+  <h2>Install</h2>
+  <p>Easiest, in SideStore or AltStore (Classic): add the source, then install the app from it. Updates come the same way.</p>
+  <div class="buttons">
+    <a class="button" id="add-sidestore-button" href="sidestore://source?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsithewok13-dev%2Fxash3d-fwgs%2Fmaster%2Fscripts%2Fios%2Faltstore-source.json">Add to SideStore</a>
+    <a class="button" id="add-altstore-button" href="altstore://source?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsithewok13-dev%2Fxash3d-fwgs%2Fmaster%2Fscripts%2Fios%2Faltstore-source.json">Add to AltStore</a>
+  </div>
+  <p class="small">These buttons only work once SideStore or AltStore is on your phone. If a button does nothing, add the source by hand (in the app's Sources, tap +) with this address:<br><code>https://raw.githubusercontent.com/sithewok13-dev/xash3d-fwgs/master/scripts/ios/altstore-source.json</code></p>
+  <p>Or download the .ipa from the releases page and install it with any sideloading tool (Feather, Sideloadly, a signing service):</p>
+  <div class="buttons">
+    <a class="button secondary" href="https://github.com/sithewok13-dev/xash3d-fwgs/releases">Releases (download the .ipa)</a>
+    <a class="button secondary" href="https://github.com/sithewok13-dev/xash3d-fwgs/blob/master/Documentation/ios-release-notes.md">Release notes and full guide</a>
+  </div>
+  <h2>Cool features</h2>
+  <ul>
+    <li><b>Three games, one app:</b> Half-Life, Opposing Force and Blue Shift, picked on a Choose a game screen that says which folders it found.</li>
+    <li><b>Touch controls</b> built for a phone: a move stick wherever your left thumb lands, drag anywhere to aim, FIRE, ALT fire, JUMP, DUCK, USE, RELOAD and a flashlight button.</li>
+    <li><b>A weapon wheel:</b> slide your thumb from NEXT WPN and pick any weapon by its icon, with its ammo shown.</li>
+    <li><b>Quick save and quick load</b> with a short hold, so a stray tap never loses your progress.</li>
+    <li><b>Metal graphics</b> on iOS 18 and newer, at <b>60 or 120 frames a second</b>.</li>
+    <li><b>Tilt aiming</b> with the gyro, if you like it.</li>
+    <li><b>A camera:</b> photos, selfies with the characters near you, bursts, and <b>Action Freeze</b>, which stops the game so you can fly a camera round the moment.</li>
+    <li><b>A cheat</b> (sithewok): god mode, every weapon, noclip, and a chapter list to jump anywhere in the game.</li>
+    <li><b>Experimental extras:</b> Half-Life <b>co-op</b> for up to 4 players, <b>Multiplayer Modes</b> (deathmatch, team deathmatch, capture the flag, gun game and more, with the free Adrenaline Gamer mod&#x27;s files), and <b>Counter-Strike 1.6</b> with your own Steam copy.</li>
+  </ul>
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/xash3d-fwgs/master/docs/ios/screenshots/black-mesa-lobby.jpg" alt="Anomalous Materials: the Black Mesa lobby, with a scientist and a security guard at the front desk" loading="lazy"><figcaption>Anomalous Materials: the Black Mesa lobby, with a scientist and a security guard at the front desk</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/xash3d-fwgs/master/docs/ios/screenshots/zombie-headcrabs.jpg" alt="Unforeseen Consequences: a zombie and two headcrabs in a red-lit corridor, shotgun ready" loading="lazy"><figcaption>Unforeseen Consequences: a zombie and two headcrabs in a red-lit corridor, shotgun ready</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/xash3d-fwgs/master/docs/ios/screenshots/surface-tension-marines.jpg" alt="Surface Tension: a marine dives for cover from an explosion in a desert canyon" loading="lazy"><figcaption>Surface Tension: a marine dives for cover from an explosion in a desert canyon</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/xash3d-fwgs/master/docs/ios/screenshots/xen.jpg" alt="Xen: floating islands and an alien controller, with the Gauss gun" loading="lazy"><figcaption>Xen: floating islands and an alien controller, with the Gauss gun</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/xash3d-fwgs/master/docs/ios/screenshots/blue-shift-marines.jpg" alt="Blue Shift: Barney fights marines in a parking yard" loading="lazy"><figcaption>Blue Shift: Barney fights marines in a parking yard</figcaption></figure>
+    <figure><img src="https://raw.githubusercontent.com/sithewok13-dev/xash3d-fwgs/master/docs/ios/screenshots/opposing-force-m249.jpg" alt="Opposing Force: Shephard&#x27;s M249 tears into Race X shock troopers at dusk, as a shock beam flies past" loading="lazy"><figcaption>Opposing Force: Shephard&#x27;s M249 tears into Race X shock troopers at dusk, as a shock beam flies past</figcaption></figure>
+  </div>
+  <p class="small">From the game running on a computer, with the game&#x27;s own files; some monsters were placed for the pictures.</p>
+  <div class="note"><p>This is an unofficial beta, made by one fan and tested on one iPhone. Expect bugs, and back up your saves.</p><p>Found a bug? <a href="https://github.com/sithewok13-dev/xash3d-fwgs/issues">Report it here</a>, not to the Xash3D FWGS developers. Every report helps.</p></div>
+  <h2>Thank you</h2>
+  <p>This port stands on the work of many people. Thank you to:</p>
+  <ul>
+    <li><b>Uncle Mike</b> (Unkle Mike), who wrote the original <a href="https://www.moddb.com/engines/xash3d-engine">Xash3D engine</a>.</li>
+    <li><b>The Flying With Gauss (FWGS) team</b>, who made <a href="https://github.com/FWGS/xash3d-fwgs">Xash3D FWGS</a> and keep it going: <a href="https://github.com/a1batross">Alibek Omarov (a1batross)</a>, <a href="https://github.com/mittorn">mittorn</a>, <a href="https://github.com/nekonomicon">nekonomicon</a>, <a href="https://github.com/Velaron">Velaron</a>, <a href="https://github.com/SNMetamorph">SNMetamorph</a> and <a href="https://github.com/FWGS/xash3d-fwgs/graphs/contributors">all its contributors</a>. You can <a href="https://github.com/FWGS/xash3d-fwgs/blob/master/Documentation/donate.md">support them here</a>.</li>
+    <li><b>The <a href="https://github.com/FWGS/hlsdk-portable">hlsdk-portable</a> contributors</b>, for the game code of all three games.</li>
+    <li><b>Valve</b>, for Half-Life and for releasing its SDK, and <b>Gearbox Software</b> for Opposing Force and Blue Shift.</li>
+    <li><b>BulliT (Martin Webrant)</b> for Adrenaline Gamer, <b>Velaron</b> for <a href="https://github.com/Velaron/cs16-client">cs16-client</a>, and the <a href="https://github.com/rehlds/ReGameDLL_CS">ReGameDLL_CS</a> contributors.</li>
+    <li><b><a href="https://github.com/libsdl-org/SDL">SDL</a></b> and <b><a href="https://github.com/google/angle">ANGLE</a></b>, which this app runs on.</li>
+  </ul>
+  <h2>More</h2>
+  <ul>
+    <li><a href="https://github.com/sithewok13-dev/xash3d-fwgs">Source code on GitHub</a></li>
+    <li><a href="https://github.com/sithewok13-dev/xash3d-fwgs/issues">Report a bug</a> (here, not to the upstream project)</li>
+  </ul>
+  <footer><p>Based on <a href="https://github.com/FWGS/xash3d-fwgs">Xash3D FWGS</a> and <a href="https://github.com/FWGS/hlsdk-portable">hlsdk-portable</a>. Unofficial fan port, not affiliated with or endorsed by Valve. Half-Life is a trademark of Valve.</p></footer>
+</main>
+<script>
+  // #add-sidestore / #add-altstore: open that app's "add source" screen at once
+  (function () {
+    var id = { "#add-sidestore": "add-sidestore-button", "#add-altstore": "add-altstore-button" }[location.hash];
+    if (id) location.href = document.getElementById(id).href;
+  })();
+</script>
+</body>
+</html>
