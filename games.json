@@ -348,6 +348,95 @@
     }
    ],
    "footer": "Based on [ECWolf](https://bitbucket.org/ecwolf/ecwolf). Unofficial fan port, not affiliated with or endorsed by id Software, Bethesda or the ECWolf developers. Wolfenstein is a trademark of ZeniMax."
+  },
+  {
+   "slug": "doom",
+   "repo": "sithewok13-dev/UZDoom",
+   "title": "DOOM and DOOM II for iPhone and iPad",
+   "page_title": "DOOM and DOOM II on iPhone and iPad: UZDoom for iOS (unofficial)",
+   "description": "Play DOOM, DOOM II, TNT and Plutonia on iPhone and iPad with touch controls, a weapon wheel, selfies and LAN play: an unofficial UZDoom port. Bring your own game files.",
+   "lead": "DOOM, DOOM II, Final DOOM (TNT and Plutonia) and add-ons like SIGIL on iPhone and iPad: an unofficial port of UZDoom, with touch controls made for DOOM.",
+   "need": "You need your own copy of DOOM or DOOM II (Steam or GOG). No game files are included.",
+   "source": "https://raw.githubusercontent.com/sithewok13-dev/UZDoom/ios/packaging/ios/altstore-source.json",
+   "icon": "https://raw.githubusercontent.com/sithewok13-dev/UZDoom/ios/branding/misc/appicon.png",
+   "keywords": [
+    "DOOM iPhone",
+    "DOOM II iOS",
+    "UZDoom iOS",
+    "GZDoom iPhone",
+    "SIGIL iPhone"
+   ],
+   "screenshots": [
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/UZDoom/ios/docs/ios/screenshots/e3m6-inferno.jpg",
+     "alt": "DOOM, Inferno: a shotgun blast hits a cacodemon while imps and a baron close in, under a red sky"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/UZDoom/ios/docs/ios/screenshots/selfie.jpg",
+     "alt": "A selfie with the camera: the doomguy floats above a baron, zombies, a lost soul and an imp, under a red sky"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/UZDoom/ios/docs/ios/screenshots/freeze.jpg",
+     "alt": "Action Freeze: the camera flown round a frozen fight, the doomguy firing at imps as a rocket explodes"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/UZDoom/ios/docs/ios/screenshots/cyberdemon.jpg",
+     "alt": "The Cyberdemon strides across the Tower of Babel in DOOM"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/UZDoom/ios/docs/ios/screenshots/chainsaw.jpg",
+     "alt": "The chainsaw against a pinky demon in DOOM's first room, E1M1"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/UZDoom/ios/docs/ios/screenshots/bfg-blast.jpg",
+     "alt": "A BFG 9000 blast tears through a crowd of monsters in DOOM II"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/UZDoom/ios/docs/ios/screenshots/icon-of-sin.jpg",
+     "alt": "DOOM II's last level: a hell knight and an imp in front of the Icon of Sin"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/UZDoom/ios/docs/ios/screenshots/sigil.jpg",
+     "alt": "SIGIL: a cacodemon and other demons in John Romero's blood-red episode"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/sithewok13-dev/UZDoom/ios/docs/ios/screenshots/classic-hud.jpg",
+     "alt": "DOOM II with the classic status bar: the super shotgun against a revenant and a pinky"
+    }
+   ],
+   "shots_note": "All from the game running on a computer, with the game's own files, not from an iPhone.",
+   "features": [
+    "**Touch controls made for DOOM:** a move stick wherever your thumb lands, drag anywhere to look, FIRE with USE, JUMP and CROUCH around it.",
+    "**A weapon wheel:** slide off NEXT WPN or PREV WPN and your whole arsenal fans out, with the game's own pictures and ammo.",
+    "**A game picker:** cards for DOOM, DOOM II, TNT and PLUTONIA, each with a monster from your own game files, and the add-ons SIGIL, SIGIL II, No Rest for the Living, The Master Levels and Legacy of Rust.",
+    "**Six HUD looks:** DOOM's classic status bar, cut-down versions of it, or small modern pills with the doomguy's face, in three sizes.",
+    "**A camera:** photos, bursts, and selfies where the doomguy poses with the nearest monsters. **Action Freeze** stops time so you can fly round a fight.",
+    "**The sithewok cheat:** god mode and every weapon, a cheat menu of DOOM's own cheats (Noclip, Full map, Berserk and more), and **LEVEL** to jump to any map.",
+    "**Tilt aiming**, **60 or 120 frames a second**, and **Vulkan** graphics on Metal.",
+    "**LAN co-op and deathmatch** for up to 8 players on the same Wi-Fi (new, see below)."
+   ],
+   "sorry": [
+    "This is an unofficial beta, so please expect bugs, and back up your saves. **Multiplayer may well be broken:** LAN games are brand new and have only been tried on a computer, never between two iPhones yet. Sorry, it's being worked on. iPads have never been tried either.",
+    "Found a bug? Please [report it here](https://github.com/sithewok13-dev/UZDoom/issues), not to upstream UZDoom, and say which build you have (it's under the MENU tray)."
+   ],
+   "thanks": [
+    "**[id Software](https://www.idsoftware.com/)**, for DOOM and DOOM II, and for releasing DOOM's source code in 1997.",
+    "**Marisa \"Randi\" Heit**, who created [ZDoom](https://github.com/rheit/zdoom); **Christoph \"Graf Zahl\" Oelckers**, who created [GZDoom](https://github.com/ZDoom/gzdoom); **Rachael \"Eruanna\" Alexanderson** and everyone who has kept GZDoom and now **[UZDoom](https://github.com/UZDoom/UZDoom)** going; and every name in [CONTRIBUTORS](https://github.com/UZDoom/UZDoom/blob/trunk/CONTRIBUTORS).",
+    "**[SDL](https://www.libsdl.org/)** (Sam Lantinga and contributors), **[MoltenVK](https://github.com/KhronosGroup/MoltenVK)** (the Khronos Group and contributors), **[OpenAL Soft](https://openal-soft.org/)** (Chris Robinson), FluidSynth, libsndfile and libvpx.",
+    "**Nightdive Studios** and id Software for the re-release, and **John Romero** for SIGIL and SIGIL II."
+   ],
+   "thanks_lead": "This port stands on the work of many people. Thank you to:",
+   "buttons": [
+    {
+     "text": "Releases (download the .ipa)",
+     "url": "https://github.com/sithewok13-dev/UZDoom/releases"
+    },
+    {
+     "text": "Release notes and full guide",
+     "url": "https://github.com/sithewok13-dev/UZDoom/blob/ios/docs/ios/RELEASE_NOTES.md"
+    }
+   ],
+   "footer": "Based on [UZDoom](https://github.com/UZDoom/UZDoom). Unofficial fan port, not affiliated with or endorsed by id Software, Bethesda, Nightdive Studios or the UZDoom team. DOOM is a trademark of id Software."
   }
  ]
 }
